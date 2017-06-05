@@ -1,20 +1,13 @@
 # HTML
 
-Forkortelsen HTML står for HyperText Markup Language, og er byggeblokkene til
-nettsider.
+Forkortelsen HTML står for HyperText Markup Language, og er det vi bruker til å
+beskrive strukturen og innholdet til en nettside. HTML er enkle tekstfiler, også
+kalt markup, og er ikke et programmeringsspråk.
 
-HTML er enkle tekstfiler.
+HTML sier ingenting om utseende eller oppførsel, dette er oppgavene til CSS og
+JavaScript. Med
+[denne chrome-extensionen](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm?hl=no)
+kan du skru av cssen på hvilken som helst nettside og se den rå HTML-strukturen som ligger bak.
 
-HTML beskriver strukturen og innholdet til en nettside.
-
-Denne strukturen brukes av CSS og JS.
-
-Block og inline.
-
-HTML sier ingenting om utseende.
-
-HTML sier ingenting om oppførsel.
-
-HTML er ikke et programmeringsspråk
-
-HTML er et markeringsspråk som beskriver semantikken til et dokument.
+#### Tips
+> Ved å skru av CSS eller JavaScript får du god oversikt over HTMLen på siden din, og kan avdekke problemer i semantikk eller struktur. For brukere som bruker skjermlesere er en god struktur avgjørende for å finne det de trenger på siden din. Mer om dette i [seksjonen om universell utforming]()
