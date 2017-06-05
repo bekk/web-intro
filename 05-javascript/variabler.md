@@ -42,6 +42,10 @@ if (false) {
 n; // undefined
 ```
 
+#### Oppgave
+Forstå (eller bli forvirret av) hvordan `var` fungerer ved å [få alle testene til å bli grønne ](http://jsbin.com/vivipur/4/edit?js,console).
+
+
 ## Let
 
 `let` oppfører seg nesten som `var`, og gir oss en variabel vi kan sette flere ganger. Forskjellen ligger i at `let` er block scoped. Det vil si at vi får en kjørefeil hvis vi forsøker å aksessere variabelen utenfor blokken den ble deklarert i, og slipper å forholde oss til at variabelen er tilgjengelig i hele funksjonen.
@@ -60,6 +64,9 @@ if (true) {
 y; // ReferenceError: y is not defined
 ```
 
+#### Oppgave
+Bli kjent med `let` ved å [få alle testene til å bli grønne](http://tddbin.com/#?kata=es6/language/block-scoping/let).
+
 Let kan også brukes i konstruerte (fake) scopes, med samme oppførsel:
 ```javascript
 {
@@ -70,7 +77,6 @@ x // ReferenceError: x is not defined
 ```
 
 ## Const
-
 På samme måte som `let`, er `const` også block scoped:
 
 ```javascript
@@ -81,13 +87,13 @@ if (true) {
 x // ReferenceError: x is not defined
 ```
 
-Men hvis vi deklarerer en variabel med `const`, er det ikke mulig å tildele den noen ny verdi etter initiering:
+Men hvis vi deklarerer en variabel med `const`, er det ikke mulig å tildele den noen ny verdi etter initiering, eller redeklarere den:
 
 ```javascript
 const x = 'I am a const';
 x = 'Can\'t change you?'; // TypeError: Assignment to constant variable.
 ```
-Men du kan fortsatt endre innholdet:
+Innholdet kan forøvrig fortsatt endres:
 
 ```javascript
 const arr = [1, 2];
@@ -95,3 +101,6 @@ arr[0] = 0;
 
 arr[0] // 0
 ```
+
+#### Oppgave
+Bli kjent med `const` ved å [få alle testene til å bli grønne](http://tddbin.com/#?kata=es6/language/block-scoping/const).
