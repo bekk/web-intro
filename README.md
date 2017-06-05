@@ -1,4 +1,3 @@
-# web-intro
-Introduksjon til webutvikling
+# Introduksjon til webutvikling
 
 [Innholdsfortegnelse](./SUMMARY.md)
