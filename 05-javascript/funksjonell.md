@@ -1,8 +1,0 @@
-# Funksjonell js
-
-```javascript
-const 
-
-
-
-```
