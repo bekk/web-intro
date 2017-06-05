@@ -5,9 +5,12 @@ mer
 
 html, body, div, span, h1, a, p, ... wtf
 
-Semantiske
+Hovedregel er at alle tagger trenger åpne / lukke<br>
+Kun elementer som ikke **kan** ha innhold avsluttes dirrekte
 
-  <header></header>
+Semantiske
+```html
+<header></header>
   <nav></nav>
   <main></main>
   <footer></footer>
@@ -15,9 +18,13 @@ Semantiske
   <p></p>
   <a></a>
   <button></button>
-Ikke-Semantiske
+```
 
+Ikke-Semantiske
+Har fortsatt nytte: styling. Men sier ikke noe om det semantiske, 
+```html
   <div></div>
   <span></span>
+```
 
-  https://developer.mozilla.org/en/docs/Web/HTML/Element
+https://developer.mozilla.org/en/docs/Web/HTML/Element

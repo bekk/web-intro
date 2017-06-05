@@ -3,6 +3,7 @@
 * [Intro til weben](01-intro-til-weben/cover.md)
   * [Hello World](01-intro-til-weben/01-hello.md)
 * [HTML](02-html/cover.md)
+  * [Metadata](02-html/metadata.md)
   * [Semantikk](02-html/semantikk.md)
   * [Bilder](02-html/bilder.md)
   * [Lenker](02-html/lenker.md)
