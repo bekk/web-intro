@@ -5,6 +5,7 @@
 * [HTML](02-html/cover.md)
   * [Metadata](02-html/metadata.md)
   * [Semantikk](02-html/semantikk.md)
+  * [Elementer](02-html/elementer.md)
   * [Bilder](02-html/bilder.md)
   * [Lenker](02-html/lenker.md)
   * [Knapper](02-html/knapper.md)
