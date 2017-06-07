@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Intro til webutvikling</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/bekk/remark/master/dist/bekk.css">
+    <link rel="stylesheet" href="slides.css">
+  </head>
+  <body class="bekk-black">
+    <textarea id="source">
+
+class: front-page
+  # Intro til webutvikling
+  ## Sommer 2017
+
+  <span class="today-date"></span>
+???
+Hvem vi er, pauser/lunsj, formål med dagen, nytt kurs mer praktisk rettet, gi beskjed om for lett (gamle del 3, funksjonell, kanskje noe relevant for prosjekt),
+
+---
+
+class: middle center center-img background-white
+
+![](https://raw.githubusercontent.com/ewendel/frontend--bilder/master/sublime-logo.png)
+
+![](https://raw.githubusercontent.com/ewendel/frontend--bilder/master/git-logo.png)
+
+![](https://raw.githubusercontent.com/ewendel/frontend--bilder/master/chrome-logo.jpeg)
+???
+Dette er alt du trenger i dag: editor (vi bruker Atom eller Sublime), git og Chrome
+
+---
+
+class: center middle red
+
+![mac_pc](https://raw.githubusercontent.com/ewendel/frontend--bilder/master/mac_pc.png)
+
+# Web: write once, run anywhere
+
+???
+
+Mer og mer av appene vi bruker er nå en webapplikasjon, dvs en webside med masse javascript og ajax som får ting til å skje.
+
+Før vi knaller igang med teknologien er det hensiktsmessig å snakke litt mer om hvor weben kommer fra for å forstå hvorfor ting er som det er.
+
+---
+
+class: fullscreen middle
+![](https://raw.githubusercontent.com/ewendel/frontend--bilder/master/browser_uglysite_ie.jpg)
+
+---
+
+class: center middle background-white
+
+![mac_pc](./images/github-languages.jpg)
+
+???
+
+En annen ting som har bidratt til den store utviklingen på web er JavaScript - webens eget programmeringspråk.
+Vi skal gå mer i detalj i dette senere idag, men i korte trekk har språket veldig få begrensninger og er veldig utvidbart.
+Dette har ført til en haug med rammeverk, nye måter å tenke på og stor innovasjon.
+Som vi ser JavaScript det mest populære språket på f.eks GitHub.
+
+Tar man samme statistikk fra StackOverflow får vi samme resultat.
+
+---
+class: middle center
+
+# Men hva består en nettside av?
+
+---
+
+class: middle center yuge
+
+## </> + {} + .js
+
+???
+Økosystemet - hva er frontend? Før var backend the shit. Nå er frontend et eget fagfelt (Frontendtunge applikasjoner++). I BEKK har vi mye web og mobil-applikasjoner, sannsynligvis toucher man borti frontend på et eller annet tidspunkt
+---
+
+class: fullscreen middle
+![](./images/bekkno.png)
+
+???
+Inspisere bekk.no i devtools. Se på HTML, CSS, JS, console, network, sources
+---
+
+#Intro til webutvikling
+
+##Repo
+<div style="font-size: 2em">
+  <a href="https://github.com/bekk/web-intro">http://tiny.cc/bekk-webintro</a>
+</div>
+<br>
+<br>
+<div style="font-size: 2em">
+  <a href="https://github.com/bekk/web-intro">github/bekk/web-intro</a>
+</div>
+
+---
+class: center middle bekk-top
+
+# Takk for oss!
+## Lykke til på prosjekt!
+
+    </textarea>
+    <script src="https://cdn.rawgit.com/bekk/remark/master/vendor/remark.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var slideshow = remark.create({
+        ratio: '16:9',
+        highlightLanguage: 'javascript',
+        highlightStyle: 'monokai',
+        navigation: {
+          scroll: false
+        }
+      });
+
+      var dateStr = new Date().toLocaleString('nb-NO', { year: 'numeric', month: 'long', day: 'numeric' });
+
+      document.querySelector('.today-date').textContent = dateStr;
+
+      document.querySelector('#danse-ape').addEventListener('click', function(event) {
+        var src = event.currentTarget.getAttribute('src');
+        src = src.replace(/(gif|png)/, src.includes('png') ? 'gif' : 'png');
+
+        event.currentTarget.setAttribute('src', src);
+      });
+    </script>
+
+  </body>
+</html>
