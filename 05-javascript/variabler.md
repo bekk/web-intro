@@ -12,7 +12,7 @@ const c = 1;
 **OBS!** Glemmer du å deklarere en variabel med `var`, `let` eller `const`, vil variabelen være global.
 
 #### Tips
-> Du finer flere gode grunner til å velge `let` og `const` over `var` i avsnittene under. Men en annen verdi med `let` og `const` er at du kommuniserer til andre som leser koden hva som er meningen med en variabel.
+> Du finner flere gode grunner til å velge `let` og `const` over `var` i avsnittene under. Men en annen verdi med `let` og `const` er at du kommuniserer til andre som leser koden hva som er meningen med en variabel.
 
 ## Var
 Før 2015 ble alle variabler i JavaScript deklarert som `var`, og er det vi kaller function scoped. Function scoped betyr at uavhengig av hvor variabelen blir deklarert, vil det være ekvivalent med å deklarere den på toppen. Dette fenomenet er kjent som [var hoisting](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var#var_hoisting), og har gjennom JavaScript sin historie forårsaket en del [uventet oppførsel](http://ignaciothayer.com/post/a-dangerous-example-of-javascript-hoisting/), særlig når looper har vært involvert. Dette er også bakgrunnen for at `let` og `const` er anbefalt å bruke til variabeldeklarasjon etter at det ble del av JavaScript-standarden i 2015.
@@ -42,9 +42,6 @@ if (false) {
 n; // undefined
 ```
 
-#### Oppgave
-Forstå (eller bli forvirret av) hvordan `var` fungerer ved å [få alle testene til å bli grønne ](http://jsbin.com/vivipur/4/edit?js,console).
-
 
 ## Let
 
@@ -63,9 +60,6 @@ if (true) {
 
 y; // ReferenceError: y is not defined
 ```
-
-#### Oppgave
-Bli kjent med `let` ved å [få alle testene til å bli grønne](http://tddbin.com/#?kata=es6/language/block-scoping/let).
 
 Let kan også brukes i konstruerte (fake) scopes, med samme oppførsel:
 ```javascript
@@ -102,5 +96,7 @@ arr[0] = 0;
 arr[0] // 0
 ```
 
-#### Oppgave
-Bli kjent med `const` ved å [få alle testene til å bli grønne](http://tddbin.com/#?kata=es6/language/block-scoping/const).
+## Oppgaver
+* [var](http://jsbin.com/vivipur/4/edit?js,console)
+* [const](http://tddbin.com/#?kata=es6/language/block-scoping/const).
+* [let](http://tddbin.com/#?kata=es6/language/block-scoping/let)

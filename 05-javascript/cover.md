@@ -1,6 +1,7 @@
 # JavaScript
 
-> **MDN:** [What is JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript) - et nybegynnerkurs i JS
+> * **MDN:** [What is JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript) - et nybegynnerkurs i JS
+> * [Eloquent Javascript](http://eloquentjavascript.net/) - en bok om JavaScript og programmering (gratis på nett)
 
 JavaScript (JS) er programmeringsspråket vi bruker for å implementere komplekse ting på nettsider. Det kan programmere hendelser, for eksempel hva som skal skje etter at en knapp har blitt trykket på,
 

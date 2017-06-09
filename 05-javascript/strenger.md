@@ -8,9 +8,6 @@ const enkeltfnutter  = 'JavaScript';
 
 Det er tilsynelatende vanlig i JS-verdenen å bruke enkeltfnutter til strenger, men [de lærde strides om hva som er best](https://stackoverflow.com/questions/242813/when-to-use-double-or-single-quotes-in-javascript). Uansett hva dere velger å ha på ditt prosjekt, er det viktigst å være konsekvent i hvordan dere bruker det gjennom prosjektet.
 
-### Oppgave
-[Få testene til å bli grønne](http://tddbin.com/#?kata=es6/language/template-strings/basics)
-
 ## Template strings
 Det finnes to måter å lage en streng med variabler:
 ```javascript
@@ -60,5 +57,6 @@ var html = `
 `;
 ```
 
-### Oppgave
-[Få testene til å bli grønne](http://tddbin.com/#?kata=es6/language/template-strings/multiline)
+## Oppgaver
+* [String Basics](http://tddbin.com/#?kata=es6/language/template-strings/basics)
+* [String multiline](http://tddbin.com/#?kata=es6/language/template-strings/multiline)
