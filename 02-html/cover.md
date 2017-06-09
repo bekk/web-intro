@@ -1,9 +1,7 @@
 # HTML
 
 Forkortelsen HTML står for HyperText Markup Language, og er det vi bruker til å
-beskrive strukturen og innholdet til en nettside. HTML er
-[markup](https://en.wikipedia.org/wiki/Markup_language), og ikke et
-programmeringsspråk.
+beskrive strukturen og innholdet til en nettside. HTML er [markup](https://en.wikipedia.org/wiki/Markup_language), og ikke et programmeringsspråk.
 
 HTML sier ingenting om utseende eller oppførsel, dette er oppgavene til CSS og
 JavaScript. Med

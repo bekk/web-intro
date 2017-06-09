@@ -12,18 +12,15 @@ Det er tilsynelatende vanlig i JS-verdenen å bruke enkeltfnutter til strenger, 
 [Få testene til å bli grønne](http://tddbin.com/#?kata=es6/language/template-strings/basics)
 
 ## Template strings
-
-\` backtick ` &nbsp;(shift + knappen før backspace)
-
+Det finnes to måter å lage en streng med variabler:
 ```javascript
-// Gammeldags
+// Gammeldags: Konkatenere strenger og variabler med +
 var text1 = 'Hei, ' + name + ', hvordan går det?';
 
-// Fremtiden
+// Fremtiden: Template strings
 var text2 = `Hei, ${name}, hvordan går det?`;
 ```
-
-Template strings har fordelen at du ikke trenger å bekymre deg for hvordan du skal få linjeskift inn i strengen:
+Template strings har fordelen at du ikke trenger å bekymre deg for hvordan du skal få linjeskift inn i strengen, og er enklere å lese.
 
 ```javascript
   var str = `Her
@@ -35,7 +32,8 @@ Template strings har fordelen at du ikke trenger å bekymre deg for hvordan du s
              linjer!!
   `
 ```
-Koden over blir rendret som følgene, med både linjeskift og indentering intakt:
+Koden over blir rendret som følgende, med både linjeskift og indentering intakt:
+
 ```text
   Her
              var
@@ -44,6 +42,22 @@ Koden over blir rendret som følgene, med både linjeskift og indentering intakt
              fine
 
              linjer!!
+```
+
+Dette kan være veldig praktisk hvis du f.eks. vil rendre html-strenger uten forstyrrende `+` operatorer overalt:
+
+```javascript
+var img = {
+    url: "http://flickr.com/bilde.jpg",
+    title: "Kult bilde"
+};
+
+var html = `
+    <figure>
+        <img src="${img.url}" />
+        <figcaption>${img.title}</figcaption>
+    </figure>
+`;
 ```
 
 ### Oppgave
