@@ -44,3 +44,7 @@ Eksempler på ikke-semantiske tagger:
 
 ## Dokumentasjon
 * Les mer om de forskjellige taggene på [MDN](https://developer.mozilla.org/en/docs/Web/HTML/Element)
+
+## Oppgave
+* Diskuter med sidemannen hvilke HTML-elementer dere ville ha brukt for å representere følgende navigasjonsmeny:
+![Navigasjonsmeny på forside.bekk.no](../resources/nav-html.png)
