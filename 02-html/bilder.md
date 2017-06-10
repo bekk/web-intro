@@ -1,2 +1,16 @@
+# Bilder og grafikk
 
-Legg til bilde i appen som ble satt opp i del 1.
+Bilder representeres med taggen `img` i HTML:
+```html
+<img src="https://i.redd.it/dl7mxnceal2z.jpg" alt="Image: Front End Web Development 2017" style="width: 400px" />
+```
+
+#### Tips
+> [På MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) finner du en grundig beskrivelse av img-taggen og attributtene man kan sette på img-elementer.
+
+> Trenger du en placeholder? Sjekk ut [LoremFlickr](http://loremflickr.com/).
+
+En viktig ting å huske på når du legger til bilder og grafikk på nettsiden din, er å beskrive bildet slik at skjermlesere og andre verktøy kan presentere det riktig for brukeren. Om du for eksempel ikke legger til det beskrivende attributtet `alt` vil skjermleseren lese opp filnavnet eller bildeadressen til brukeren - noe som ikke er så moro når filnavnet er en [data-URL](https://tools.ietf.org/html/rfc2397). På [Difis  nettsider](https://uu.difi.no/krav-og-regelverk/losningsforslag-web/bilder-og-grafikk) kan du se mer om hvordan du kan løse dette på en god måte.
+
+## Oppgave
+Legg til et valgfritt bilde i `hello.html` fra kapittel 1.
