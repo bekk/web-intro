@@ -6,6 +6,7 @@
 * [Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
 Man kan definere en funksjon i JavaScript på ulike måter, som igjen kan gi ulik oppførsel. Sjekk MDN-dokumentasjonen vi har lenket til øverst for å bli kjent med hva som skiller dem fra hverandre og ikke minst *hvorfor* de oppfører seg sånn.
+
 ```javascript
 // Function statement
 function myFunction() {
@@ -30,6 +31,8 @@ Arrow functions er kanskje syntaksen som er mest fremmed av måtene man kan defi
 
 // Arrow function
 [1,2,3].map(n => n * 2);
+```
+
 > En [anonym funksjon](https://en.wikipedia.org/wiki/Anonymous_function) er en funksjon som bare finnes akkurat der den er definert, og som ikke er bundet til noen variabel.
 
 > Du kan lese mer om `map`-funksjonen som brukes over i seksjonen om nyttige [listeoperasjoner]().
