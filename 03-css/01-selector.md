@@ -56,4 +56,8 @@ a[attributt="verdi"] {...}  /* matcher på attributt, a:[href^="https://"] */
 ```
 
 ## Oppgave
-* Øv deg på selectorer i spillet [CSS Diner](https://flukeout.github.io/)
+* Lag en CSS-fil og link til den i HTML-filen med knapper fra [kapittel 2](../02-html/06-knapper.md).
+* Sett en bakgrunnsfarge på siden.
+* Endre font, farge og skriftstørrelse på teller-verdien.
+* Endre størrelse, bakgrunnsfarge, border/ramme og tekstfarge på knappene.
+* Bonus: øv deg på selectorer i spillet [CSS Diner](https://flukeout.github.io/)
