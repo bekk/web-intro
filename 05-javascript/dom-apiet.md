@@ -6,12 +6,12 @@
 Javascript gir oss et rikt API mot [DOMen](01-intro-til-weben/03-dom.md) via document-objektet.
 Hvis HTML-en inneholder dette...
 ```html
-    <img id="mainpicture" src="http://placekitten.com/200/300">
+<img id="mainpicture" src="http://placekitten.com/200/300">
 ```
 ... så kan vi aksessere den slik:
 
 ```js
-  var img = document.querySelector('#mainpicture');
+const img = document.querySelector('#mainpicture');
 ```
 
 ```html
@@ -21,21 +21,15 @@ Hvis HTML-en inneholder dette...
 ```
 
 ```javascript
-var boks = document.querySelector('#boks');
-```
+const boks = document.querySelector('#boks');
 
-```javascript
-  boks.innerHTML; // <a href="mer.html">Klikk her</a> for å lære mer
-```
-
-```javascript
-  boks.textContent; // Klikk her for å lære mer
+boks.innerHTML; // <a href="mer.html">Klikk her</a> for å lære mer
+boks.textContent; // Klikk her for å lære mer
 ```
 ## Oppgaver
 * [Test ut DOM-apiet](http://jsbin.com/povoyoz/24/edit?js,console)
-* []
 
-Fortsett med knappene du lagde i [kapittel 2](../02-html/06-knapper).
-* Legg til unike `id`-attributter på `output` og `button`-elementene.
-* Legg til en click event handler som legger til 1 på tallet i `output` når man trykker på plussknappen.
-* Legg til en click event handler som trekker fra 1 fra tallet i `output` når man trykker på minusknappen.
+* Fortsett med knappene du lagde i [kapittel 2](../02-html/06-knapper).
+  * Legg til unike `id`-attributter på `output` og `button`-elementene.
+  * Legg til en click event handler som legger til 1 på tallet i `output` når man trykker på plussknappen.
+  * Legg til en click event handler som trekker fra 1 fra tallet i `output` når man trykker på minusknappen.
