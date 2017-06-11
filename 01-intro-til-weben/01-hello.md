@@ -8,7 +8,7 @@ Det første vi må gjøre i filen vår er å deklarere dokumenttypen slik at net
 
 Etter dette kan vi legge til rotelementet og strukturen for innholdet vårt:
 
-```
+```html
 <html lang="no">
   <head></head>
   <body></body>
@@ -21,7 +21,7 @@ Vi har satt på attributten `lang` for å beskrive at innholdet i HTMLen skal sk
 
 Inni `body` legger vi selve innholdet på siden. La oss legge til en overskrift og litt tekst:
 
-```
+```html
 <h1>Hello World</h1>
 <p>Min første nettside</p>
 ```
