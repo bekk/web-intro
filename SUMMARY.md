@@ -12,6 +12,7 @@
   * [Lenker](02-html/05-lenker.md)
   * [Knapper](02-html/06-knapper.md)
 * [CSS](03-css/cover.md)
+  * [Selectorer](03-css/01-selectorer.md)
 * [Universell utforming](04-universell-utforming/cover.md)
 * [JavaScript](05-javascript/cover.md)
   * [Variabler](05-javascript/variabler.md)
