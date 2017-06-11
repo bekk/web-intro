@@ -15,7 +15,7 @@
 * [Universell utforming](04-universell-utforming/cover.md)
 * [JavaScript](05-javascript/cover.md)
   * [Variabler](05-javascript/variabler.md)
-  * [Typer](05-javascript/typer.md)
+  * [Typer og operatorer](05-javascript/typer.md)
   * [Strenger](05-javascript/strenger.md)
   * [Funksjoner](05-javascript/funksjoner.md)
   * [Scope](05-javascript/scope.md)

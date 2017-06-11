@@ -41,22 +41,6 @@ Koden over blir rendret som følgende, med både linjeskift og indentering intak
              linjer!!
 ```
 
-Dette kan være veldig praktisk hvis du f.eks. vil rendre html-strenger uten forstyrrende `+` operatorer overalt:
-
-```javascript
-var img = {
-    url: "http://flickr.com/bilde.jpg",
-    title: "Kult bilde"
-};
-
-var html = `
-    <figure>
-        <img src="${img.url}" />
-        <figcaption>${img.title}</figcaption>
-    </figure>
-`;
-```
-
 ## Oppgaver
 * [String Basics](http://tddbin.com/#?kata=es6/language/template-strings/basics)
 * [String multiline](http://tddbin.com/#?kata=es6/language/template-strings/multiline)
