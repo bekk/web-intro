@@ -13,6 +13,8 @@
   * [Knapper](02-html/06-knapper.md)
 * [CSS](03-css/cover.md)
   * [Selectorer](03-css/01-selectorer.md)
+  * [Box model](03-css/02-box-model.md)
+  * [Layout](03-css/03-layout.md)
 * [Universell utforming](04-universell-utforming/cover.md)
 * [JavaScript](05-javascript/cover.md)
   * [Variabler](05-javascript/variabler.md)
