@@ -42,5 +42,5 @@ Koden over blir rendret som følgende, med både linjeskift og indentering intak
 ```
 
 ## Oppgaver
-* [String Basics](http://tddbin.com/#?kata=es6/language/template-strings/basics)
+* [String basics](http://tddbin.com/#?kata=es6/language/template-strings/basics)
 * [String multiline](http://tddbin.com/#?kata=es6/language/template-strings/multiline)
