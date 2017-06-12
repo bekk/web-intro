@@ -26,7 +26,7 @@ Som regel skriver vi ikke script inne i html-filene, men har det i en egen `.js`
 
 ```html
 <body>
-  <script type="text/javascript" src="heia.js"></script>
+  <script type="text/javascript" src="filnavn.js"></script>
 </body>
 ```
 
