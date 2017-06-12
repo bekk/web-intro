@@ -37,7 +37,7 @@ document.querySelector('#boks').addEventListener('click', function() {
 });
 ```
 
-Vi kan også erstatte innhold med noe annet. Ut fra koden under, ser du hva som skjer når man trykker på bildet av apen?
+Vi kan også erstatte innhold med noe annet. Kjør den følgende kodesnutten i consolet på denne siden. Ser du ut fra koden hva som skjer når du nå trykker på bildet av apen?
 ```javascript
 document.querySelector('#danse-ape').addEventListener('click', function() {
     var el = document.querySelector('#danse-ape');
