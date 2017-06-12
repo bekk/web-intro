@@ -10,7 +10,7 @@
   * [Bilder](02-html/04-bilder.md)
   * [Lenker](02-html/05-lenker.md)
   * [Knapper](02-html/06-knapper.md)
-  * [DOM-en](01-intro-til-weben/07-dom.md)
+  * [DOM-en](02-html/07-dom.md)
 * [CSS](03-css/cover.md)
   * [Selectorer](03-css/01-selector.md)
   * [Box model](03-css/02-box-model.md)
