@@ -25,7 +25,7 @@ function MyCoolComponent(props) {
 }
 ```
 
-`props` er det første argumentet som sendes inn til komponenten og består av alle key-value parene som settes på komponenten. `props` settes på samme måte som du ville ha lagt attributter på tradisjonelle HTML elementer:
+`props` er det første argumentet som sendes inn til komponenten og består av alle key-value parene som settes på komponenten. `props` settes på samme måte som du ville ha satt attributter på tradisjonelle HTML elementer:
 ```html
 <Component foo="bar" frontendkurs="awesome" />
 ```
@@ -39,7 +39,7 @@ function Component(props) {
 }
 ```
 
-`prop`-ene må ikke være strenger. Når vi bruker krøllparanteser inne i en JSX-uttrykket, så "escaper" vi JSX-syntaksen og går inn i standard JavaScript-modus, dvs at vi kan skrive vanlig JavaScript-kode og utnytte språket:
+`prop`-ene må ikke være strenger. Når vi bruker krøllparanteser inne i et JSX-uttrykk, så "escaper" vi JSX-syntaksen og går inn i standard JavaScript-modus, dvs at vi kan skrive vanlig JavaScript-kode og utnytte hele språket:
 ```html
 <Component divisionFactor={ 2.0 } primes={ [1,2,3,5] } />
 ```
