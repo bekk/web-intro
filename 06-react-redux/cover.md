@@ -1,12 +1,23 @@
 # React og Redux
 
+> **BEKK Teknologiradar** med generelle besrkivelser av...
+* ...[React](https://radar.bekk.no/tech2017/frontend-og-mobil/react)
+* ...[Redux](https://radar.bekk.no/tech2017/frontend-og-mobil/redux)
+
+> **React**:
+[Create react app](https://github.com/facebookincubator/create-react-app)
+er et fint sted å starte hvis vil lage en React-app. Når du kjører dette programmet, får du alt du trenger av oppsett og byggeverktøy for en SPA.
+
+> **Redux**:
+Redux har en veldig god [dokumentasjon](http://redux.js.org/), det finnes også en god [videoserie](https://egghead.io/courses/getting-started-with-redux) laget av mannen bak biblioteket, Dan Abramov.  
+
 ## Workshop
-Workshoppen som kjøres under frontendkurset finner du [her](https://github.com/ewendel/redux-workshop)
+Workshopen som kjøres under frontendkurset finner du [her](https://github.com/ewendel/redux-workshop)
 
-## Basic React
-React lar oss representere GUI-et som en mengde av funksjoner. Disse funksjonene kan man se på som transformasjoner som tar inn en datastruktur og returnerer en representasjon som sier noe om hvordan datastrukturen skal rendres som HTML. Det høres kanskje komplekst og vanskelig ut, men React handler egentlig bare om funksjoner. Funksjoner som tar inn objekter som f.eks. `{ name: 'John', likesApples: true }` og returner HTML: `<div>John likes apples</div>`. Vi kaller en slik funksjon som representerer GUI-et for en "React komponent" eller bare en "komponent". 
+## Grunnleggende om React
+React lar oss representere GUI-et som en mengde av funksjoner. Disse funksjonene kan man se på som transformasjoner som tar inn en datastruktur og returnerer en representasjon som sier noe om hvordan datastrukturen skal rendres som HTML. Det høres kanskje komplekst og vanskelig ut, men React handler egentlig bare om funksjoner som tar inn objekter som f.eks. `{ name: 'John', likesApples: true }` og returner HTML: `<div>John likes apples</div>`. Vi kaller en slik funksjon som representerer GUI-et for en _React component_ eller bare en "komponent".
 
-En komponent kan f.eks se slik ut:
+En komponent kan f.eks. se slik ut:
 
 ```javascript
 function MyCoolComponent() {
@@ -48,22 +59,11 @@ Komponenter kan også rendre andre komponenter:
 
 ```javascript
 function MyView() {
-    return <div>
+    return (
+        <div>
             <MyCoolComponent name="John" likesApples={true} />
             <MyCoolComponent name="Alice" likesApples={false} />
-          </div>;
+        </div>
+    );
 }
 ```
-
-## Ressurser
-
-### React
-[Create react app](https://github.com/facebookincubator/create-react-app)
-er et fint sted å starte hvis vil lage en React-app. Når du kjører dette programmet, får du alt du trenger av oppsett og byggeverktøy for en SPA.
-
-Create react app gir deg et utviklingsmiljø ut av boksen, og oppstartsguiden nevner ulike verktøy som yarn og npm. Hvordan dette henger sammen og kan brukes kan du lese mer om i [seksjonen om utviklingsmiljø]().
-
-### Redux
-Redux har en veldig god [dokumentasjon](http://redux.js.org/), det finnes også en god [videoserie](https://egghead.io/courses/getting-started-with-redux) laget av mannen bak biblioteket, Dan Abramov.  
-
-
