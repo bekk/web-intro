@@ -56,7 +56,7 @@ I JS kan man bare slenge på og ta bort et key-value-par som man ønsker, runtim
 Denne fleksibiliteten i JavaScript gjør det lett å referere til felter som ikke finnes og kan dermed skape trøbbel.
 
 ## Truthy and falsy
-På MDN sine sider finner dere lister og dokumentasjon for alt av operatorer som finnes i JS. Men operatorene for sammenlikning er verdt litt ekstra oppmerksomhet, fordi JS i en boolsk kontekst sjekker om en verdi er [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) eller [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy). Hvis man i Java sjekker om to ting er like med `==`, er det en strikt likhetssjekk. I JavaScript, derimot, evaluerer uttrykket til truthy og passerer i en if-sjekk. Derfor bør man i sammenlikninger bruke strict equal og strict not equal-operatorene `===` og `!==` for å unngå logiske feil under kjøring.
+På MDN sine sider finner dere lister og dokumentasjon for alt av operatorer som finnes i JS. Men operatorene for sammenlikning er verdt litt ekstra oppmerksomhet, fordi JS i en boolsk kontekst sjekker om en verdi er [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) eller [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy). Hvis man i Java sjekker om to ting er like med `==`, er det en strikt likhetssjekk. I JavaScript, derimot, kan uttrykket bli evaluert til truthy og passere i en if-sjekk. Derfor bør man i sammenlikninger bruke strict equal og strict not equal-operatorene `===` og `!==` for å unngå logiske feil under kjøring.
 
 ```js
 // Evaluerer til true
