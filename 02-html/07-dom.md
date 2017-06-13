@@ -38,8 +38,3 @@ JavaScript kan bruke DOM-en til å lese, endre og overvåke en gitt nettside. Vi
 ## CSS Object Model (CSSOM)
 
 Tilsvarende har vi CSS Object Model, som lar oss manipulere CSS med JavaScript. CSSOM-en har som DOM-en en trestruktur som representerer CSS-reglene som gjelder for siden. Når nettleseren skal forstå hvilken regel som gjelder for en node vil den navigere treet fra den mest generelle regelen som treffer noden, rekursivt ned til den mest spesifikke regelen som skal brukes.
-
-## Oppgave
-
-* Åpne [bekk.no](https://www.bekk.no) i Chrome og åpne DevTools Console. Hent ut første element i DOM-en med tagen "header" og lagre denne til en `const`. Undersøk objektstrukturen til elementet.
-* Les ut den beregnede stylingen elementet har fått i nettleseren ved å skrive dette (erstatt variabelnavnet `header` med variabelnavnet du valgte i forrige punkt): `window.getComputedStyle(header)`. Undersøk objektstrukturen og sammenlign den med det du ser når du inspiserer `header`-elementet i Elements-fanen og ser på underfanen "Computed".

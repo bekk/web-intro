@@ -1,3 +1,0 @@
-doctype+++
-
-header, title, SEO

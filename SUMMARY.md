@@ -5,7 +5,7 @@
   * [DevTools](01-intro-til-weben/02-devtools.md)
 * [HTML](02-html/cover.md)
   * [Elementer](02-html/01-elementer.md)
-  * [Metadata](02-html/02-metadata.md)
+  * [Head og body](02-html/02-head-body.md)
   * [Semantikk](02-html/03-semantikk.md)
   * [Bilder](02-html/04-bilder.md)
   * [Lenker](02-html/05-lenker.md)
