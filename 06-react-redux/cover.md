@@ -26,7 +26,7 @@ function MyCoolComponent() {
 ```
 
 Det ser litt merkelig ut - HTML inn i JavaScript-en!? Det kan umulig være riktig, eller?
-Kort fortalt, så kalles denne syntaksen JSX. JSX lar oss "transpilere" (transformere) noe som ser ut som HTML om til noe som React vil rendre som HTML når programmet kjøres i nettlseren.
+Kort fortalt, så kalles denne syntaksen JSX. JSX lar oss skrive komponentene våre som om de var HTML-elementer, og så vil React passe på at det blir helt vanlig HTML når programmet kjøres i nettleseren.
 
 I likhet med funksjoner kan komponenter også ta inn ulike parametere:
 
