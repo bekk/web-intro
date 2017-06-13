@@ -1,6 +1,6 @@
 # Lenker
 
-> * **MDN**: [`a`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a)
+> * **MDN**: [`a`-taggen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a)
 > * **DIFI**: [Krav og anbefalinger for lenker](https://uu.difi.no/krav-og-regelverk/losningsforslag-web/lenker)
 
 Noen ganger trenger du en lenke, og noen ganger trenger du en knapp. Begge gangene bør du tenke gjennom hvilken HTML-tagg du skal bruke. Hvis du skal lage en lenke bruker du taggen `a`.

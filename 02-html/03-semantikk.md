@@ -1,5 +1,7 @@
 # Semantikk
 
+> **MDN**: [Liste over alle tilgjengelige HTML-elementer](https://developer.mozilla.org/en/docs/Web/HTML/Element)
+
 Semantikk betyr at typen til en HTML-tagg sier noe om hva slags innhold den har.
 
 #### Definisjon
@@ -17,7 +19,7 @@ Før brukte vi ofte bare div og span til å bygge en side. Med HTML5 fikk vi man
 ```
 
 #### Husk
-> Hovedregelen er at alle tagger trenger å åpnes og lukkes, eksempel: `<main></main>`. Enkelte elementer **kan ikke** ha innhold og avsluttes direkte: `<br/>`
+> Hovedregelen er at alle tagger trenger å åpnes og lukkes, eksempel: `<main></main>`. Enkelte elementer **kan ikke** ha innhold og avsluttes direkte: `<br />`
 
 Ikke-semantiske tagger kan fortsatt være nyttige for styling, men man bør ha et bevisst forhold til bruken av dem.
 
@@ -42,8 +44,8 @@ Eksempler på ikke-semantiske tagger:
 <span></span>
 ```
 
-## Dokumentasjon
-* Les mer om de forskjellige taggene på [MDN](https://developer.mozilla.org/en/docs/Web/HTML/Element)
+## WAI-ARIA
+I tillegg til semantisk HTML, kan du bruke [WAI-ARIA](https://en.wikipedia.org/wiki/WAI-ARIA) i HTML-elementene dine for å gjøre nettsiden din enda mer tilgjengelig for skjermleser-brukere. Denne [videoen](https://egghead.io/lessons/html-5-intro-to-aria) gir en fin intro til WAI-ARIA og hvordan man bør bruke det sammen med semantisk HTML.
 
 ## Oppgave
 * Diskuter med sidemannen hvilke HTML-elementer dere ville ha brukt for å representere følgende navigasjonsmeny:

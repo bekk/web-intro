@@ -1,7 +1,6 @@
 # Bilder og grafikk
 
-> **MDN**: [`img`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) finner du en grundig beskrivelse av img-taggen og attributtene man kan sette på img-elementer.
-
+> **MDN**: [`img`-taggen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) 
 Bilder representeres med taggen `img` i HTML:
 ```html
 <img
