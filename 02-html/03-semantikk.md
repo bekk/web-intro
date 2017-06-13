@@ -48,7 +48,7 @@ Eksempler på ikke-semantiske tagger:
 I tillegg til semantisk HTML, kan du bruke [WAI-ARIA](https://en.wikipedia.org/wiki/WAI-ARIA) i HTML-elementene dine for å gjøre nettsiden din enda mer tilgjengelig for skjermleser-brukere. Denne [videoen](https://egghead.io/lessons/html-5-intro-to-aria) gir en fin intro til WAI-ARIA og hvordan man bør bruke det sammen med semantisk HTML.
 
 ## Oppgaver
-* Last ned [denne chrome-extensionen](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm?hl=no). Med den installert, gå til [vg.no](vg.no), åpne extensionen og velg *Information* &rarr; *View document outline*. Se på hvordan siden er strukturert - har du forslag til forbedringer? Hvordan er konkurrenten [dagebladet.no](dagbladet.no) til sammenlikning?
+* Last ned [denne chrome-extensionen](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm?hl=no). Med den installert, gå til [vg.no](vg.no), åpne extensionen og velg *Information* &rarr; *View document outline*. Se på hvordan siden er strukturert - har du forslag til forbedringer? Hvordan er konkurrenten [dagbladet.no](dagbladet.no) til sammenlikning?
 * Med samme chrome-extension, skru av CSSen (_CSS_ &rarr; _Disable all styles_). Hvordan ser sidene ut?
 * Diskuter med sidemannen hvilke HTML-elementer dere ville ha brukt for å representere følgende navigasjonsmeny:
 ![Navigasjonsmeny på forside.bekk.no](../resources/nav-html.png)
