@@ -31,6 +31,6 @@
 * [React og Redux](06-react-redux/cover.md)
 * [Utviklingsmiljø](07-utviklingsmiljo/cover.md)
 * [Best practices](08-best-practices/cover.md)
-  * [Git](08-best-practices/code-review.md)
+  * [Code review](08-best-practices/code-review.md)
   * [Keep it simple, stupid!](08-best-practices/KISS.md)
 * [Flere ressurser](09-ressurser/cover.md)
