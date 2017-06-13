@@ -6,6 +6,7 @@
 * [`reduce`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce?v=control)
 * [`filter`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter?v=control)
 * [Spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator)
+* [Destructuring assignment](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
 
 Fra skolebenken er vi veldig vant med å bruke for-loops når vi ønsker å modifisere lister.
@@ -67,3 +68,24 @@ console.log(arr1);    // [0, 1, 2]
 console.log(arr2);    // [3, 4, 5]
 console.log(arr3);    // [0, 1, 2, 3, 4, 5]
 ```
+
+## Destrukturering
+Destruktureringssyntaksen lar oss hente ut verdier fra et array, characters fra en string eller properties fra et objekt og lagre disse i egne variabler.
+
+```js
+const [a,b] = ['2016', '2017'];
+console.log(a); // '2016'
+console.log(b); // '2017'
+
+const [,,c] = [0, 1, 2];
+console.log(c); // 2
+
+const {d} = { a: 1, c: 3, d: 4};
+console.log(d); // 4
+```
+
+## Oppgaver
+* [Map & filter](http://jsbin.com/tetevo/edit?js,console)
+* [Reduce](https://jsbin.com/basuxog/edit?js,console)
+* [Spread](http://tddbin.com/?782#?kata=es6/language/spread/with-arrays)
+* [Destrukturering](http://tddbin.com/?36#?kata=es6/language/destructuring/array)
