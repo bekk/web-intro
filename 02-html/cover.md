@@ -13,4 +13,4 @@ kan du skru av cssen på hvilken som helst nettside og se den rå HTML-strukture
 avdekke problemer i semantikk eller struktur. For brukere med skjermlesere er en
 god struktur og semantikk avgjørende for at de enkelt kan finne det de trenger
 på siden din. Mer om dette i
-[seksjonen om universell utforming](/04-universell-utforming/cover.html)
+[seksjonen om universell utforming](/04-universell-utforming/cover.md)
