@@ -35,7 +35,7 @@ Arrow functions er kanskje syntaksen som er mest fremmed av måtene man kan defi
 
 > En [anonym funksjon](https://en.wikipedia.org/wiki/Anonymous_function) er en funksjon som bare finnes akkurat der den er definert, og som ikke er bundet til noen variabel.
 
-> Du kan lese mer om `map`-funksjonen som brukes over i seksjonen om nyttige [listeoperasjoner](05-javascript/05-listeoperasjoner.md).
+> Du kan lese mer om `map`-funksjonen som brukes over i seksjonen om nyttige [listeoperasjoner](/05-listeoperasjoner.md).
 
 ## Oppgaver
 * [Funksjoner](http://jsbin.com/nahugen/4/edit?js,console)

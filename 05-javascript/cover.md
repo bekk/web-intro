@@ -10,4 +10,4 @@ Hvis du hører begrepet _Vanilla JS_, er det [en referanse til vanlig JavaScript
 Når man begynner å jobbe med JavaScript, kommer man også fort over begrepet _EcmaScript_. Det er egentlig to sider av samme sak, men EcmaScript kan ses på som  [standarden](05-javascript/ecmascript.md), og JavaScript språket som implementerer denne.
 
 #### Tips
-> JavaScript kan [skrus av i nettleseren](https://productforums.google.com/forum/#!msg/chrome/BYOQskiuGU0/5PRO2P-1WWwJ), slik som med CSS. Men siden de aller fleste nettsider i dag bruker JS, kan sidene du besøker slutte å fungere eller oppføre seg uventet.
+> JavaScript kan [skrus av i nettleseren](https://productforums.google.com/forum/#!msg/chrome/BYOQskiuGU0/5PRO2P-1WWwJ). Men siden de aller fleste nettsider i dag bruker JS, kan sidene du besøker slutte å fungere eller oppføre seg uventet.

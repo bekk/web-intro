@@ -79,9 +79,6 @@ console.log(b); // '2017'
 
 const [,,c] = [0, 1, 2];
 console.log(c); // 2
-
-const {d} = { a: 1, c: 3, d: 4};
-console.log(d); // 4
 ```
 
 ## Oppgaver

@@ -3,7 +3,7 @@
 > **MDN**
 * [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 * [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
-* [Destructuring assignment](The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.)
+
 
 JavaScript er dynamisk typet, det vil si at vi ikke definerer hvilken type (int, boolean, string) en variabel er, slik man gjør i språk som Java og C#. Typer bestemmes underveis når et program kjøres, noe som også betyr at den samme variabelen kan ha
 
@@ -99,31 +99,6 @@ const arr = [1, 2];
 arr[0] = 0;
 
 arr[0] // 0
-```
-
-## Destrukturering
-Fra andre programmeringsspråk er man gjerne vant med å aksessere variabler og funksjoner på et objekt med dot-notasjon:
-
-```js
-const artist = {
-  navn: 'Taylor Swift',
-  syng: () => 'Lalalala'
-};
-
-console.log(artist.navn); // Taylor Swift
-console.log(artist.syng()); // Lalalala
-```
-
-I stedet for å dotte oss til et attributt på et objekt, kan vi bruke destructuring assignment. Gjelder for både arrays og objekter, men kan være særlig hendig for å hente ut verdier fra sistnevnte:
-
-```js
-const {
-  navn,
-  syng
-} = artist;
-
-console.log(navn); // Taylor Swift
-console.log(syng()); // Lalalala
 ```
 
 ## Oppgaver

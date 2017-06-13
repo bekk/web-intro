@@ -3,6 +3,7 @@
 > **MDN**:
 * [Data types and data structures ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
 * [Expressions and operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
+* [Destructuring assignment](The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.)
 
 JavaScript har syv datatyper:
 * boolean
@@ -70,8 +71,33 @@ if (0);
 if (undefined);
 if (null);
 if (6 === '6')
-
 ```
+
+## Destrukturering
+Fra andre programmeringsspråk er man gjerne vant med å aksessere variabler og funksjoner på et objekt med dot-notasjon:
+
+```js
+const artist = {
+  navn: 'Taylor Swift',
+  syng: () => 'Lalalala'
+};
+
+console.log(artist.navn); // Taylor Swift
+console.log(artist.syng()); // Lalalala
+```
+
+I stedet for å dotte oss til et attributt på et objekt, kan vi bruke destructuring assignment. Gjelder for både arrays og objekter, men kan være særlig hendig for å hente ut verdier fra sistnevnte:
+
+```js
+const {
+  navn,
+  syng
+} = artist;
+
+console.log(navn); // Taylor Swift
+console.log(syng()); // Lalalala
+```
+
 
 ## Oppgaver
 * [Sett verdier i et objekt](https://jsfiddle.net/ingvilin/DuYAc/104/)
