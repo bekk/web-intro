@@ -1,7 +1,7 @@
 # Hello World
 
 La oss lage en enkel nettside for å se hva som kreves for å bli rendret av nettleseren.
-Det er vanlig å legge nye prosjekter i _Projects_-mappa som ligger (default) i root på de fleste maskiner. Naviger deg hit (i terminal eller Finder), og lag en ny mappe med et navn du synes passer. I klassisk intro-ånd går vi for "Hello World" på weben, så
+Det er vanlig å legge nye prosjekter i _Projects_-mappa som ligger (default) i rotmappa på de fleste maskiner. Naviger deg hit i terminal eller Finder, og lag en ny mappe med et navn du synes passer. I klassisk intro-ånd går vi for "Hello World" på weben, så
 lag en ny fil i mappen du akkurat opprettet og kall den `hello.html`.
 
 Det første vi må gjøre i filen vår er å deklarere dokumenttypen slik at nettleseren vet hva den skal tolke innholdet som. Dette gjøres ved å starte filen med denne linjen:
