@@ -1,6 +1,7 @@
 # Bilder og grafikk
 
-> **MDN**: [`img`-taggen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) 
+> **MDN**: [`img`-taggen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
+
 Bilder representeres med taggen `img` i HTML:
 ```html
 <img

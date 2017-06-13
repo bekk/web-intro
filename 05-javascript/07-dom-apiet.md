@@ -3,7 +3,7 @@
 > **MDN**:
 * [Oversikt over DOM- og HTML-interfaces](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 
-Javascript gir oss et rikt API mot [DOMen](01-intro-til-weben/03-dom.md) via document-objektet.
+Javascript gir oss et rikt API mot [DOMen](/01-intro-til-weben/03-dom.md) via document-objektet.
 Hvis HTML-en inneholder dette...
 ```html
 <img id="mainpicture" src="http://placekitten.com/200/300">
@@ -57,7 +57,7 @@ document.querySelector('#danse-ape').addEventListener('click', function() {
 ## Oppgaver
 * [Test ut DOM-apiet](http://jsbin.com/povoyoz/24/edit?js,console)
 
-* Fortsett med knappene du lagde i [kapittel 2](../02-html/06-knapper).
+* Fortsett med knappene du lagde i [kapittel 2](/02-html/06-knapper).
   * Legg til unike `id`-attributter på `output` og `button`-elementene.
   * Legg til hendelseshåndtering av knappene i JS-filen du lagde i forrige seksjon. Legg til en click event handler som legger til 1 på tallet i `output` når man trykker på plussknappen.
   * Legg til en click event handler som trekker fra 1 fra tallet i `output` når man trykker på minusknappen.
