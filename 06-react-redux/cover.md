@@ -5,8 +5,10 @@
 * ...[Redux](https://radar.bekk.no/tech2017/frontend-og-mobil/redux)
 
 > **React**:
-[Create react app](https://github.com/facebookincubator/create-react-app)
+* [Create react app](https://github.com/facebookincubator/create-react-app)
 er et fint sted å starte hvis vil lage en React-app. Når du kjører dette programmet, får du alt du trenger av oppsett og byggeverktøy for en SPA.
+* React-tutorial: [Lag spillet tre på rad (tic-tac-toe) i React](https://facebook.github.io/react/tutorial/tutorial.html)
+
 
 > **Redux**:
 Redux har en veldig god [dokumentasjon](http://redux.js.org/), det finnes også en god [videoserie](https://egghead.io/courses/getting-started-with-redux) laget av mannen bak biblioteket, Dan Abramov.  
