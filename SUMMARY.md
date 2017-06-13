@@ -31,3 +31,4 @@
 * [Utviklingsmiljø](07-utviklingsmiljo/cover.md)
 * [Best practices](08-best-practices/cover.md)
   * [Keep it simple, stupid!](08-best-practices/KISS.md)
+* [Flere ressurser](09-ressurser/cover.md)
