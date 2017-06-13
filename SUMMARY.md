@@ -22,7 +22,7 @@
   * [Typer og operatorer](05-javascript/02-typer.md)
   * [Strenger](05-javascript/03-strenger.md)
   * [Funksjoner](05-javascript/04-funksjoner.md)
-  * [Funksjoner](05-javascript/05-listeoperasjoner.md)
+  * [Listeoperasjoner](05-javascript/05-listeoperasjoner.md)
   * [Filer](05-javascript/06-filer.md)
   * [DOM-apiet](05-javascript/07-dom-apiet.md)
   * [Promises](05-javascript/08-promises.md)
