@@ -21,3 +21,7 @@ Lenke-elementer kan ha forskjellige funksjoner. De kan brukes til å lenke innad
 ## Dokumentasjon
 * [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) har god dokumentasjon for `a`-taggen og dens attributter.
 * Difi skriver om .
+
+
+## Oppgaver
+* Legg inn en ny html-fil i samme mappe som fila du lagde i kapittel 1. Lag en meny som lenker til denne (og eventuelt flere andre sider du måtte ha lyst til å lenke til). Tenk semantisk html, og lær hvordan du kan style den i kapittelet om [css](/03-css/cover.md)

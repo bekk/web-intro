@@ -1,6 +1,6 @@
 # Summary
 
-* [Intro til weben](01-intro-til-weben/cover.md)
+* [Din første nettside](01-intro-til-weben/cover.md)
   * [Hello World](01-intro-til-weben/01-hello.md)
   * [DevTools](01-intro-til-weben/02-devtools.md)
 * [HTML](02-html/cover.md)
