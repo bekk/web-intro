@@ -1,3 +1,100 @@
-Hva er box model TL;DR
+# Box Model
 
-MDN
+> **MDN**: [CSS Box Model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model)
+
+## Box sizing
+Med CSS kan vi sette en del verdier som påvirker både den ytre størrelsen på et element og den indre størrelsen på innholdet i elementet.
+
+For å vise dette har vi laget en liten boks på 300x100px:
+
+```css
+.min-boks {
+  width: 300px;
+  height: 100px;
+  padding: 0px;
+  border: 0px solid white;
+  margin: 0px;
+}
+```
+
+<div style="width: 300px; height: 100px;
+  padding: 0px;
+  background: cadetblue;
+  border: 0px solid white;">Lorem ipsum</div>
+
+---
+
+Hvis vi nå endrer på propertyen `padding` kan vi se hvordan den indre størrelsen endrer seg:
+
+```css
+.min-boks {
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  border: 0px solid white;
+  margin: 0px;
+}
+```
+
+<div style="width: 300px;  height: 100px;
+  padding: 20px;
+  background: cadetblue;
+  border: 0px solid white;">Lorem ipsum</div>
+
+---
+
+La oss endre på bredden på `border` for å se hva dette gjør:
+
+```css
+.min-boks {
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  border: 15px solid white;
+  margin: 0px;
+}
+```
+
+<div style="width: 300px;  height: 100px;
+  padding: 20px;
+  background: cadetblue;
+  border: 15px solid white;">Lorem ipsum</div>
+
+---
+
+Hvis vi legger til en ny boks ved siden av, kan vi se hvordan boksens ytre grenser defineres:
+
+```css
+.min-boks {
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  border: 15px solid white;
+  margin: 0px;
+}
+```
+
+<div style="width: 200px;  height: 100px; padding: 20px; background: cadetblue; border: 15px solid white; display: inline-block;">Lorem ipsum</div><div style="width: 200px;  height: 100px; padding: 20px; background: cadetblue; border: 15px solid white; display: inline-block;">Lorem ipsum</div>
+
+---
+
+Når vi endrer `margin` lager boksen seg et slags usynlig skjold som holder andre elementer unna:
+
+```css
+.min-boks {
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  border: 15px solid white;
+  margin: 5px;
+}
+```
+
+<div style="width: 200px;  height: 100px; padding: 20px; background: cadetblue; border: 15px solid white; display: inline-block; margin: 5px;">Lorem ipsum</div><div style="width: 200px;  height: 100px; padding: 20px; background: cadetblue; border: 15px solid white; display: inline-block; margin: 5px;">Lorem ipsum</div>
+
+## Box model
+Alt vi har endret på nå inngår i noe som heter "the Box Model". Modellen beskriver plassen et element tar opp, og hvordan plassen skal brukes. Med andre ord: hvordan elementet skal pakkes inn.
+
+I DevTools under Elements er det en fane som heter "Computed" - den viser oss de beregnede verdiene for stylingen for elementet som inspiseres i DOM-en. Der finner vi også en visuell fremstilling av elementets Box Model som er veldig nyttig under debugging:
+
+![CSS Box Model](../resources/box-model.png)
