@@ -11,6 +11,6 @@ Knapper representeres med taggen `button` i HTML.
 Knapper får automatisk en default styling av nettleseren, som du kan velge å overstyre med din egen CSS. Hvis du ikke spesifiserer en type-attributt på knappen vil nettleseren anta at typen er `submit`, altså at knappen utløser en skjemainnsending for nærmeste `form`-element. Om du vil ha en knapp som ikke har default-oppførsel men styres av klient-kode kan du sette typen til `type="button"` slik som i eksempelet over.
 
 ## Oppgave
-Bruk HTML-elementene `<button>` og `<output>` til å lage layouten under på nettsiden din.
+Bruk HTML-elementene `<button>` og `<output>` til å lage layouten under på nettsiden din. Du trenger ikke å implementere noe funksjonalitet, det tar vi senere.
 
 ![Pluss- og minusknapper](../resources/counter.png)

@@ -18,10 +18,5 @@ Lenke-elementer kan ha forskjellige funksjoner. De kan brukes til å lenke innad
 <a href="../resources/nav-html.png" download="web-intro.png">Last ned en ressurs</a>
 ```
 
-## Dokumentasjon
-* [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) har god dokumentasjon for `a`-taggen og dens attributter.
-* Difi skriver om .
-
-
 ## Oppgaver
 * Legg inn en ny html-fil i samme mappe som fila du lagde i kapittel 1. Lag en meny som lenker til denne (og eventuelt flere andre sider du måtte ha lyst til å lenke til). Tenk semantisk html, og når du kommer til kapittelet om [css](/03-css/cover.md) kan du begynne å style den til å se ut som du selv vil.
