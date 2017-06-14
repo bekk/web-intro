@@ -102,6 +102,5 @@ arr[0] // 0
 ```
 
 ## Oppgaver
-* [var](http://jsbin.com/vivipur/4/edit?js,console)
 * [const](http://tddbin.com/#?kata=es6/language/block-scoping/const)
 * [let](http://tddbin.com/#?kata=es6/language/block-scoping/let)
