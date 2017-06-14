@@ -12,7 +12,7 @@ For å vise dette har vi laget en liten boks på 300x100px:
   width: 300px;
   height: 100px;
   padding: 0px;
-  border: 0px solid white;
+  border: 0px solid gray;
   margin: 0px;
 }
 ```
@@ -20,7 +20,7 @@ For å vise dette har vi laget en liten boks på 300x100px:
 <div style="width: 300px; height: 100px;
   padding: 0px;
   background: cadetblue;
-  border: 0px solid white;">Lorem ipsum</div>
+  border: 0px solid gray;">Lorem ipsum</div>
 
 ---
 
@@ -31,7 +31,7 @@ Hvis vi nå endrer på propertyen `padding` kan vi se hvordan den indre størrel
   width: 300px;
   height: 100px;
   padding: 20px;
-  border: 0px solid white;
+  border: 0px solid gray;
   margin: 0px;
 }
 ```
@@ -39,7 +39,7 @@ Hvis vi nå endrer på propertyen `padding` kan vi se hvordan den indre størrel
 <div style="width: 300px;  height: 100px;
   padding: 20px;
   background: cadetblue;
-  border: 0px solid white;">Lorem ipsum</div>
+  border: 0px solid gray;">Lorem ipsum</div>
 
 ---
 
@@ -50,7 +50,7 @@ La oss endre på bredden på `border` for å se hva dette gjør:
   width: 300px;
   height: 100px;
   padding: 20px;
-  border: 15px solid white;
+  border: 15px solid gray;
   margin: 0px;
 }
 ```
@@ -58,7 +58,7 @@ La oss endre på bredden på `border` for å se hva dette gjør:
 <div style="width: 300px;  height: 100px;
   padding: 20px;
   background: cadetblue;
-  border: 15px solid white;">Lorem ipsum</div>
+  border: 15px solid gray;">Lorem ipsum</div>
 
 ---
 
@@ -69,12 +69,12 @@ Hvis vi legger til en ny boks ved siden av, kan vi se hvordan boksens ytre grens
   width: 300px;
   height: 100px;
   padding: 20px;
-  border: 15px solid white;
+  border: 15px solid gray;
   margin: 0px;
 }
 ```
 
-<div style="width: 200px;  height: 100px; padding: 20px; background: cadetblue; border: 15px solid white; display: inline-block;">Lorem ipsum</div><div style="width: 200px;  height: 100px; padding: 20px; background: cadetblue; border: 15px solid white; display: inline-block;">Lorem ipsum</div>
+<div style="width: 200px;  height: 100px; padding: 20px; background: cadetblue; border: 15px solid gray; display: inline-block;">Lorem ipsum</div><div style="width: 200px;  height: 100px; padding: 20px; background: cadetblue; border: 15px solid gray; display: inline-block;">Lorem ipsum</div>
 
 ---
 
@@ -85,12 +85,12 @@ Når vi endrer `margin` lager boksen seg et slags usynlig skjold som holder andr
   width: 300px;
   height: 100px;
   padding: 20px;
-  border: 15px solid white;
+  border: 15px solid gray;
   margin: 5px;
 }
 ```
 
-<div style="width: 200px;  height: 100px; padding: 20px; background: cadetblue; border: 15px solid white; display: inline-block; margin: 5px;">Lorem ipsum</div><div style="width: 200px;  height: 100px; padding: 20px; background: cadetblue; border: 15px solid white; display: inline-block; margin: 5px;">Lorem ipsum</div>
+<div style="width: 200px;  height: 100px; padding: 20px; background: cadetblue; border: 15px solid gray; display: inline-block; margin: 5px;">Lorem ipsum</div><div style="width: 200px;  height: 100px; padding: 20px; background: cadetblue; border: 15px solid gray; display: inline-block; margin: 5px;">Lorem ipsum</div>
 
 ## Box model
 Alt vi har endret på nå inngår i noe som heter "the Box Model". Modellen beskriver plassen et element tar opp, og hvordan plassen skal brukes. Med andre ord: hvordan elementet skal pakkes inn.
