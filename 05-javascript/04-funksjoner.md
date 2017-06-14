@@ -24,12 +24,12 @@ const myFunction = () => {};
 Arrow functions er kanskje syntaksen som er mest fremmed av måtene man kan definere funksjoner på over. De er kortere, og dermed mer lesbare i enkelte situasjoner, som her hvor vi sender en anonym funksjon inn til map:
 
 ```javascript
-// Klassisk funksjonsdeklarasjon
+// Her er callbacken til map en klassisk funksjonsdeklarasjon
 [1,2,3].map(function(n) {
    return n * 2;
  });
 
-// Arrow function
+// Her er callbacken til map en arrow function
 [1,2,3].map(n => n * 2);
 ```
 
