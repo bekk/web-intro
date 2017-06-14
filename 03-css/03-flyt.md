@@ -7,12 +7,12 @@ De forskjellige HTML-elementene har forskjellig default-verdi for `display`:
 
 ```html
 <div>
-  <h1>Overskrift</h1> <!-- block -->
-  <p>Litt tekst</p> <!-- block -->
-  <button>En knapp</button> <!-- inline-block -->
+  <h1>Overskrift</h1>              <!-- block -->
+  <p>Litt tekst</p>                <!-- block -->
+  <button>En knapp</button>        <!-- inline-block -->
   <button>Enda en knapp</button>
-  <a href="#">Lenke</a> <!-- inline -->
-  <div>mer tekst</div> <!-- blokk -->
+  <a href="#">Lenke</a>            <!-- inline -->
+  <div>mer tekst</div>             <!-- blokk -->
 </div>
 ```
 
@@ -51,7 +51,7 @@ Med `text-align` kan vi velge om tekst skal være venstre-, midt- eller høyreju
 .midtstilt { text-align: center; }
 ```
 
-<span style="text-align:center; background-color:lightgray;">Midtstilt?</div>
+<span style="text-align:center; background-color:lightgray;">Midtstilt?</span>
 
 Siden `span` er et inline-element kan vi ikke posisjonere tekst innenfor elementet.
 
@@ -60,7 +60,7 @@ Siden `span` er et inline-element kan vi ikke posisjonere tekst innenfor element
 Hvis vi vil midtstille et element innenfor sitt forelder-element kan vi bruke `margin`.
 
 ```html
-<div class="midtstilt-blokk">Midstilt blokk </div>
+<div class="midtstilt-blokk">Midstilt blokk</div>
 ```
 
 ```css
