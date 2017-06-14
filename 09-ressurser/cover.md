@@ -25,6 +25,7 @@ Noen har kanskje blitt nevnt andre steder i gitbooken, men for oversiktens skyld
 ## Tutorials
 * [Intro til React](https://facebook.github.io/react/tutorial/tutorial.html)
 * [Elm-tutorial](https://www.elm-tutorial.org/en-v01/)
+* [Codecademy har maasse lettvekts introkurs](https://www.codecademy.com/)
 
 ## Dokumentasjon
 * [MDN](https://developer.mozilla.org/en-US/) har veldig grundig og god (og oppdatert!) dokumentasjon på html, javascript og css.
