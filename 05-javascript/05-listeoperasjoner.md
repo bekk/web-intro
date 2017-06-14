@@ -29,9 +29,9 @@ Reduce kaller en funksjon på alle elementer i en liste mot en akkumulator, slik
 
 ```js
 const numbers = [1, 2, 3];
-const sum = list.reduce(
+const sum = numbers.reduce(
 	(accumulated, current) => accumulated + current, // anonym funksjon
-	0 // basisverdi
+	0 // initiell verdi for accumulated
 );
 
 console.log(sum);     // 6
