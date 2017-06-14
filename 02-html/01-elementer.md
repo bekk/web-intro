@@ -35,7 +35,8 @@ Et HTML-element kan ha flere attributter som bestemmer hvordan den skal oppføre
 </tag>
 ```
 ## Block og inline
-HTML-elementer er gjerne enten _block-level_ eller _inline_.
+Vi har nå ulike HTML-elementer med egenskaper som bestemmes av hvilken tag eller type de har. En av disse egenskapene er hvordan elementet oppfører seg i nettleseren, og vi sier gjerne at HTML-elementer enten er _block-level_ eller _inline_.
+
 Block-level innebærer at elementer begynner på en ny linje, mens inline-elementer kan starte hvor som helst på en linje.
 Mange browsere har ny linje både før _og_ etter block-level-elementer, så man kan forestille seg disse elementene som et tårn med bokser som ligger oppå hverandre.
 
