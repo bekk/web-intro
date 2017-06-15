@@ -8,7 +8,7 @@ Noen har kanskje blitt nevnt andre steder i gitbooken, men for oversiktens skyld
 
 > Vi lenker til nettressurser der disse finnes, men de vil som regel også være tilgjengelige på din favoritt-podcastplattform.
 
-* [Resilient Web Design](https://podfanatic.com/podcast/resilient-web-design) om webens historie, viktigheten av å lære av fortiden for å bli bedre forberedt på fremtiden. **Veldig anbefalt!!**
+* [Resilient Web Design](https://resilientwebdesign.com/#audio) om webens historie, viktigheten av å lære av fortiden for å bli bedre forberedt på fremtiden. **Veldig anbefalt!!**
 * [BartJS](https://soundcloud.com/bartjs) om JavaScript
 
 ## Bøker
