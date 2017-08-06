@@ -5,67 +5,19 @@ I denne oppgaven skal du lage et lite grensesnitt som ser ut som en kalkulator. 
 Hvis du alternativt vil programmere den som en faktisk kalkulator, må du gjerne gjøre det også.
 
 ## Sett opp nedtelleren
-* Ta utgangspunkt i HTMLen og CSSen under og lag en fil `nedteller.html` med tilhørende CSS-fil `nedteller.css`.
+* Ta utgangspunkt i HTMLen og CSSen i `nedteller`-mappa under `assignments` i dette [repoet](https://github.com/bekk/web-intro)
 * Gi `main`-elementet en bredde og midtstill det.
 * Midtstill teksten til telleren.
 * Bruk flexbox på beholderen med alle knappene for å få dem til å ligge som vist på bildet under.
-
-```html
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Nedteller</title>
-  <link rel="stylesheet" type="text/css" href="nedteller.css">
-</head>
-<body>
-  <main>
-    <output>0</output>
-    <div class="buttons">
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>4</button>
-      <button>5</button>
-      <button>6</button>
-      <button>7</button>
-      <button>8</button>
-      <button>9</button>
-      <button>0</button>
-    </div>
-    <button class="startbutton">Start</button>
-  </main>
-</body>
-</html>
-```
-
-```css
-body {
-    background-color: #262626;
-    color: #ffffff;
-}
-
-main {
-}
-
-output {
-}
-
-.buttons {
-}
-
-.buttons button {
-}
-
-.startbutton {
-}
-```
 
 #### Farger:
 > * Gråfarge: #262626
 * Rødfarge: #fd5158
 
 
-![Nedteller](../resources/nedteller.png)
+<div style="width:27em;">
+  ![Nedteller](../resources/nedteller.png)
+</div>
 
 ## Style element state på nedtelleren
 * Midtstill og style start-knappen.

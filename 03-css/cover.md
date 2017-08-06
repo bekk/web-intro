@@ -7,6 +7,11 @@
 
 Cascading Style Sheets, eller CSS, tar seg av stylingen av HTML. Man kan blant annet definere hvordan elementene skal presenteres på skjermen, og kan spesifisere egne regler ved forskjellige skjermbredder, ved utskrift, og når de blir interagert med.
 
+CSS kan legges direkte på html-elementer med attributtet `style="property: value"`, men vi legger det som regel i en egen `.css`-fil. Denne kan deretter lenkes inn i htmlen på følgende måte:
+```html
+<link rel="stylesheet" type="text/css" href="styling.css" />
+```
+
 Når vi skriver CSS skriver vi sett med regler for presentasjonen av elementene i HTMLen vår. Reglene har prioritet etter [regelvekt](https://developer.mozilla.org/en/docs/Web/CSS/Specificity) og rekkefølge. Om du lager to regler med lik selector vil den siste overskrive den første.
 
 Syntaks:
