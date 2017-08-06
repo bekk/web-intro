@@ -1,0 +1,119 @@
+
+
+class: center middle
+## Grafikk og bildebehandling
+
+
+???
+Denne oppgaven handler om å utforske litt av det CSS har å tilby innen grafikk og bildebehandling.
+
+---
+class: center middle
+## filters
+
+???
+kjenner det fra photshop, instagram eller snapchat - det samme kan vi få til med å bruke css.
+---
+class: center middle
+## bare for gøy?
+
+---
+class: center middle
+![](resources/ansatte.png)
+
+---
+class:
+
+# Oppgave
+
+I denne oppgaven skal dere utforske forskjellige filtere. Finn et bilde du liker og åpne det i fullversjon -
+gjerne ett med farger for å virkelig se effekten av filterene. Du må gjerne bruke flere filtere på en gang.
+
+---
+class: center middle
+
+```css
+      1. filter: blur(20px);
+```
+--
+## Obs! I chrome må man bruke:
+```css
+      -webkit-filter: ...;
+```
+---
+class: center middle
+
+```css
+      2. filter: grayscale(20%);
+```
+---
+class: center middle
+
+```css
+      3. filter: brightness (50%);
+```
+---
+class: middle center
+Dette er et godt tidspunkt til å fortelle om HSL. HSL er en annen måte å
+definere farger på. Tidligere har vi benyttet oss av RGB, som angir farger
+utifra sammensetningen av Rødt, Grønt og Blått. I HSL benytter vi isteden
+komponentene Hue, Saturation og Lightness. Basisen for HSL er en fargesirkel:
+
+![fargesirkel](resources/huecircle.jpg?raw=true)
+
+Når vi bruker HSL til å forklare farger beskriver Hue-komponenten plasseringen
+langs omkretsen til sirkelen. Saturation-komponenten beskriver avstanden fra
+senteret i sirkelen og Lightness-komponenten beskriver hvor lys fargen er (dette
+kommer ikke godt frem av bildet).
+
+---
+class: center middle
+Så, tilbake til filters. Neste filter ut er `hue-rotate`. Siden vi nå vet hva
+`hue` er, blir dette filteret forhåpentligvis lettere å forstå. Et `hue-rotate`-filter vil
+justere alle fargene i bildet med `x deg` langs omkretsen av fargesirkelen. Test ut med forskjellige grader.
+
+```css
+      4. filter: hue-rotate (90deg);
+```
+---
+class: center middle
+Saturation justerer alle fargene i bildet 50% lengre inn mot sentrum av fargesirkelen
+iforhold til der fargen var. Hvis vi hadde gitt filteret en verdi på `100%`
+ville verdien forblitt den samme. Vi kan også angi verdier over `100%`, det vil
+flytte fargen lengre vekk fra sentrum i fargesirkelen enn det var. Test ut med forskjellige verdier.
+
+```css
+      5. filter: saturation (50%);
+```
+---
+class: center middle
+Vi har et annet filter som også gjør artige ting med fargene i bilder. Det er
+`invert`. `invert`-filteret vil flippe alle fargene i bildet
+```css
+      6. filter: invert (100%);
+```
+---
+class: center middle
+Her gjelder samme prisnipp som med `saturate`-filteret. `100%` contrast vil
+ikke gi noen effekt. Denne effekten er det enklest å få en feel for hvis du
+endrer litt på verdien i DeveloperTools.
+
+```css
+      7. filter: contrast (100%);
+```
+---
+class: center middle
+Det siste filteret vi skal se på i dag er `sepia`-filteret. Dette har du sikkert
+sett i bilde-applikasjoner på telefonen din. Sepia er en bildeeffekt som
+tradisjonelt ble brukt på svart-hvitt bilder i gamle dager for å gi dem en
+varmere fargetone. I disse moderne tider er det mest brukt for å få ting til å
+se gammelt ut.
+
+```css
+      8. filter: sepia(100%);
+```
+---
+class: center middle
+## 9: Bruk filterene som vi har vært igjennom til å gi bildegalleriet ditt egne filtere. Filterene kan også animeres som vi så tidligere ved bruk av transition.
+
+---

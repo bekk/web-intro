@@ -1,0 +1,168 @@
+
+
+
+class: center middle
+
+#Forms
+
+---
+class: center middle
+
+Representerer en <em>interaktiv</em> del av siden, og brukes for å <em>sende</em> data til en server
+--
+
+```html
+<form></form>
+```
+---
+
+#Form
+
+*Noen nyttige attributter*
+
+```html
+<form action="url" method="get"></form>   // url?key=value1&key2=value2
+<form action="url" method="post"></form>  // url
+```
+--
+
+Sjekk <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">MDN form</a>
+
+---
+
+#Input
+
+Definerer hva som skal sendes til serveren
+```html
+<form action="url" method="get">
+  <input type="text" name="sok" value="" placeholder="Søk" />
+</form>
+```
+--
+
+<label><input type="checkbox" /> checkbox</label><br />
+<label><input type="radio" name="radio" /> radio1</label>
+<label><input type="radio" name="radio" /> radio2</label><br />
+<label><input type="date" /></label>
+
+--
+
+Sjekk <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/Input" target="_blank">MDN input</a>
+
+---
+class: cols two
+
+#Input - uthenting av verdien
+
+For tekstelement:
+
+Skriv noe her: <input type="text" data-ex="1" data-listen-for="keyup" data-value-prop="value" />
+
+```javascript
+document.querySelector('#da-tekstelement').value
+```
+
+--
+<p>For checkbox:</p>
+<input type="checkbox" data-ex="2" data-listen-for="change" data-value-prop="checked" />
+<span id="ex2">Velg meg</span>
+
+```javascript
+document.querySelector('#da-checkbox').checked
+```
+
+
+---
+class: cols two
+
+#Browser default
+
+
+.col[
+<label><input type="checkbox" />Default</label>
+]
+.col[
+```html
+<input type="checkbox" />
+```
+]
+
+.col[
+<label><input type="checkbox" class="prevent" />Endret</label>
+]
+.col[
+```javascript
+document
+  .querySelector('input')
+  .addEventListener('click', function(e) {
+    e.preventDefault();
+  });
+```
+]
+
+Form- og input-elementer kommer med en del *default behaviour* fra browseren.
+
+Denne oppførselen kan hindres ved hjelp av `preventDefault()`
+
+---
+
+#Submit
+
+*Submit*-knapp
+```html
+<form action="/sok.html" method="post">
+  <input type="text" name="sok" value="" autocomplete="off"/>
+  <button type="submit">Søk</button>
+</form>
+```
+
+---
+
+#Submit
+
+*Submit*-knapp
+```html
+<form action="/sok.html" method="post">
+  <input type="text" name="sok" value="" autocomplete="off"/>
+  <button type="submit">Søk</button>
+</form>
+```
+
+Det skjer en `submit`-event når `form` skal sendes til serveren.
+
+---
+
+#Submit
+
+*Submit*-knapp
+```html
+<form action="/sok.html" method="post">
+  <input type="text" name="sok" value="" autocomplete="off"/>
+  <button type="submit">Søk</button>
+</form>
+```
+
+Det skjer en `submit`-event når `form` skal sendes til serveren.
+
+Dette kan lyttes etter ved hjelp av `addEventListener`
+
+```javascript
+document.querySelector('.mitt-form').addEventListener('submit', function(event) {
+  // Stop default behaviour
+  // Do something
+});
+```
+
+---
+class: split
+
+# Oppgave
+
+* Forsett på løsningen fra forrige oppgave
+* Legg til submit event handler på form'et
+* Hent ut verdien som er skrevet inn i tekstfeltet
+* Bruk verdien til å hente ut og vise de nye bildene
+
+<iframe src="http://localhost:5004/" style="width: 50%; border-left: 1px solid #515151;" />
+
+---

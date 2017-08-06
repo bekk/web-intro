@@ -1,0 +1,15 @@
+class: center middle
+  #Del 2
+
+???
+
+Må kjøre opp serveren før slidesene lastes
+
+---
+class: center
+
+<iframe src="http://localhost:5006/" style=" height: 100%; width: 50%;" />
+
+???
+Gi en inroduksjon til oppgaven vi skal gjennom
+---

@@ -1,0 +1,351 @@
+
+
+<div class="example-box" style="
+  top: 30%;
+  height: 200px;
+">
+  Klient
+</div>
+
+<div class="example-box" style="
+  top: 22%;
+  right: 2em;
+">
+  Server
+</div>
+
+--
+
+<div class="example-arrow arrow-right" style="top: 250px;">
+  Request
+</div>
+
+--
+
+<div class="example-arrow arrow-left" style="top: 350px;">
+  Response
+</div>
+
+---
+
+
+<div class="example-box" style="
+  top: 30%;
+  height: 200px;
+">
+  Klient
+</div>
+
+<div class="example-box" style="
+  top: 22%;
+  right: 2em;
+">
+  Server
+</div>
+
+<div class="example-arrow arrow-right" style="
+  top: 250px;
+  text-transform: lowercase;
+">
+  http://localhost:5000/sok?tag=bekk
+</div>
+
+<div class="example-arrow arrow-left" style="
+  top: 350px;
+  text-transform: none;
+  text-align: left;
+">
+  <pre style="
+  margin: 0;
+  padding: 0 1em;
+  font-size: 0.8em;
+">
+[{
+  "url":"https://flickr.com/bilde1.jpg",
+  "title":"Fint bilde av en bekker"
+},{...}]
+  </pre>
+</div>
+---
+# Laste data
+
+```javascript
+  var httpRequest = new XMLHttpRequest();
+
+  httpRequest.onreadystatechange = function() {
+    if (httpRequest.readyState === 4) {
+      if (httpRequest.status === 200) {
+        var data = JSON.parse(httpRequest.responseText);
+        console.log(data);
+      } else {
+        console.log('There was a problem with the request.');
+      }
+    }
+  }
+
+  httpRequest.open('GET', 'http://localhost:5000/sok?tag=bekk'); // Setter opp request
+  httpRequest.send(); // Sender request
+```
+
+---
+# Laste data
+
+```javascript
+  fetch('http://localhost:5000/sok?tag=bekk')
+```
+--
+
+```javascript
+  var promise = fetch('http://localhost:5000/sok?tag=bekk')
+  console.log(promise);
+
+  Promise: {
+            [[PromiseStatus]]: "pending",
+            [[PromiseValue]]: undefined
+        }
+```
+---
+#asynkront
+```javascript
+  var promise = fetch('http://localhost:5000/sok?tag=bekk');
+
+  promise.then(function(result) {
+        console.log(result)
+        //[Object, Object, Object,...]
+  });
+```
+--
+```javascript
+fetch('http://localhost:5000/sok?tag=bekk').then(function(result) {
+    //...
+  });
+```
+---
+class: middle center
+## Hva om kallet feiler?
+---
+# Laste data
+
+```javascript
+  fetch('http://localhost:5000/sok?tag=bekk').then(function(response) {
+    //...
+  }).catch(function(error) {
+   //håndter feil
+  });
+```
+
+---
+# Laste data - chaining
+
+```javascript
+  fetch('http://localhost:5000/sok?tag=bekk').then(function(response) {
+    return response[0];
+  }).then(function(img) {
+    return img;
+  }).catch(function(error) {
+    //gjør noe
+  });
+```
+
+---
+
+class: cols two
+# JavaScript Object Notation - JSON
+--
+
+.col[
+## JSON
+```json
+  {
+    "string": "en string",
+    "key2": 1.2,
+    "boolean": false,
+    "array": [1,2,3,4,5,6],
+    "object": {
+      "key": "value"
+    },
+    "empty": null
+  }
+```
+]
+
+.col[
+## JavaScript objekter
+```javascript
+  {
+    string: "en string",
+    key2: 1.2,
+    boolean: false,
+    array: [1,2,3,4,5,6],
+    object: {
+      key: "value"
+    },
+    empty: undefined
+  }
+```
+]
+---
+# Parse JSON
+```javascript
+  JSON.parse('{"key":"value"}'); // {key: "value"}
+```
+--
+
+```javascript
+  JSON.stringify({key:"value"}); // '{"key": "value"}'
+```
+
+
+---
+# Parse reposonsen
+
+
+## JSON
+
+```javascript
+  fetch('http://localhost:5000/sok?tag=bekk').then(function(response) {
+    return response.json();
+  });
+```
+
+--
+## Text
+
+```javascript
+  fetch('http://localhost:5000/sok?tag=bekk').then(function(response) {
+    return response.text();
+  });
+```
+
+--
+## Blob
+```javascript
+  fetch('http://localhost:5000/sok?tag=bekk').then(function(response) {
+    return response.blob();
+  });
+```
+
+---
+# Laste data
+
+```javascript
+  fetch('http://localhost:5000/sok?tag=bekk').then(function(response) {
+    return response.json();
+  }).then(function(data) {
+    console.log(data);
+  }).catch(function(error) {
+    throw error;
+  });
+```
+--
+
+```
+  [{
+    "url":"https://flickr.com/bilde1.jpg",
+    "title":"Fint bilde av en bekker"
+  },{
+    "url":"https://flickr.com/bilde2.jpg",
+    "title":"Ikke fullt så fint bilde av en bekker"
+  },{
+    "url":"https://flickr.com/bilde3.jpg",
+    "title":"Rart bilde av en bekk"
+  },{
+    ...
+  }]
+```
+---
+# Same origin policy
+
+```javascript
+  fetch('https://ntnu.no');
+```
+--
+
+You will receive an error. `XMLHttpRequest` cannot load https://ntnu.no. No `'Access-Control-Allow-Origin'` header is present on the requested resource. Origin http://localhost:5000 is therefore not allowed access.
+
+--
+
+An origin is defined as a combination of URI scheme, hostname, and port number.
+
+---
+# Same origin policy
+
+<div class="example-same-origin">
+  http://localhost:5000
+</div>
+
+--
+<div class="example-same-origin">
+  https://ntnu.no:443
+</div>
+
+---
+
+# Same origin policy
+
+<div class="example-same-origin">
+  <span class="protocol">http</span>://<span class="domain">localhost</span>:<span class="port">5000</span>
+</div>
+
+<div class="example-same-origin">
+  <span class="protocol">https</span>://<span class="domain">ntnu.no</span>:<span class="port">443</span>
+</div>
+
+--
+<div style="margin-top:0.5em;font-size: 5em">&#128557;</div>
+
+
+
+---
+# Same origin policy
+
+<div class="example-same-origin">
+  <span class="protocol">http</span>://<span class="domain">localhost</span>:<span class="port">5000</span>
+</div>
+
+<div class="example-same-origin">
+  <span class="protocol">http</span>://<span class="domain">localhost</span>:<span class="port">5000</span>/sok?tag=bekk
+</div>
+
+--
+
+<div style="margin-top:0.5em;font-size: 5em">&#128571;</div>
+---
+class: middle center
+##Hvorfor er det sånn?
+---
+class: middle center
+##Fordi sikkerhet
+???
+Ble implementert av alle browsere i 1995 Netscape Navigator 2
+---
+class: middle center
+##Apropos sikkerhet - Cross site scripting
+
+--
+<input type="text" value="skriv noe her"/> <button>Send</button>
+```html
+   <script> alert(document.cookie); </script>
+```
+---
+class: split
+
+# Oppgave
+
+* Gå til <b>bildegalleri/assignment</b> i en terminal
+ * Kjør <b>npm install</b>
+ * Kjør <b>npm start</b>
+
+* For å se nettsiden, åpne http://localhost:5000 i en nettleser
+ * Ikke åpne html-filen rett fra filsystemet
+
+* I script.js
+ * Gjør en request mot `/sok?tag=bekk` når siden blir lastet
+ * Logg ut resultatet i consollet
+
+<iframe src="http://localhost:5001/" style="width: 50%; border-left: 1px solid #515151;" />
+
+
+
+
+---

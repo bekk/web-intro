@@ -1,0 +1,189 @@
+
+class: center middle
+#Vise bildene
+
+---
+
+#Ønsket resultat
+
+<iframe src="http://localhost:5002" style="height: 80%; width: 100%;" />
+
+---
+
+# Hva vi har
+```javascript
+function getPhotos(tag) {
+    return fetch('/sok?tag=' + tag).then(function(resp) {
+        return resp.json();
+    });
+}
+
+getPhotos('bekk').then(function(data) {
+    console.log(data);
+});
+```
+
+```json
+[{
+    "url": "https://farm2.staticflickr.com/1545/25292140150_8029266c75.jpg",
+    "title": "Freeze"
+}, {
+    "url": "https://farm2.staticflickr.com/1485/25535245756_37be2821ee.jpg",
+    "title": "Winter"
+}...]
+```
+
+---
+# Ønsket HTML
+
+```html
+<main>
+    <figure>
+        <img src="https://farm2.staticflickr.com/1545/25292140150_8029266c75.jpg" />
+        <figcaption>Freeze</figcaption>
+    </figure>
+    <figure>
+        <img src="https://farm2.staticflickr.com/1485/25535245756_37be2821ee.jpg", />
+        <figcaption>Winter</figcaption>
+    </figure>
+    <!-- ... -->
+</main>
+```
+
+---
+
+# Løkker
+
+```javascript
+var data = ["hei", "på", "deg"];
+for (var i = 0; i < data.length; i++) {
+    var tekst = data[i];
+    console.log(i + ': ' + tekst);
+}
+```
+
+--
+
+```
+0: hei
+1: på
+2: deg
+```
+
+---
+
+# Template strings
+
+```javascript
+var name = "Mats";
+var text1 = 'Hei, ' + name + ', hvordan går det?';
+var text2 = `Hei, ${name}, hvordan går det?`;
+```
+
+&nbsp;
+
+--
+
+Ikke 'enkeltfnutt'
+
+--
+
+Ikke "dobbeltfnutt"
+
+--
+
+Men \` backtick ` &nbsp;(shift + knappen før backspace)
+
+---
+
+# Template strings
+
+```javascript
+var img = {
+    url: "http://flickr.com/bilde.jpg",
+    title: "Kult bilde"
+};
+
+var html = `
+    <figure>
+        <img src="${img.url}" />
+        <figcaption>${img.title}</figcaption>
+    </figure>
+        `;
+```
+
+--
+
+```javascript
+
+var html = '' +
+    '<figure>' +
+        '<img src="' + img.url + '" />' +
+        '<figcaption>' + img.title} + '</figcaption>' +
+    '</figure>';
+```
+
+---
+# Dom repetisjon
+
+```javascript
+var medTag = document.querySelector('body');
+var medTag2 = document.querySelector('main');
+var medId = document.querySelector('#min-boks');
+```
+&nbsp;
+--
+
+```javascript
+var tekst = medTag.textContent;
+medTag.textContent = 'Hei på deg';
+```
+&nbsp;
+--
+
+```javascript
+var html = medTag.innerHTML;
+medTag.innerHTML = '<div>Masse <b>HTML</b> kode</div>';
+```
+
+---
+
+class: split
+# Oppgave
+
+* Lag en ny funksjon som heter `renderImages` som tar inn listen over bilder
+ * Denne funksjonen skal returnere HTML-markup
+ * For hvert bilde, lag en `<figure>` med `<img>` som viser bildet og en `<figcaption>` som viser tittelen
+* Sett HTML-en som `renderImages` returnerer som innhold til `<main>`-elementet
+
+## Bonus
+ * Funksjonelle oppgaver: https://jsfiddle.net/Matsemann/3goec5me/2/
+ * Bruk map i stedet for en for-løkke i oppgaven over
+
+.wayright[```javascript
+function renderImages(data) {
+    var html = '';
+    // bruk en for-løkke for å fylle htmlen
+    // med en <figure> for hvert bilde i data
+    return html;
+}
+
+function getPhotos(tag) {
+    return fetch('/sok?tag=' + tag).then(function(resp) {
+        return resp.json();
+    });
+}
+
+getPhotos('bekk').then(function(data) {
+    // console.log(data);
+    var html = renderImages(data);
+    // hent ut main-elementet og sett
+    // innholdet til å være denne htmlen
+});
+
+```]
+
+
+
+
+---

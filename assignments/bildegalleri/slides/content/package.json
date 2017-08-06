@@ -1,0 +1,9 @@
+{
+  "name": "-",
+  "version": "1.0.0",
+  "scripts": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-replace": "^0.5.4"
+  }
+}

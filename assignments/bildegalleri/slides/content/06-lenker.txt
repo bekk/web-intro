@@ -1,0 +1,62 @@
+
+
+
+
+# Lenker
+
+`Anchor`-tagen definerer en hyperkobling til en annen ressurs på weben
+
+```html
+<a>...</a>
+```
+
+Der attributtet href sier hvor lenken peker
+
+
+```html
+<a href="/bekk/2">Se bilde 2</a>
+```
+
+Kan legge lenke på et bilde
+
+```html
+<a href="/bekk/2">
+  <img src="/url/til/bilde.jpg">
+</a>
+```
+---
+
+# Lenker og Single Page Applications
+
+En lenke fører til en full sidelast, på samme måte som `window.location`.
+
+Det kan vi unngå ved å "hijacke" klikk på lenker, og istedet kalle `history.pushstate` med URLen som ble lenket til.
+
+```javascript
+document.querySelector('main').addEventListener('click', function (event) {
+  var parent = event.target.parentNode; // klikkes på et bilde, finner a-taggen rundt
+
+  if (parent.tagName === 'A') {
+    event.preventDefault(); // hindrer lenken i å laste en ny side
+    var href = parent.getAttribute('href');
+    history.pushState(undefined, '', href); // leser ut href verdien og setter den i urlen
+    router(); // kaller routeren nå som vi har en oppdatert URL
+  }
+});
+```
+
+Koden over antar at lenken ligger rundt et bilde, og at alle lenker skal føre til en pushstate, noe som er godt nok for vår bruk.
+
+---
+
+# Oppgave
+
+* Legg en lenke rundt bildene som vises, som lenker til det man har søkt på pluss hvilket nummer bildet er.
+  * F. eks. href="/bekk/0", href="/bekk/1" osv.
+* Når et bilde klikkes på, hijack eventet og bruk pushstate til å oppdatere URL
+* I routeren, vis bare bildet med riktig index om det ligger en index i URL
+  * Om `<figure>` får klassen `fullwidth` får bildet automatisk riktig styling.
+
+
+
+---

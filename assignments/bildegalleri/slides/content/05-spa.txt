@@ -1,0 +1,138 @@
+
+
+
+class: center middle
+
+# Single Page Applications
+
+???
+
+Vise GitHub med rød banner, sammenligne med VG med rød banner
+Vise den laster bare innhold midt på siden, sånn som vår app!!
+Men at den i tillegg oppdaterer URL, og lar en gå frem og tilbake
+
+Fordeler SPA + hvorfor URL
+
+APIer: window.location, men kan ikke bruke settingen
+pushstate popstate
+
+router!
+
+---
+
+# SPA - Hvorfor?
+
+* Mer effektivt, unngår å laste hele siden på nytt
+* Oppleves bedre for brukeren
+* Visker ut skillet mellom desktop-applikasjoner og nettsider
+
+Må oppdatere URL
+* Lar en bruke fram- og tilbakeknappene i nettleseren
+* Kan bokmerke og dele lenker
+
+---
+
+# Lese ut URL
+
+`window.location` inneholder masse info om hvor brukeren er
+
+```javascript
+// http://localhost:9000/bekk/1
+console.log(window.location);
+// ->
+{
+    protocol: "http:",
+    hostname: "localhost",
+    port: "9000",
+    pathname: "/bekk/1"
+    ...
+}
+```
+
+---
+
+# Lese ut riktig del av URL
+```javascript
+// http://localhost:9000/bekk/1
+var path = window.location.pathname; // '/bekk/1'
+var deler = path.split('/'); // ['', 'bekk', '1']
+var tag = deler[1];
+var id = deler[2];
+```
+
+---
+
+# Modifisere URL
+
+Kan sette verdien til `window.location` og `window.location.pathname` selv.
+
+```javascript
+window.location = 'http://vg.no';
+
+window.location.pathname = '/elv';
+```
+
+--
+Men dette fører til en fullstendig sidelast :(
+
+---
+
+# History API
+HTML5 kom med et API som lar en modifisere URL uten sidelast
+
+```javascript
+history.pushState(state, title, URL);
+```
+
+I praksis bruker man ofte bare siste parameter
+
+```javascript
+history.pushState(null, '', '/bekk/1');
+```
+---
+
+# History API
+Kan også lytte på når brukeren går frem og tilbake i nettleseren
+
+```javascript
+function router() {
+    console.log(window.location.pathname);
+}
+
+window.addEventListener('popstate', router);
+```
+
+---
+
+# Routing
+
+Routing er et vanlig navn på logikken som bestemmer hva som skal skje basert på URLen brukeren er på
+
+```javascript
+function router() {
+    var path = window.location.pathname;
+    var deler = path.split('/');
+    // ... gjør ting basert på verdier
+}
+```
+--
+Må kalle den ved oppstart
+
+```javascript
+router();
+```
+
+---
+
+# Oppgave
+* URLen i nettleseren skal oppdatere seg ved søk
+    * Lag en router-funksjon som søker på det som ligger i URLen
+    * I eventlisteneren for submit, oppdater URLen og kall routeren
+* Skal kunne bruke frem- og tilbakeknappene i nettleseren
+    * Legg til en popstate-listener som kaller routeren
+* Skal kunne åpne siden rett på et søk
+    * Kall router-funksjonen i det siden lastes
+
+http://localhost:5005
+
+---

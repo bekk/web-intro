@@ -1,0 +1,130 @@
+
+
+class: center middle
+#Responsive design
+
+???
+Sammenligne vg.no med abakus.no evt ifinavet.no eller nav.no
+vise smal/stor side horisontal scroll, zoom
+
+---
+# Hvorfor?
+* Trenger bare lage én nettside, fungerer på alle enheter
+ * PC, tablet, mobil, tv...
+* Brukervennlig
+* Zoomkrav i universell utforming
+
+
+
+---
+# Strategi
+
+* Mobile first
+    * Lettere å legge til enn å ta bort
+
+
+* Bruke enheten *rem* for de fleste størrelser
+* 1rem = font-size til rot-elementet
+
+```css
+html {
+    font-size: 16px;
+}
+.styling {
+    font-size: 1.5rem;
+}
+```
+
+
+???
+
+Videre vise hva vi ønsker å oppnå, localhost:5003
+Vise ser bra ut i mobilbredde, dårlig i fullbredde
+Sette til 50/49%, vise ser bedre ut. Sette 30% fullbredde, vise ser bra ut
+Men da dårlig på mobil!
+
+---
+#Media queries
+
+CSS-regler som bare er aktive i visse tilfeller
+
+```css
+@media (min-width: 500px) {
+  .bokser {
+      width: 50%;
+  }
+}
+```
+
+&nbsp;
+
+--
+* Enheter
+ * all, print, screen, speech
+* Egenskaper
+ * min-width, max-width, min-height, max-height, orientation, resolution, color, light-level
+
+Legger media-queries til slutt i CSS-en
+
+---
+#Eksempel
+
+```css
+.bokser {
+  width: 100%;
+  background: red;
+}
+
+@media (min-width: 500px) {
+  .bokser {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .bokser {
+    width: 33%;
+  }
+}
+```
+```
+250px => 100%, 750px => 50%, 1500px => 33%
+```
+---
+#Eksempel, feil rekkefølge
+
+```css
+.bokser {
+  width: 100%;
+  background: red;
+}
+
+@media (min-width: 1000px) {
+  .bokser {
+    width: 33%;
+  }
+}
+
+@media (min-width: 500px) {
+  .bokser {
+    width: 50%;
+  }
+}
+```
+```
+250px => 100%, 750px => 50%, 1500px => 50%
+```
+
+---
+class: split
+# Oppgave
+* Legg til media-queries nederst i CSS-filen for å:
+ * Minske bredden på `figure` slik at det blir plass til 2 bilder i bredden ved medium skjermer
+ * Vise 3 bilder i bredden ved enda bredere skjerm
+
+
+<iframe src="http://localhost:5003/" style="width: 50%; border-left: 1px solid #515151;" />
+
+
+
+---
