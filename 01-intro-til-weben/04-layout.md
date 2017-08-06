@@ -1,10 +1,10 @@
 # Layout
-I denne oppgaven skal du lage en visning av leilighetsannonser alla finn.no/hybel.no/airbnb. Du står fritt til å implementere ditt eget desgin, men du kan også ta utgangspunkt i løsningsforslaget hvis du ønsker det. Løsningsforslaget har valgt å fokusere på tittel, pris, kvadratmeter og adresse i tillegg til en bildekarusell som det viktigste.
+I denne oppgaven skal du lage en visning av leilighetsannonser ala finn.no/hybel.no/airbnb. Du står fritt til å implementere ditt eget desgin, men du kan også ta utgangspunkt i løsningsforslaget hvis du ønsker det. Løsningsforslaget har valgt å fokusere på tittel, pris, kvadratmeter og adresse i tillegg til en bildekarusell som det viktigste.
 
-Prekode og løsningsforslag finner du i `layout`-mappa under `assignments`. Oppgavebeskrivelsen ligger opgså tilgjengelig i README-fila i denne mappen.
+Prekode og løsningsforslag finner du i `layout`-mappa under `assignments`. Oppgavebeskrivelsen ligger også tilgjengelig i README-fila i denne mappen.
 
 ## Annonser
-Under mappen annonser finner du 8 forskjellige annonser hvor hver annonse inneholder et sett med bilder og en details.json-fil. jsonfilen beskriver nøkkelinformasjon til hver annonse. Se eksempelet under:
+Under mappen annonser finner du 8 forskjellige annonser hvor hver annonse inneholder et sett med bilder og en details.json-fil. JSON-filen beskriver nøkkelinformasjon til hver annonse. Se eksempelet under:
 ```javascript
 {
   "omradetittel": "Grunerløkka",
@@ -16,44 +16,47 @@ Under mappen annonser finner du 8 forskjellige annonser hvor hver annonse inneho
 ```
 
 ## Løsningsforslaget
-Forslag til løsning ligger under solutions. For å se løsningforslaget - følg stegene under "For å starte opp serveren" og i stedet for å åpne localhost:6001 åpner du localhost:6002
+Forslag til løsning ligger under `solutions`. For å se løsningforslaget - følg stegene under "For å starte opp serveren" og i stedet for å åpne `localhost:6001` åpner du `localhost:6002`.
 
 ## Oppgave uten javascript
 Hvis du ønsker kan denne oppgaven løses helt uten javascript, dog må man skrive mye mer html-kode selv.
 
-* ta utgangspunt i home.html-filen under client-mappen
-* bygg opp annonseelementene med html - ta med den informasjonen du mener er viktigst å ha med i en annonse. For å vise første bilde i den første annonsen kan du legge til denne html-en:
-     ```html
-    <img src="../annonser/annonse1/1.jpg" />
-    ```
-    Siden annonser ligger høyere oppe i mappestrukturen enn home.html (som er utgangspunktet vårt),  må vi skrive ../ foran for å finne riktig fil. Første ../ vil gå ett steg opp i mappestrukturen. Da vil man kunne aksessere mappen client, server osv. Deretter kan vi traversere oss ned til det første bildet.
-* html-elementer som kan være nyttig er -
-    ```html
-        <aticle>, <section>, <img>, <main>, <h1>, <h2>, <h3>, <a>, <div>, <p>
-    ```
-* legg på klassenavn du føler gir mening - tenk på gjenbrukbarhet
-* style innholdet ditt slik du ønsker det i styling.css-filen
-* gjør nødvendige endringer så det ser bra ut på forskjellige skjermstørrelser
-* se under for stylingstips
+* Ta utgangspunt i `home.html`-filen under `client`-mappen
+* Bygg opp annonseelementene med html, og ta med den informasjonen du mener er viktigst å ha med i en annonse. For å vise første bilde i den første annonsen kan du legge til denne html-en:
+ ```html
+<img src="../annonser/annonse1/1.jpg" />
+```
+Siden annonser ligger høyere oppe i mappestrukturen enn home.html (som er utgangspunktet vårt),  må vi skrive ../ foran for å finne riktig fil. Første ../ vil gå ett steg opp i mappestrukturen. Da vil man kunne aksessere mappen client, server osv. Deretter kan vi traversere oss ned til det første bildet.
+* Html-elementer som kan være nyttig er -
+  ```html
+      <aticle>, <section>, <img>, <main>, <h1>, <h2>, <h3>, <a>, <div>, <p>
+  ```
+* Legg på klassenavn du føler gir mening - tenk på gjenbrukbarhet
+* Style innholdet ditt slik du ønsker det i styling.css-filen
+* Gjør nødvendige endringer så det ser bra ut på forskjellige skjermstørrelser
+* Se nederst på dette dokumentet for stylingstips
 
 ## Oppgave med javascript
-Ta utgangspunkt i index.html-filen som inkluderer script.js og styling.css for henholdsvis javascript og styling.
+Ta utgangspunkt i `index.html`-filen som inkluderer `script.js` og `styling.css` for henholdsvis javascript og styling.
 Overordnet går oppgaven ut på at man først gjør et kall mot serveren for å få alle annonsedataene, for deretter å lage en html-representasjon av disse.
 
 
 ### For å starte opp serveren:
 Naviger til bildegalleri-mappen og skriv inn følgende kommandoer (som for bildegalleriet)
 ```sh
-    $ npm install
-    $ npm start
+$ npm install
+$ npm start
 ```
-Gå deretter til http://localhost:5000 i nettleseren din. Da skal alt være klart til å starte på oppgaven.
+Gå deretter til `http://localhost:6001` i nettleseren din, hvor alt skal være klart til å starte på oppgaven.
 
 ### Oppgave 1 - hent data
-1. Lag en funksjon getAnnonser() som returnerer resultatet fra en request mot '/annonser' når siden blir lastet
+1. Lag en funksjon getAnnonser() som returnerer resultatet fra en request mot '/annonser' når siden blir lastet.
 2. Skriv resultatet til consolen.
 
 Forventet resultat er en liste med annonser hvor hver annonse inneholder en ny liste med urler til annonsebildene, og et objekt som inneholder infromasjon om leiligheten. Denne informasjonen skal brukes i neste oppgave til å vise annonsene på siden.
+
+#### Tips
+> Du kan bruke [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) til å hente ut annonsene fra serveren.
 
 ### Oppgave 2 - vis bildene
 1. Lag en funksjon som itererer over annonsene og lager html-markup for første bilde i hver annonse
@@ -71,16 +74,18 @@ Forventet resultat er en liste med annonser hvor hver annonse inneholder en ny l
   "adresse": "Helgesens gate 5a, 0563 Oslo"
 }
 ```
-tips: her er det lurt å tenke litt på overskriftshiearki (h1,h2,h3) - hvilken informasjon du mener er viktigst osv.
+#### Tips
+> Her er det lurt å tenke litt på overskriftshiearki (h1,h2,h3) - hvilken informasjon du mener er viktigst osv.
 
 ### Oppgave 4 - styling
 1. Du står helt fritt til å designe annonsene som du selv vil, men det er ingenting i veien for å kopiere løsningsforslaget. I løsningsforslaget er det brukt noe css som vi ikke har gått gjennom tidligere. Se gjerne nedenfor for tips til fremgangsmåte.
 2. Gjør nødvendige tilpasninger så det også ser fint ut på mobil.
 
-tips: Hvis du vil se hvordan siden blir seendes ut på én type mobiltelefon kan du i chrome velge type mobilmodell ved å trykke på mobil/tablet-ikonet øverst i venstre hjørnet i developer toolen.
+#### Tips
+> Hvis du vil se hvordan siden blir seendes ut på én type mobiltelefon kan du i chrome velge type mobilmodell ved å trykke på mobil/tablet-ikonet øverst i venstre hjørnet i DevTools.
 
 ## Bildekarusell
-Uavhengig av om man har valgt å løse oppgaven med eller uten javascript kan man lage en bildekarusell av annonsene - men dog med javascript ;) Tanken her er at man skal kunne trykke på piler for å se flere bilder av leiligheten.
+Uavhengig av om man har valgt å løse oppgaven med eller uten javascript kan man lage en bildekarusell av annonsene - men nå med javascript ;) Tanken her er at man skal kunne trykke på piler for å se flere bilder av leiligheten.
 
 ### Oppgave 1 - vise alle bildene
 Per nå viser vi bare første bilde i hver annonse
@@ -97,7 +102,9 @@ Tips: for å skjule elementer kan man sette display:none
 Under img-mappen ligger to pil-ikoner som kan brukes.
 2. Legg til de to nye bilde-ikonene i markupen som blir laget for hver annonse.
 3. Style de nye ikonene så de plasseres fint for hver annonse.
-Tips: for å ta i bruk bilde-ikonene som ligger i img-mappen setter man src-attributtet til filnavnet -
+
+#### Tips
+For å ta i bruk bilde-ikonene som ligger i img-mappen setter man src-attributtet til filnavnet -
 ```html
     <img src="left.png" />
 ```
@@ -109,7 +116,7 @@ Vil man bruke noen andre ikoner kan disse legges under img-mappen.
 3. Sjekk om elementet som ble klikket på er fremover-ikonet, sett på klassen hidden, finn neste element og fjern klassen hidden for at denne skal vises.
 4. Sjekk om elementet som ble klikket på er bakover-ikon, sett på klassen hidden, finn forrige element og fjern klassen hidden for at denne skal vises
 
-#### Tips:
+#### Tips
 >* Klasser kan legges til og fjernes på følgende måte: element.classList.remove("enklasse") og element.classList.add("enklasse")
 * For å sjekke om et element har en klasse: element.classList.contains("enklasse")
 
