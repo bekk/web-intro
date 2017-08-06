@@ -1,0 +1,62 @@
+body {
+  background-color: #262626;
+  color: #ffffff;
+}
+
+main {
+  width: 30rem;
+  margin: 0 auto;
+}
+
+output {
+  display: block;
+  font-size: 5.5rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.buttons button {
+  font-size: 1.8rem;
+  padding: 0.5em 1.7em;
+  background: transparent;
+  color: #ebebeb;
+  border: 1px solid #c6c8ca;
+  width: 28%;
+  margin: 2%;
+  transition: background 0.2s ease-out, border 0.2s ease-out;
+}
+
+.buttons button:hover {
+  cursor: pointer;
+  background: #fd5158;
+  border-color: #fd5158;
+}
+
+.buttons button:focus {
+  background: orange;
+  border-color: orange;
+  outline: none;
+}
+
+.startbutton {
+  font-size: 2.2rem;
+  padding: 0.5em 2.5em;
+  background: #fd5158;
+  color: #ffffff;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.startbutton:hover {
+  cursor: pointer;
+  background: white;
+  color: #000000;
+}

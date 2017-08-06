@@ -31,7 +31,7 @@ Treffer alle elementer med den gitte klassen.
 
 IDer må være unike, fordi regler for en ID gjelder for første matchende element.
 ```css
-#hovedkmeny {
+#hovedmeny {
   position: fixed;
   top: 0;
   left: 0;
