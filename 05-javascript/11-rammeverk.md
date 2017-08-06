@@ -6,6 +6,6 @@ Det er vanskelig å holde oversikt over alle JS-rammeverkene, og til tider kan d
 
 ## To SPA or not SPA
 
-Når vi bruker React og Redux, får vi en [SPA (Single Page App)](https://en.wikipedia.org/wiki/Single-page_application). Men det er ikke alltid man trenger å dra inn et rammeverk. Enkle sider med statisk innhold, klarer seg fint med VanillaJS og god filstruktur. Det er greit å huske på at byggetid og kompleksitet gjerne øker med antall rammeverk. Nicolay Hvidsten holdt lyntale om dette på BEKK Open fagdag, og gjør et poeng ut av at det ikke er nødvendig å skyte spurver med kanoner:
+Når vi bruker React og Redux, får vi en [SPA (Single Page App)](https://en.wikipedia.org/wiki/Single-page_application). Men det er ikke alltid man trenger å dra inn et rammeverk. Enkle sider med statisk innhold klarer seg fint med VanillaJS og god filstruktur. Det er greit å huske på at byggetid og kompleksitet gjerne øker med antall rammeverk. Nicolay Hvidsten holdt lyntale om dette på BEKK Open fagdag, og gjør et poeng ut av at det ikke alltid er hensiktsmessig å dra inn rammeverk:
 
 <iframe src="https://player.vimeo.com/video/208184341" width="640" height="238" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

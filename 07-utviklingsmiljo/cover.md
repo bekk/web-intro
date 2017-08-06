@@ -10,9 +10,11 @@ Derfor kommer vi ikke til å gå så veldig i detalj på dette, men nevner helle
 Byggeprosessen er en rekke tasks, eller oppgaver om du vil, som løper over prosjektfilene dine og kompilerer koden. Man har også gjerne et byggesteg hvor man kjører tester, slik at kode som feiler ikke vil bli produksjonssatt.
 Man kjører ofte bygget lokalt underveis mens man utvikler, og når man skal produksjonssette (også kalt deploye) lager byggeprosessen en produksjonsversjon av prosjektet. Deploy-versjonene er ofte [minifiserte](https://en.wikipedia.org/wiki/Minification_(programming) versjoner av det du har kjørt lokalt, for å gjøre det som skal kjøres i nettleseren til brukerne dine så lite og raskt som mulig.
 
-De mest populære verktøyene for implementering av en byggeprosess, er Webpack, Gulp og Grunt.
+De mest populære verktøyene for implementering av en byggeprosess er Webpack, Gulp og Grunt.
 
 ## Håndtering av avhengigheter
 Alle avhengigheter, det vil si verktøy, rammeverk og biblioteker vi har lyst til å bruke i utviklingsprosessen, må håndteres på en eller annen måte. De to vanligste pakkehåndtererne (package managers) vi bruker å gjøre dette med, er [npm](https://www.npmjs.com/) og [yarn](https://yarnpkg.com/lang/en/).
 
 Filen `package.json` brukes til å spesifisere hvilke avhengigheter vi har, og kan skille på hva vi bare vil ha i utviklingsmiljøet og hva vi vil ha i produksjon. [Linteverktøy](/08-best-practices/linting.md) er for eksempel avhengigheter vi bare har lyst på i utviklingsmiljøet.
+
+Hvis du setter opp en enkel React-app med [Create react app](https://github.com/facebookincubator/create-react-app), kan du se at den setter opp en rekke avhengigheter for deg, slik at du har et lite byggmiljø du kan bruke til å utvikle appen din i.
