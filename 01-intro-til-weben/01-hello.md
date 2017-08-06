@@ -1,13 +1,13 @@
 # Hello World
 
 La oss lage en enkel nettside for å se hva som kreves for å bli rendret av nettleseren.
-Det er vanlig å legge nye prosjekter i en _Projects_-mappe i rotmappa på maskinen, men det er opp til deg hvor du har lyst til å samle prosjektenene dine. Naviger deg hit i terminal eller Finder, og lag en ny mappe med et navn du synes passer. I klassisk intro-ånd går vi for "Hello World" på weben, så
-lag en ny fil i mappen du akkurat opprettet og kall den `hello.html`.
+Det er vanlig å legge nye prosjekter i en _Projects_-mappe du har opprettet selv i hjemmemappa på brukeren din, men det er opp til deg hvor du har lyst til å samle prosjektenene dine. Naviger deg til hjemmemappa i terminal (`cd ~`) eller Finder, og lag en slik samlemappe for dine fremtidige prosjekter. I denne mappen kan du så lage en ny mappe som skal inneholde det vi trenger for å sette opp din første nettside. I klassisk intro-ånd går vi for "Hello World" på weben, så lag en ny fil i mappen for nettsiden og kall den `hello.html`.
 
 Det første vi må gjøre i filen vår er å deklarere dokumenttypen slik at nettleseren vet hva den skal tolke innholdet som. Dette gjøres ved å starte filen med denne linjen:
 
 `<!DOCTYPE html>`
 
+[`!DOCTYPE html`](https://www.w3.org/TR/html5/syntax.html#the-doctype) betyr at innholdet på nettsiden skal tolkes som  [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5), og dokumentet blir lest i det som kalles for [standard mode](https://developer.mozilla.org/en-US/docs/Quirks_Mode_and_Standards_Mode). Standard mode  gir oss forutsigbar oppførsel fordi nettleserne ikke kan bryte med kjente webformat-spesifikasjoner når de forsøker å vise innholdet på siden din.
 Etter dette kan vi legge til rotelementet og strukturen for innholdet vårt:
 
 ```html

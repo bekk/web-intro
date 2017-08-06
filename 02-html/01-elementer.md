@@ -34,6 +34,8 @@ Et HTML-element kan ha flere attributter som bestemmer hvordan den skal oppføre
     Innhold
 </tag>
 ```
+Hvilke attributter som er tilgjengelig på de ulike elementene, kan man finne i dokumentasjonen til HTML-elementene. Igjen anbefaler vi å bruke MDN som oppslagsverk, siden dokumentasjonen deres er grundig og oppdatert.
+
 ## Block og inline
 Vi har nå ulike HTML-elementer med egenskaper som bestemmes av hvilken tag eller type de har. En av disse egenskapene er hvordan elementet oppfører seg i nettleseren, og vi sier gjerne at HTML-elementer enten er _block-level_ eller _inline_.
 
@@ -46,9 +48,6 @@ Mange browsere har ny linje både før _og_ etter block-level-elementer, så man
 <p>This paragraph is a block-level element; its background has been colored to display the paragraph's parent element.</p>
 ```
 
-```css
-p { background-color: #8ABB55; }
-```
 <p>This <span style="background-color: #8ABB55">span</span> is an inline element; its background has been colored to display both the beginning and end of the inline element's influence</p>
 
 <p style="background-color: #8ABB55">This paragraph is a block-level element; its background has been colored to display the paragraph's parent element.</p>
