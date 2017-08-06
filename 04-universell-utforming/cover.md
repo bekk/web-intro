@@ -25,12 +25,13 @@ Vi har også en egen podcast i BEKK, og denne episoden er spesielt relevant hva 
 
 
 ## WAI-ARIA
-I tillegg til semantisk HTML, kan du bruke [WAI-ARIA](https://en.wikipedia.org/wiki/WAI-ARIA) i HTML-elementene dine for å gjøre nettsiden din enda mer tilgjengelig for skjermleser-brukere.
-WAI-ARIA er en spesifikasjon skrevet av W3C, og definerer et sett med HTML-attributter som kan brukes med elementer for å legge til semantisk betydning og forbedre tilgjengelighet der det mangler. Denne [videoen](https://egghead.io/lessons/html-5-intro-to-aria) gir en fin intro til WAI-ARIA og hvordan man bør bruke det sammen med semantisk HTML.
+[WAI-ARIA](https://en.wikipedia.org/wiki/WAI-ARIA) er et sett attributter som settes på HTML-elementer og fungerer som et ekstra lag med beskrivende metadata. Disse er ikke ment som en erstatning for det semantiske innholdet som god bruk av HTML allerede gir, men som et tillegg. Det kan brukes til å informere skjermleseren om tilstander og oppdateringer i grensesnittet, noe som HTML i selg selv ikke har støtte for. Eksempelvis kan vi ved hjelp av WAI-ARIA informere brukeren om hvorvidt en meny er åpen eller lukket, om nytt innhold er lastet inn, eller om en feilmelding har dukket opp.
+
+Denne [videoen](https://egghead.io/lessons/html-5-intro-to-aria) gir en fin intro til WAI-ARIA og hvordan man bør bruke det sammen med semantisk HTML.
 
 #### Husk
 >Selv om WAI-ARIA er veldig nyttig, er det viktig å huske på at man bare bør bruke det når det er nødvendig. Du bør alltid bruke innebygde semantiske HTML-elementer for å uttrykke semantikk, men hvis det ikke er mulig å bruke HTML-semantikk, f.eks. hvis du lager noe komplekst som ikke kan lages med enkle HTML-elementer, er WAI-ARIA et verdifullt tilskudd for å skape tilgjengelig kode.
 
 ## Oppgaver
-* Les over koden i [dette repoet](https://github.com/mdn/learning-area/tree/master/accessibility/aria/website-aria-roles) og se hvordan rollebegrepet brukes for å tilføre mening til nettsiden.
+* Les over koden i [dette repoet](https://github.com/mdn/learning-area/tree/master/accessibility/aria/website-aria-roles) og se hvordan WAI-ARIA sitt rollebegrep brukes for å tilføre mer informasjon om nettsiden.
 * Test VoiceOver på macen din med denne [oppstartsguiden](https://help.apple.com/voiceover/info/guide/10.12/)
