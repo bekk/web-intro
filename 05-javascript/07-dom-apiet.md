@@ -3,7 +3,7 @@
 > **MDN**:
 * [Oversikt over DOM- og HTML-interfaces](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 
-Javascript gir oss et rikt API mot [DOMen](/02/07-dom.md) via document-objektet.
+Javascript gir oss et rikt API mot [DOMen](/02-html/07-dom.md) via document-objektet.
 Hvis HTML-en inneholder dette...
 ```html
 <img id="mainpicture" src="http://placekitten.com/200/300">

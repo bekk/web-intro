@@ -10,7 +10,7 @@
 
 
 Fra skolebenken er vi veldig vant med å bruke for-loops når vi ønsker å modifisere lister.
-I JavaScript har vi en del innebygde listeoperasjoner som er gode å lese, som vi anbefaler å bruke i stedet for å skrive en egen listeiterasjon. Enkelte av disse er også funksjonelle - det vil si, endrer ikke den opprinnelige listen du kaller listeoperasjonen på, men returnerer en ny liste. Det er ofte en fordel å bruke funksjonelle prosedyrer, fordi de ikke har [sideeffekter](https://en.wikipedia.org/wiki/Side_effect_(computer_science), og kan gjøre programmet ditt forutsigbart og mulig å teste. Under har vi lagt inn eksempler noen funksjonelle listeoperasjoner som er fine  å kjenne til, men det finnes mange flere i MDN sin oversikt over listeoperasjoner som er praktiske å bruke i ulike situasjoner i stedet for loops.
+I JavaScript har vi en del innebygde listeoperasjoner som er gode å lese, og som vi anbefaler å bruke i stedet for å skrive en egen listeiterasjon. Enkelte av disse er også funksjonelle - det vil si, endrer ikke den opprinnelige listen du kaller listeoperasjonen på, men returnerer en ny liste. Det er ofte en fordel å bruke funksjonelle prosedyrer, fordi de ikke har [sideeffekter](https://en.wikipedia.org/wiki/Side_effect_(computer_science) og kan gjøre programmet ditt forutsigbart og mulig å teste. Under har vi lagt inn eksempler på noen funksjonelle listeoperasjoner som er fine  å kjenne til, men det finnes mange flere i MDN sin oversikt over listeoperasjoner som er praktiske å bruke i ulike situasjoner i stedet for loops.
 
 ## Map
 Map returnerer en ny liste med resultatet av å kalle funksjonen vi sender inn til map på hvert element i lista map ble kalt på.
@@ -39,7 +39,7 @@ console.log(numbers); // [1, 2, 3]
 ```
 
 ## Filter
-Filter tar inn en funksjon som returnerer en boolsk verdi (denne typen funksjon kalles et predikat), og returnerer en ny liste med elementene i den opprinnelige lista som returnerte  `true` når de ble testet mot predikatet.
+Filter tar inn en funksjon som returnerer en boolsk verdi (et slikt uttrykk som evaluerer sannhet kalles et predikat), og returnerer en ny liste med elementene i den opprinnelige lista som returnerte  `true` når de ble testet mot predikatet.
 
 
 ```js

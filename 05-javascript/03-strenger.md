@@ -17,7 +17,7 @@ var text1 = 'Hei, ' + name + ', hvordan går det?';
 // Fremtiden: Template strings
 var text2 = `Hei, ${name}, hvordan går det?`;
 ```
-Template strings har fordelen at du ikke trenger å bekymre deg for hvordan du skal få linjeskift inn i strengen, og er enklere å lese.
+Template strings har fordelen at du ikke trenger å bekymre deg for hvordan du skal få linjeskift inn i strengen og er enklere å lese.
 
 ```javascript
   var str = `Her

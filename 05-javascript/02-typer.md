@@ -52,12 +52,12 @@ Objekter kan ses på som en samling av key-value-par.
     obj.key1;         // undefined
 ```
 
-I JS kan man bare slenge på og ta bort et key-value-par som man ønsker, runtime. Dette skiller seg ganske mye fra kompilerte språk som feks Java, hvor man typisk først må lage en klasse og definert at objekter av denne typen vil ha disse feltene.
+I JS kan man bare slenge på og ta bort et key-value-par som man ønsker, runtime. Dette skiller seg ganske mye fra kompilerte språk som feks Java, hvor man typisk først må lage en klasse og definert at objekter av denne klassen vil ha et sett med attributter.
 
 Denne fleksibiliteten i JavaScript gjør det lett å referere til felter som ikke finnes og kan dermed skape trøbbel.
 
 ## Truthy and falsy
-På MDN sine sider finner dere lister og dokumentasjon for alt av operatorer som finnes i JS. Men operatorene for sammenlikning er verdt litt ekstra oppmerksomhet, fordi JS i en boolsk kontekst sjekker om en verdi er [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) eller [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy). Hvis man i Java sjekker om to ting er like med `==`, er det en strikt likhetssjekk. I JavaScript, derimot, kan uttrykket bli evaluert til truthy og passere i en if-sjekk. Derfor bør man i sammenlikninger bruke strict equal og strict not equal-operatorene `===` og `!==` for å unngå logiske feil under kjøring.
+På MDN sine sider finner dere dokumentasjon for alt av operatorer som finnes i JS. Men operatorene for sammenlikning er verdt litt ekstra oppmerksomhet, fordi JS i en boolsk kontekst kan sjekke om en verdi er [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) eller [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy). Hvis man i Java sjekker om to ting er like med `==`, er det en strikt likhetssjekk. I JavaScript, derimot, kan uttrykket bli evaluert til truthy og passere i en if-sjekk der vi egentlig forventer å få `false` tilbake. Derfor bør man i sammenlikninger bruke strict equal og strict not equal-operatorene `===` og `!==` for å unngå logiske feil under kjøring.
 
 ```js
 // Evaluerer til true
@@ -86,7 +86,7 @@ console.log(artist.navn); // Taylor Swift
 console.log(artist.syng()); // Lalalala
 ```
 
-I stedet for å dotte oss til et attributt på et objekt, kan vi bruke destructuring assignment. Gjelder for både arrays og objekter, men kan være særlig hendig for å hente ut verdier fra sistnevnte:
+I stedet for å dotte oss til et attributt på et objekt, kan vi bruke destructuring assignment. Dette kan vi bruke både for arrays og objekter, men kan være særlig hendig for å hente ut verdier fra sistnevnte:
 
 ```js
 const {

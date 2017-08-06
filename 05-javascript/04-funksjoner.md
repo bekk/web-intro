@@ -21,7 +21,7 @@ const myFunction = () => {};
 ```
 
 ## Arrow functions
-Arrow functions er kanskje syntaksen som er mest fremmed av måtene man kan definere funksjoner på over. De er kortere, og dermed mer lesbare i enkelte situasjoner, som her hvor vi sender en anonym funksjon inn til map:
+Arrow functions er kanskje syntaksen som er mest fremmed av måtene man kan definere funksjoner på over, sammenliknet med hvordan funksjoner deklareres hos en del andre programmeringsspråk. De er kortere, og dermed mer lesbare i enkelte situasjoner, som her hvor vi sender en anonym funksjon\* inn til map\*\*:
 
 ```javascript
 // Her er callbacken til map en klassisk funksjonsdeklarasjon
@@ -33,9 +33,9 @@ Arrow functions er kanskje syntaksen som er mest fremmed av måtene man kan defi
 [1,2,3].map(n => n * 2);
 ```
 
-> En [anonym funksjon](https://en.wikipedia.org/wiki/Anonymous_function) er en funksjon som bare finnes akkurat der den er definert, og som ikke er bundet til noen variabel.
+> \*En [anonym funksjon](https://en.wikipedia.org/wiki/Anonymous_function) er en funksjon som bare finnes akkurat der den er definert, og som ikke er bundet til noen variabel.
 
-> Du kan lese mer om `map`-funksjonen som brukes over i seksjonen om nyttige [listeoperasjoner](/05-listeoperasjoner.md).
+> \*\*Du kan lese mer om `map`-funksjonen som brukes over i seksjonen om nyttige [listeoperasjoner](/05-listeoperasjoner.md).
 
 ## Oppgaver
 * [Funksjoner](http://jsbin.com/nahugen/4/edit?js,console)
