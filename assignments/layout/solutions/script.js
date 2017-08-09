@@ -5,7 +5,7 @@ function getAnnonser() {
 }
 
 getAnnonser().then((annonser) => {
-  const annonseHtml = annonser.map((annonse) => lagAnnonseHtml(annonse));
+  const annonseHtml = annonser.filter(item => !!item).map((annonse) => lagAnnonseHtml(annonse));
 
   document.querySelector('.annonse-container').innerHTML = annonseHtml.join('');
 });
