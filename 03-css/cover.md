@@ -4,6 +4,7 @@
 * På Difis nettsider for universell utforming finner du blant annet regelverk for [bruk av farger](https://uu.difi.no/krav-og-regelverk/losningsforslag-web/bruk-av-farger) og [krav til kontrast](https://uu.difi.no/krav-og-regelverk/losningsforslag-web/kontrast).
 * Når du vil sjekke om to farger har tilstrekkelig kontrast for UU-kravene kan du bruke [denne kontrastkalkulatoren](http://leaverou.github.io/contrast-ratio/).
 * Er du usikker på hvilken av to regler som prioriteres? Sjekk ut denne [spesifisitetskalkulatoren](https://specificity.keegan.st/).
+* [Specifics on CSS Specificity](https://css-tricks.com/specifics-on-css-specificity/)
 
 Cascading Style Sheets, eller CSS, tar seg av stylingen av HTML. Man kan blant annet definere hvordan elementene skal presenteres på skjermen, og kan spesifisere egne regler ved forskjellige skjermbredder, ved utskrift, og når de blir interagert med.
 
