@@ -16,7 +16,7 @@ Hvis du alternativt vil programmere den som en faktisk kalkulator, må du gjerne
 
 
 <div style="width:27em;">
-  ![Nedteller](../resources/nedteller.png)
+  <img src="../resources/nedteller.png" />
 </div>
 
 ## Style element state på nedtelleren
