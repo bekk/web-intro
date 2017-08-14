@@ -106,24 +106,29 @@ class: middle center
 # Laste data
 
 ```javascript
-  fetch('http://localhost:5000/sok?tag=bekk').then(function(response) {
-    //...
-  }).catch(function(error) {
-   //håndter feil
-  });
+  fetch('http://localhost:5000/sok?tag=bekk')
+    .then(function(response) {
+      // Gjør noe med responsen
+    })
+    .catch(function(error) {
+     //håndter feil
+    });
 ```
 
 ---
 # Laste data - chaining
 
 ```javascript
-  fetch('http://localhost:5000/sok?tag=bekk').then(function(response) {
-    return response[0];
-  }).then(function(img) {
-    return img;
-  }).catch(function(error) {
-    //gjør noe
-  });
+  fetch('http://localhost:5000/sok?tag=bekk')
+    .then(function(response) {
+      return response[0];
+    })
+    .then(function(img) {
+      return img;
+    })
+    .catch(function(error) {
+      // Håndter feil
+    });
 ```
 
 ---
@@ -176,7 +181,7 @@ class: cols two
 
 
 ---
-# Parse reposonsen
+# Parse responsen
 
 
 ## JSON

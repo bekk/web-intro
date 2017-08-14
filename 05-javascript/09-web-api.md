@@ -10,6 +10,7 @@ Et API (Application Programming interface) kan ses på som en slags kontrakt for
 REST står for representational state transfer, og beskriver en arkitektur eller stil for kommunikasjon gjennom web-APIer. Det innebærer at oppslag bruker `GET`-forespørsler, mens `PUT`, `POST` og `DELETE` brukes til å endre, opprette og slette data over http.
 
 ## JSON
+Når vi sender og mottar data fra et web-api, pleier det å skje i form av JSON, som vi deretter parser til JavaScript.
 JSON står for JavaScript Object Notation, og er en syntaks for å serialisere objekter, arrayer, tall, strenger, boolske verdier og null. Det ser ganske likt ut som et JavaScript-objekt, men [er ikke det samme](http://timelessrepo.com/json-isnt-a-javascript-subset). Det formatteres som følger:
 
 ```json
@@ -31,12 +32,24 @@ Til sammenlikning ser et JavaScript-objekt ut som dette:
   string: "en string",
   key2: 1.2,
   boolean: false,
-  array: [1,2,3,4,5,6],
+  array: [1, 2, 3, 4, 5, 6],
   object: {
     key: "value"
   },
   empty: undefined
 }
 ```
+
+Vi kan parse fra JSON til JavaScript og motsatt med de følgende funksjonskallene:
+```javascript
+// Fra JSON til JS
+JSON.parse('{"key":"value"}'); // {key: "value"}
+```
+
+```javascript
+// Fra JS til JSON
+JSON.stringify({key:"value"}); // '{"key": "value"}'
+```
+
 ## Oppgaver
 * Åpne inspectoren (DevTools) i chrome på en hvilken som helst nettside og gå til nettverk-fanen. Refresh siden og titt på hvilke kall som går. Er det bare `GET`, eller også en og annen `POST`? Trykk deg gjerne inn på kallene og undersøk hvordan headerne, preview og eventuell respons ser ut.
