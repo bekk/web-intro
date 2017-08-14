@@ -102,5 +102,5 @@ arr[0] // 0
 ```
 
 ## Oppgaver
-* [const](http://tddbin.com/#?kata=es6/language/block-scoping/const)
 * [let](http://tddbin.com/#?kata=es6/language/block-scoping/let)
+* [const](https://jsbin.com/huqodog/1/edit?js,console)

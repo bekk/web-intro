@@ -38,5 +38,5 @@ Arrow functions er kanskje syntaksen som er mest fremmed av måtene man kan defi
 > \*\*Du kan lese mer om `map`-funksjonen som brukes over i seksjonen om nyttige [listeoperasjoner](/05-listeoperasjoner.md).
 
 ## Oppgaver
-* [Funksjoner](http://jsbin.com/nahugen/4/edit?js,console)
-* [Arrow functions](http://tddbin.com/#?kata=es6/language/arrow-functions/basics)
+* [Funksjoner](https://jsbin.com/mehujeh/1/edit?js,console)
+* [Arrow functions](https://jsbin.com/deliri/1/edit?js,console)
