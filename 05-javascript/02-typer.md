@@ -100,4 +100,4 @@ console.log(syng()); // Lalalala
 
 
 ## Oppgaver
-* [Sett verdier i et objekt](https://jsfiddle.net/ingvilin/DuYAc/104/)
+* [Sett verdier i et objekt](https://jsbin.com/doqimip/2/edit?js,output)

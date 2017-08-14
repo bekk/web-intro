@@ -82,7 +82,7 @@ console.log(c); // 2
 ```
 
 ## Oppgaver
-* [Map & filter](http://jsbin.com/tetevo/edit?js,console)
-* [Reduce](https://jsbin.com/basuxog/edit?js,console)
-* [Spread](http://tddbin.com/?782#?kata=es6/language/spread/with-arrays)
-* [Destrukturering](http://tddbin.com/?36#?kata=es6/language/destructuring/array)
+* [Map & filter](http://jsbin.com/pocunot/1/edit?js,console)
+* [Reduce](http://jsbin.com/jumujuq/1/edit?js,console)
+* [Spread](http://jsbin.com/pajizet/1/edit?js,output)
+* [Destrukturering](http://jsbin.com/rujowed/1/edit?js,output)
