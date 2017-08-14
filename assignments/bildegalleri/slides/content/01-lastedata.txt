@@ -83,8 +83,11 @@
     }
   }
 
-  httpRequest.open('GET', 'http://localhost:5000/sok?tag=bekk'); // Setter opp request
-  httpRequest.send(); // Sender request
+  // Setter opp request
+  httpRequest.open('GET', 'http://localhost:5000/sok?tag=bekk');
+
+  // Sender request
+  httpRequest.send();
 ```
 
 ---

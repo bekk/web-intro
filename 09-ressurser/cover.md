@@ -16,8 +16,10 @@ Noen har kanskje blitt nevnt andre steder i gitbooken, men for oversiktens skyld
 * [Inclusive design patterns](https://shop.smashingmagazine.com/products/inclusive-design-patterns): om å bruke kjente mønstre for webutvikling, og på den måten gjøre nettsider tilgjengelig for alle.
 * [Eloquent JavaScript](http://eloquentjavascript.net/): om JavaScript og webprogrammering (tilgjengelig gratis på nett).
 
-## Kursserier (video)
+## Foredrag (video)
+* Etter hver fagdag legges foredragene som har vært på [BEKK sin vimeo](https://vimeo.com/bekk). Her finnes det mange spennende og inspirerende videoer fra alle fagområdene våre.
 
+## Kursserier
 > [Egghead.io](https://egghead.io/) er en veldig god ressurs man kan finne videoserier på de fleste JavaScript-rammeverk. Noen av våre favoritter er listet under.
 
 * [Getting started with redux](https://egghead.io/courses/getting-started-with-redux)

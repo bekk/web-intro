@@ -1,5 +1,5 @@
 class: center middle
-  #Del 2
+  # Single page app (SPA)
 
 ???
 
