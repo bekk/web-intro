@@ -1,16 +1,16 @@
-var fs = require('fs');
-var http = require('http');
-var path = require('path');
-var url = require('url');
+const fs = require('fs');
+const http = require('http');
+const path = require('path');
+const url = require('url');
 
-var defaultSiteRoot = path.join(__dirname, '..', 'client');
-var solutionSiteRoot1 = path.join(__dirname, '..', '..', 'solutions');
-var annonserRoot = path.join(__dirname, '..', '..', 'annonser');
-var imgRoot = path.join(__dirname, '..', '..', 'img');
+const defaultSiteRoot = path.join(__dirname, '..', 'client');
+const solutionSiteRoot1 = path.join(__dirname, '..', '..', 'solutions');
+const annonserRoot = path.join(__dirname, '..', '..', 'annonser');
+const imgRoot = path.join(__dirname, '..', '..', 'img');
 
 function getAnnonser() {
     return new Promise(function (resolve, reject) {
-        var resultatAnnonser = [];
+        const resultatAnnonser = [];
         fs.readdir(annonserRoot, function (error, filename) {
             if (error) {
                 throw error
@@ -21,7 +21,7 @@ function getAnnonser() {
 
             bildefiler.forEach(function (annonsefil, index) {
                 fs.readdir(path.join(annonserRoot, annonsefil), function (error, subfil) {
-                    var bildeUrl = subfil.filter(function (filnavn) {
+                    const bildeUrl = subfil.filter(function (filnavn) {
                         return filnavn.indexOf("jpg") > -1;
                     }).map(function (bildefil) {
                         return annonsefil + "/" + bildefil;
@@ -49,7 +49,7 @@ function handleRequest(siteRoot, request, response) {
             response.end();
         });
     } else {
-        var filePath = path.join(siteRoot, request.url);
+        let filePath = path.join(siteRoot, request.url);
 
         if(request.url.indexOf("annonse") > -1) {
          filePath = path.join(annonserRoot, request.url);
@@ -57,7 +57,7 @@ function handleRequest(siteRoot, request, response) {
             filePath = path.join(imgRoot, request.url);
         }
 
-        var fallbackPath = path.join(siteRoot, 'index.html');
+        const fallbackPath = path.join(siteRoot, 'index.html');
 
         fs.stat(filePath, (err, stat) => {
             if (err || !stat.isFile()) {

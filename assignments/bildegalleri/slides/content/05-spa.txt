@@ -58,10 +58,10 @@ console.log(window.location);
 # Lese ut riktig del av URL
 ```javascript
 // http://localhost:9000/bekk/1
-var path = window.location.pathname; // '/bekk/1'
-var deler = path.split('/'); // ['', 'bekk', '1']
-var tag = deler[1];
-var id = deler[2];
+const path = window.location.pathname; // '/bekk/1'
+const deler = path.split('/'); // ['', 'bekk', '1']
+const tag = deler[1];
+const id = deler[2];
 ```
 
 ---
@@ -114,8 +114,8 @@ Routing er et vanlig navn på logikken som bestemmer hva som skal skje basert p�
 
 ```javascript
 function router() {
-    var path = window.location.pathname;
-    var deler = path.split('/');
+    const path = window.location.pathname;
+    const deler = path.split('/');
     // ... gjør ting basert på verdier
 }
 ```

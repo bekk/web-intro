@@ -13,3 +13,13 @@ class: center
 ???
 Gi en introduksjon til oppgaven vi skal gjennom
 ---
+class: center middle
+# Repoet
+## https://github.com/bekk/web-intro
+`git clone https://github.com/bekk/web-intro.git`
+
+## Oppgave: assignments > bildegalleri > assignment > client
+## Fasit: assignments > bildegalleri > solutions > 1 / 2 / 3 ...
+???
+Satt opp en node-server som de også kan titte på - også skrevet i javascript, som henter bilder fra flickr.
+---

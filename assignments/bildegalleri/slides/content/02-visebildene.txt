@@ -54,22 +54,22 @@ getPhotos('bekk').then(function(data) {
 # Dom repetisjon
 
 ```javascript
-var medTag = document.querySelector('body');
-var medTag2 = document.querySelector('main');
-var medId = document.querySelector('#min-boks');
+const medTag = document.querySelector('body');
+const medTag2 = document.querySelector('main');
+const medId = document.querySelector('#min-boks');
 ```
 &nbsp;
 --
 
 ```javascript
-var tekst = medTag.textContent;
+const tekst = medTag.textContent;
 medTag.textContent = 'Hei på deg';
 ```
 &nbsp;
 --
 
 ```javascript
-var html = medTag.innerHTML;
+const html = medTag.innerHTML;
 medTag.innerHTML = '<div>Masse <b>HTML</b> kode</div>';
 ```
 
@@ -83,13 +83,9 @@ class: split
  * For hvert bilde, lag en `<figure>` med `<img>` som viser bildet og en `<figcaption>` som viser tittelen
 * Sett HTML-en som `renderImages` returnerer som innhold til `<main>`-elementet
 
-## Bonus
- * Funksjonelle oppgaver: https://jsfiddle.net/Matsemann/3goec5me/2/
- * Bruk map i stedet for en for-løkke i oppgaven over
-
 .wayright[```javascript
 function renderImages(data) {
-    var html = '';
+    let html = '';
     // bruk en for-løkke for å fylle htmlen
     // med en <figure> for hvert bilde i data
     return html;
@@ -103,7 +99,7 @@ function getPhotos(tag) {
 
 getPhotos('bekk').then(function(data) {
     // console.log(data);
-    var html = renderImages(data);
+    const html = renderImages(data);
     // hent ut main-elementet og sett
     // innholdet til å være denne htmlen
 });

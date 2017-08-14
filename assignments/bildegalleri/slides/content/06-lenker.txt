@@ -34,11 +34,11 @@ Det kan vi unngå ved å "hijacke" klikk på lenker, og istedet kalle `history.p
 
 ```javascript
 document.querySelector('main').addEventListener('click', function (event) {
-  var parent = event.target.parentNode; // klikkes på et bilde, finner a-taggen rundt
+  const parent = event.target.parentNode; // klikkes på et bilde, finner a-taggen rundt
 
   if (parent.tagName === 'A') {
     event.preventDefault(); // hindrer lenken i å laste en ny side
-    var href = parent.getAttribute('href');
+    const href = parent.getAttribute('href');
     history.pushState(undefined, '', href); // leser ut href verdien og setter den i urlen
     router(); // kaller routeren nå som vi har en oppdatert URL
   }

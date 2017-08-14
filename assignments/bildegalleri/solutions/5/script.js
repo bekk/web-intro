@@ -7,7 +7,7 @@ function getPhotos(tag) {
 function renderImages(data) {
   let html = '';
 
-  for (var i = 0; i < data.length; i++) {
+  for (let i = 0; i < data.length; i++) {
     const img = data[i];
     html += `
       <figure>

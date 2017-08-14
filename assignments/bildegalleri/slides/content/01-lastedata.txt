@@ -71,31 +71,32 @@
 # Laste data
 
 ```javascript
-  fetch('http://localhost:5000/sok?tag=bekk')
+fetch('http://localhost:5000/sok?tag=bekk')
 ```
 --
 
 ```javascript
-  var promise = fetch('http://localhost:5000/sok?tag=bekk')
-  console.log(promise);
+const promise = fetch('http://localhost:5000/sok?tag=bekk')
+console.log(promise);
 
-  Promise: {
-            [[PromiseStatus]]: "pending",
-            [[PromiseValue]]: undefined
-        }
+Promise: {
+  [[PromiseStatus]]: "pending",
+  [[PromiseValue]]: undefined
+}
 ```
 ---
-#asynkront
+# asynkront
 ```javascript
-  var promise = fetch('http://localhost:5000/sok?tag=bekk');
+const promise = fetch('http://localhost:5000/sok?tag=bekk');
 
-  promise.then(function(result) {
-        console.log(result);      // [Object, Object, Object,...]
-  });
+promise.then(function(result) {
+  console.log(result);      // [Object, Object, Object,...]
+});
 ```
 --
 ```javascript
-fetch('http://localhost:5000/sok?tag=bekk').then(function(result) {
+fetch('http://localhost:5000/sok?tag=bekk')
+  .then(function(result) {
     //...
   });
 ```
@@ -111,7 +112,7 @@ class: middle center
       // Gjør noe med responsen
     })
     .catch(function(error) {
-     //håndter feil
+      // Håndter feil
     });
 ```
 
@@ -187,39 +188,34 @@ class: cols two
 ## JSON
 
 ```javascript
-  fetch('http://localhost:5000/sok?tag=bekk').then(function(response) {
-    return response.json();
-  });
+fetch('http://localhost:5000/sok?tag=bekk').then(function(response) {
+  return response.json();
+});
 ```
 
 --
 ## Text
 
 ```javascript
-  fetch('http://localhost:5000/sok?tag=bekk').then(function(response) {
-    return response.text();
-  });
-```
-
---
-## Blob
-```javascript
-  fetch('http://localhost:5000/sok?tag=bekk').then(function(response) {
-    return response.blob();
-  });
+fetch('http://localhost:5000/sok?tag=bekk').then(function(response) {
+  return response.text();
+});
 ```
 
 ---
 # Laste data
 
 ```javascript
-  fetch('http://localhost:5000/sok?tag=bekk').then(function(response) {
-    return response.json();
-  }).then(function(data) {
-    console.log(data);
-  }).catch(function(error) {
-    throw error;
-  });
+  fetch('http://localhost:5000/sok?tag=bekk')
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(data) {
+      console.log(data);
+    })
+    .catch(function(error) {
+      throw error;
+    });
 ```
 --
 

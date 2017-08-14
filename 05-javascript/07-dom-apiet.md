@@ -40,8 +40,8 @@ document.querySelector('#boks').addEventListener('click', function() {
 Vi kan også erstatte innhold med noe annet. Kjør den følgende kodesnutten i consolet på denne siden. Ser du ut fra koden hva som skjer når du nå trykker på bildet av apen?
 ```javascript
 document.querySelector('#danse-ape').addEventListener('click', function() {
-    var el = document.querySelector('#danse-ape');
-    var src = el.getAttribute('src').replace('.png', '.gif');
+    const el = document.querySelector('#danse-ape');
+    const src = el.getAttribute('src').replace('.png', '.gif');
     el.setAttribute('src', src);
 });
 ```

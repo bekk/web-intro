@@ -7,8 +7,8 @@ function getPhotos(tag) {
 function renderImages(data) {
   let html = '';
 
-  for (var i = 0; i < data.length; i++) {
-    const img = data[i];
+  for (let i = 0; i < data.length; i++) {
+    let img = data[i];
     html += `
       <figure>
         <img src="${img.url}" />

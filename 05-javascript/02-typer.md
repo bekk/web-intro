@@ -38,7 +38,7 @@ typeof null;        // 'object'     WTF?
 Objekter kan ses på som en samling av key-value-par.
 
 ```javascript
-    var obj = {
+    const obj = {
       key1: 'value1',
       key2: 13,
       navn: 'olav'

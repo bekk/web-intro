@@ -56,7 +56,7 @@ class: cols two
 
 For tekstelement:
 
-Skriv noe her: <input type="text" data-ex="1" data-listen-for="keyup" data-value-prop="value" />
+Skriv noe her: <input id="da-tekstelement" type="text" data-ex="1" data-listen-for="keyup" data-value-prop="value" />
 
 ```javascript
 document.querySelector('#da-tekstelement').value
@@ -64,7 +64,7 @@ document.querySelector('#da-tekstelement').value
 
 --
 <p>For checkbox:</p>
-<input type="checkbox" data-ex="2" data-listen-for="change" data-value-prop="checked" />
+<input type="checkbox" id="da-checkbox" data-ex="2" data-listen-for="change" data-value-prop="checked" />
 <span id="ex2">Velg meg</span>
 
 ```javascript

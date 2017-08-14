@@ -64,6 +64,6 @@ container.addEventListener('click', function(event) {
 function enFunksjon() {
   console.log('Jeg printer til konsollet');
 }
-var id = setInterval(enFunksjon, 1000);
+const id = setInterval(enFunksjon, 1000);
 clearInterval(id);
 ```
