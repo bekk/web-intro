@@ -6,12 +6,16 @@ class: center middle
 # Single Page Applications
 
 ???
+En single page application, er en web app eller nettside som får plass på en enkeltnettside
+og har som mål å fremstå som en desktopapplikasjon.
+I en SPA er enten all koden du trenger, HTML, JS og CSS hentet ved første sidelast,
+eller så lastes de nødvendige ressursene inn dynamisk underveis når de trengs.
 
-Vise GitHub med rød banner, sammenligne med VG med rød banner
-Vise den laster bare innhold midt på siden, sånn som vår app!!
-Men at den i tillegg oppdaterer URL, og lar en gå frem og tilbake
+Alt i alt gir det en ganske sømløs opplevelse, men noen ting må man selv sette opp -
+må feks programmere noen ting som ellers kommer ut av boksen når man ikke har SPA.
+Feks navigering/bakoverknapp.
 
-Fordeler SPA + hvorfor URL
+React er et rammeverk som hjelper oss i gang med SPA.
 
 APIer: window.location, men kan ikke bruke settingen
 pushstate popstate

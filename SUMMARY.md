@@ -4,6 +4,7 @@
   * [Hello World](01-intro-til-weben/01-hello.md)
   * [DevTools](01-intro-til-weben/02-devtools.md)
   * [Et lite program](01-intro-til-weben/03-lite-program.md)
+  * [Layout-oppgave](01-intro-til-weben/04-layout.md)
 * [HTML](02-html/cover.md)
   * [Elementer](02-html/01-elementer.md)
   * [Head og body](02-html/02-head-body.md)
