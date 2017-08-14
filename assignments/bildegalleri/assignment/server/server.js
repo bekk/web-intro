@@ -1,21 +1,21 @@
-var fs = require('fs');
-var http = require('http');
-var path = require('path');
-var url = require('url');
-var qs = require('querystring');
+const fs = require('fs');
+const http = require('http');
+const path = require('path');
+const url = require('url');
+const qs = require('querystring');
 
-var Flickr = require('node-flickr');
+const Flickr = require('node-flickr');
 
-var flickr = new Flickr({'api_key': 'ea97a6690f90a628b60e2fd79012c74c'});
+const flickr = new Flickr({'api_key': 'ea97a6690f90a628b60e2fd79012c74c'});
 
-var defaultSiteRoot = path.join(__dirname, '..', 'client');
-var solutionSiteRoot1 = path.join(__dirname, '..', '..', 'solutions', '1');
-var solutionSiteRoot2 = path.join(__dirname, '..', '..', 'solutions', '2');
-var solutionSiteRoot3 = path.join(__dirname, '..', '..', 'solutions', '3');
-var solutionSiteRoot4 = path.join(__dirname, '..', '..', 'solutions', '4');
-var solutionSiteRoot5 = path.join(__dirname, '..', '..', 'solutions', '5');
-var solutionSiteRoot6 = path.join(__dirname, '..', '..', 'solutions', 'final');
-var flickerCache = {};
+const defaultSiteRoot = path.join(__dirname, '..', 'client');
+const solutionSiteRoot1 = path.join(__dirname, '..', '..', 'solutions', '1');
+const solutionSiteRoot2 = path.join(__dirname, '..', '..', 'solutions', '2');
+const solutionSiteRoot3 = path.join(__dirname, '..', '..', 'solutions', '3');
+const solutionSiteRoot4 = path.join(__dirname, '..', '..', 'solutions', '4');
+const solutionSiteRoot5 = path.join(__dirname, '..', '..', 'solutions', '5');
+const solutionSiteRoot6 = path.join(__dirname, '..', '..', 'solutions', 'final');
+const flickerCache = {};
 
 function fetchFlickerContent(tag) {
   return new Promise(function(resolve, reject) {
@@ -53,7 +53,7 @@ function handleError(err, response) {
 function handleRequest(siteRoot, request, response) {
 
   if(/^\/sok\?/.test(request.url)) {
-    var tag = url.parse(request.url, true).query.tag;
+    const tag = url.parse(request.url, true).query.tag;
 
     getFlickerContent(tag)
       .then(transformResult)
@@ -66,8 +66,8 @@ function handleRequest(siteRoot, request, response) {
 
   } else {
 
-    var filePath = path.join(siteRoot, request.url);
-    var fallbackPath = path.join(siteRoot, 'index.html');
+    let filePath = path.join(siteRoot, request.url);
+    const fallbackPath = path.join(siteRoot, 'index.html');
 
     fs.stat(filePath, (err, stat) => {
       if(err || !stat.isFile()) {

@@ -5,10 +5,10 @@ function getPhotos(tag) {
 }
 
 function renderImages(data) {
-  var html = '';
+  let html = '';
 
   for (var i = 0; i < data.length; i++) {
-    var img = data[i];
+    const img = data[i];
     html += `
       <figure>
         <img src="${img.url}" />
@@ -22,6 +22,6 @@ function renderImages(data) {
 
 
 getPhotos('bekk').then(function(data) {
-  var html = renderImages(data);
+  const html = renderImages(data);
   document.querySelector('main').innerHTML = html;
 });

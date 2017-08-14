@@ -66,29 +66,6 @@
 },{...}]
   </pre>
 </div>
----
-# Laste data
-
-```javascript
-  var httpRequest = new XMLHttpRequest();
-
-  httpRequest.onreadystatechange = function() {
-    if (httpRequest.readyState === 4) {
-      if (httpRequest.status === 200) {
-        var data = JSON.parse(httpRequest.responseText);
-        console.log(data);
-      } else {
-        console.log('There was a problem with the request.');
-      }
-    }
-  }
-
-  // Setter opp request
-  httpRequest.open('GET', 'http://localhost:5000/sok?tag=bekk');
-
-  // Sender request
-  httpRequest.send();
-```
 
 ---
 # Laste data
@@ -113,8 +90,7 @@
   var promise = fetch('http://localhost:5000/sok?tag=bekk');
 
   promise.then(function(result) {
-        console.log(result)
-        //[Object, Object, Object,...]
+        console.log(result);      // [Object, Object, Object,...]
   });
 ```
 --

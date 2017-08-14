@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>Single Page Application (SPA)</title>
+    <title>Frontendkurs</title>
     <link rel="stylesheet" href="https://cdn.rawgit.com/bekk/remark/master/dist/bekk.css">
     <link rel="stylesheet" href="slides.css">
   </head>
@@ -96,26 +96,6 @@ Gi en introduksjon til oppgaven vi skal gjennom
 },{...}]
   </pre>
 </div>
----
-# Laste data
-
-```javascript
-  var httpRequest = new XMLHttpRequest();
-
-  httpRequest.onreadystatechange = function() {
-    if (httpRequest.readyState === 4) {
-      if (httpRequest.status === 200) {
-        var data = JSON.parse(httpRequest.responseText);
-        console.log(data);
-      } else {
-        console.log('There was a problem with the request.');
-      }
-    }
-  }
-
-  httpRequest.open('GET', 'http://localhost:5000/sok?tag=bekk'); // Setter opp request
-  httpRequest.send(); // Sender request
-```
 
 ---
 # Laste data
@@ -140,8 +120,7 @@ Gi en introduksjon til oppgaven vi skal gjennom
   var promise = fetch('http://localhost:5000/sok?tag=bekk');
 
   promise.then(function(result) {
-        console.log(result)
-        //[Object, Object, Object,...]
+        console.log(result);      // [Object, Object, Object,...]
   });
 ```
 --
@@ -384,6 +363,7 @@ class: split
 
 
 
+
 class: center middle
 #Vise bildene
 
@@ -433,79 +413,6 @@ getPhotos('bekk').then(function(data) {
     </figure>
     <!-- ... -->
 </main>
-```
-
----
-
-# Løkker
-
-```javascript
-var data = ["hei", "på", "deg"];
-for (var i = 0; i < data.length; i++) {
-    var tekst = data[i];
-    console.log(i + ': ' + tekst);
-}
-```
-
---
-
-```
-0: hei
-1: på
-2: deg
-```
-
----
-
-# Template strings
-
-```javascript
-var name = "Mats";
-var text1 = 'Hei, ' + name + ', hvordan går det?';
-var text2 = `Hei, ${name}, hvordan går det?`;
-```
-
-&nbsp;
-
---
-
-Ikke 'enkeltfnutt'
-
---
-
-Ikke "dobbeltfnutt"
-
---
-
-Men \` backtick ` &nbsp;(shift + knappen før backspace)
-
----
-
-# Template strings
-
-```javascript
-var img = {
-    url: "http://flickr.com/bilde.jpg",
-    title: "Kult bilde"
-};
-
-var html = `
-    <figure>
-        <img src="${img.url}" />
-        <figcaption>${img.title}</figcaption>
-    </figure>
-        `;
-```
-
---
-
-```javascript
-
-var html = '' +
-    '<figure>' +
-        '<img src="' + img.url + '" />' +
-        '<figcaption>' + img.title} + '</figcaption>' +
-    '</figure>';
 ```
 
 ---
@@ -572,6 +479,7 @@ getPhotos('bekk').then(function(data) {
 
 
 ---
+
 
 
 
@@ -890,12 +798,16 @@ class: center middle
 # Single Page Applications
 
 ???
+En single page application, er en web app eller nettside som får plass på en enkeltnettside
+og har som mål å fremstå som en desktopapplikasjon.
+I en SPA er enten all koden du trenger, HTML, JS og CSS hentet ved første sidelast,
+eller så lastes de nødvendige ressursene inn dynamisk underveis når de trengs.
 
-Vise GitHub med rød banner, sammenligne med VG med rød banner
-Vise den laster bare innhold midt på siden, sånn som vår app!!
-Men at den i tillegg oppdaterer URL, og lar en gå frem og tilbake
+Alt i alt gir det en ganske sømløs opplevelse, men noen ting må man selv sette opp -
+må feks programmere noen ting som ellers kommer ut av boksen når man ikke har SPA.
+Feks navigering/bakoverknapp.
 
-Fordeler SPA + hvorfor URL
+React er et rammeverk som hjelper oss i gang med SPA.
 
 APIer: window.location, men kan ikke bruke settingen
 pushstate popstate
@@ -1020,6 +932,7 @@ router();
 http://localhost:5005
 
 ---
+
 
 
 

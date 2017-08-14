@@ -5,10 +5,10 @@ function getPhotos(tag) {
 }
 
 function renderImages(data) {
-  var html = '';
+  let html = '';
 
   for (var i = 0; i < data.length; i++) {
-    var img = data[i];
+    const img = data[i];
     html += `
       <figure>
       <a href="${window.location.pathname}/${i}">
@@ -32,16 +32,16 @@ function renderOneImage(img) {
 }
 
 function router() {
-  var url = window.location.pathname;
+  const url = window.location.pathname;
 
   if (url == "/") { return; }
 
-  var urlDeler = url.split('/');
-  var tag = urlDeler[1];
-  var bildeId = urlDeler[2];
+  const urlDeler = url.split('/');
+  const tag = urlDeler[1];
+  const bildeId = urlDeler[2];
 
   getPhotos(tag).then(function(data) {
-    var html;
+    let html;
 
     if (bildeId) {
       html = renderOneImage(data[bildeId]);
@@ -55,7 +55,7 @@ function router() {
 
 document.querySelector('form').addEventListener('submit', function(event) {
   event.preventDefault();
-  var tag = event.target.querySelector('input').value;
+  const tag = event.target.querySelector('input').value;
   history.pushState(null, '', tag);
   router();
 });
@@ -66,13 +66,12 @@ window.addEventListener('popstate', router);
 router();
 
 document.querySelector('main').addEventListener('click', function(event) {
-  var parent = event.target.parentNode;
+  const parent = event.target.parentNode;
 
   if(parent.tagName === 'A') {
     event.preventDefault();
-    var href = parent.getAttribute('href');
+    const href = parent.getAttribute('href');
     history.pushState(undefined, '', href);
     router();
   }
 });
-
