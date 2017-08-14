@@ -39,4 +39,4 @@ Arrow functions er kanskje syntaksen som er mest fremmed av måtene man kan defi
 
 ## Oppgaver
 * [Funksjoner](https://jsbin.com/mehujeh/1/edit?js,console)
-* [Arrow functions](https://jsbin.com/deliri/1/edit?js,console)
+* [Arrow functions](https://jsbin.com/deliri/5/edit?js,console)
