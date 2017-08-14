@@ -25,6 +25,6 @@ siHeiOmToSekunder.then(melding => {
 Et Promise lar deg jobbe videre uten å måtte stå og vente på svar. Vi kan fortelle det hva den skal gjøre når den er ferdig, og så gå videre med det vi gjør. En vanlig use case er når vi skal hente inn data fra et [web-API](/05-javascript/09-web-api.md) og ikke vet hvor lang tid det tar før APIet svarer. Da kan vi sende en forespørsel og vite at vi får beskjed når den enten blir besvart eller feiler.
 
 ## Oppgaver
-* [Promise](http://tddbin.com/?636#?kata=es6/language/promise/basics)
-* [Lenkede promises](http://tddbin.com/?464#?kata=es6/language/promise/chaining-then)
+* [Promise](http://jsbin.com/nusaxuw/3/edit?js,output)
+* [Lenkede promises](http://jsbin.com/saboziv/1/edit?js,output)
 * [Promise-APIet](http://tddbin.com/?889#?kata=es6/language/promise/api)
