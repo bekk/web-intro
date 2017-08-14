@@ -27,4 +27,4 @@ Et Promise lar deg jobbe videre uten å måtte stå og vente på svar. Vi kan fo
 ## Oppgaver
 * [Promise](http://jsbin.com/nusaxuw/3/edit?js,output)
 * [Lenkede promises](http://jsbin.com/saboziv/1/edit?js,output)
-* [Promise-APIet](http://tddbin.com/?889#?kata=es6/language/promise/api)
+* [Promise-APIet](http://jsbin.com/camezap/2/edit?js,output)
