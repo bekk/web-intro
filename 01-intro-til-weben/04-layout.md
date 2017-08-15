@@ -56,7 +56,7 @@ Gå deretter til `http://localhost:6001` i nettleseren din, hvor alt skal være 
 Forventet resultat er en liste med annonser hvor hver annonse inneholder en ny liste med urler til annonsebildene, og et objekt som inneholder infromasjon om leiligheten. Denne informasjonen skal brukes i neste oppgave til å vise annonsene på siden.
 
 #### Tips
-> Du kan bruke [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) til å hente ut annonsene fra serveren.
+> Du kan bruke [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) til å hente ut annonsene fra serveren. Responsen du får tilbake er et `Response`-objekt, som du kan kalle funksjonen `json()` på. Dette gir et [`Promise`-objekt](https://johhorn.gitbooks.io/web-intro/05-javascript/08-promises.html) som du kan få dataene fra.
 
 ### Oppgave 2 - vis bildene
 1. Lag en funksjon som itererer over annonsene og lager html-markup for første bilde i hver annonse
