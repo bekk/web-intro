@@ -42,7 +42,7 @@ Overordnet går oppgaven ut på at man først gjør et kall mot serveren for å 
 
 
 ### For å starte opp serveren:
-Naviger til bildegalleri-mappen og skriv inn følgende kommandoer (som for bildegalleriet)
+Naviger til layout-mappen og skriv inn følgende kommandoer
 ```sh
 $ npm install
 $ npm start
