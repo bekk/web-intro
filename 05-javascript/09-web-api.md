@@ -4,7 +4,7 @@
 * [Web API](https://en.wikipedia.org/wiki/Web_API)
 * [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)
 
-Et API (Application Programming interface) kan ses på som en slags kontrakt for informasjonsutveksling mellom programmer eller software-komponenter. Hvis vi vil lage en nettside som skal vise informasjon fra en database, eller sende inn et skjema som skal lagres i et annet system, bruker vi en API-standard kalt web services. Web services er en tjeneste som lar programmer kommunisere over World Wide Web, gjerne gjennom Web-APIer som er RESTfulle. Typisk lager vi web-APIer for å kommunisere mellom klienten, f.eks. en nettside, og serveren der tjenester i backend er eksponert.
+Et API (Application Programming interface) kan ses på som en slags kontrakt for informasjonsutveksling mellom programmer eller software-komponenter. Hvis vi vil lage en nettside som skal vise informasjon fra en database, eller sende inn et skjema som skal lagres i et annet system, bruker vi en API-standard kalt web services. Web services er en tjeneste som lar programmer kommunisere over World Wide Web, gjerne gjennom Web-APIer. I stor grad bruker vi i dag RESTfulle APIer - kjært barn har mange navn. Typisk lager vi web-APIer for å kommunisere mellom klienten, f.eks. en nettside, og serveren der tjenester i backend er eksponert. APIer knytter med andre ord frontenden sammen med backenden ❤️
 
 ## REST og http
 REST står for representational state transfer, og beskriver en arkitektur eller stil for kommunikasjon gjennom web-APIer. Det innebærer at oppslag bruker `GET`-forespørsler, mens `PUT`, `POST` og `DELETE` brukes til å endre, opprette og slette data over http.

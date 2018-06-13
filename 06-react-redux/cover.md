@@ -1,8 +1,9 @@
 # React og Redux
 
 > **BEKK Teknologiradar** med generelle besrkivelser av...
-* ...[React](https://radar.bekk.no/tech2017/frontend-og-mobil/react)
-* ...[Redux](https://radar.bekk.no/tech2017/frontend-og-mobil/redux)
+* ...[React](https://radar.bekk.no/tech2018/sprak-og-rammeverk/react)
+* ...[Redux](https://radar.bekk.no/tech2018/sprak-og-rammeverk/redux)
+* ...[create-react-app](https://radar.bekk.no/tech2018/verktoy/create-react-app)
 
 > **React**:
 * [Create react app](https://github.com/facebookincubator/create-react-app)
