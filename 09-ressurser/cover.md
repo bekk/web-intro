@@ -19,7 +19,7 @@ Noen har kanskje blitt nevnt andre steder i gitbooken, men for oversiktens skyld
 
 ## Foredrag (video)
 
--   Etter hver fagdag legges foredragene som har vært på [BEKK sin vimeo](https://vimeo.com/bekk). Her finnes det mange spennende og inspirerende videoer fra alle fagområdene våre.
+-   Etter hver fagdag legges foredragene som har vært på [Bekk sin vimeo](https://vimeo.com/bekk). Her finnes det mange spennende og inspirerende videoer fra alle fagområdene våre.
 
 ## Kursserier
 
@@ -42,7 +42,7 @@ Noen har kanskje blitt nevnt andre steder i gitbooken, men for oversiktens skyld
 
 > Det finnes masse [meetups](meetup.com) man kan melde seg på! Lister noen vi kan anbefale som går på frontendprogrammering under, men det er bare å søke seg rundt og finne grupper som driver med det du har lyst til å lære eller er interessert i.
 
--   [Pils og Programmering Oslo](https://www.meetup.com/Pils-og-Programmering-Oslo/) avholdes som regel på Skuret en gang i måneden, men det er mange utenfor BEKK som deltar. Du kan ta med et hobbyprosjekt eller bare en interesse, og få hjelp av andre på meetupen eller plundre for deg selv. Blir servert pizza og øl.
+-   [Pils og Programmering Oslo](https://www.meetup.com/Pils-og-Programmering-Oslo/) avholdes som regel på Skuret en gang i måneden, men det er mange utenfor Bekk som deltar. Du kan ta med et hobbyprosjekt eller bare en interesse, og få hjelp av andre på meetupen eller plundre for deg selv. Blir servert pizza og øl.
 -   [Oslo Elm Meetup](https://www.meetup.com/oslo-elm-meetup/) er en ganske aktiv gjeng med Elm-entusiaster som har arrangement på Skuret en gang i måneden. Blir servert pizza og øl.
 -   [Framsia](https://www.meetup.com/framsia/) holder meetups om diverse frontend-temaer.
 -   [ReactJS Oslo Meetup](https://www.meetup.com/ReactJS-Oslo-Meetup/) for React/Redux-interesserte. Ser ofte på hvordan ulike selskaper bruker React hos seg.

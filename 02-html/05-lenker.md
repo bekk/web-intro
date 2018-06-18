@@ -8,7 +8,7 @@ Noen ganger trenger du en lenke, og noen ganger trenger du en knapp. Begge gange
 Hvis du skal lage en lenke bruker du taggen `a`.
 
 ```html
-<a href="https://www.bekk.no">BEKK.no</a>
+<a href="https://www.bekk.no">bekk.no</a>
 ```
 
 Lenke-elementer kan ha forskjellige funksjoner. De kan brukes til å lenke innad på samme side, til andre sider, til filer eller til e-postadresser. Man kan bestemme om lenken skal åpnes i en ny fane, i samme fane, i et nytt vindu eller i en iframe.

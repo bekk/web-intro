@@ -7,7 +7,7 @@ Problemet med mange preferanser og manglende standard, eventuelt at man glemmer 
 
 ## Linting
 
-Løsningen på dette er å bruke linting, feks [ESLint](http://eslint.org/) med [Airbnb sin JavaScript style guide](https://github.com/airbnb/javascript). Linteren sier fra om kode som bryter med konvensjonene man har bestemt seg for, gjerne med en rød strek eller en warning i consolet når man bygger koden. [Her finner du en oversikt](http://eslint.org/docs/user-guide/integrations) over hvilke byggverktøy og IDEer som støtter linting. Vi anbefaler på det varmeste å gjøre lintingen til en del av arbeidsprosessen din, fordi man gjerne sparer mye tid underveis i utviklingen, får renere pull requests, og ikke minst lærer seg å skrive god JavaScript-kode.
+Løsningen på dette er å bruke linting, feks [ESLint](http://eslint.org/) med [AirBnb sin JavaScript style guide](https://github.com/airbnb/javascript). Linteren sier fra om kode som bryter med konvensjonene man har bestemt seg for, gjerne med en rød strek eller en warning i consolet når man bygger koden. [Her finner du en oversikt](http://eslint.org/docs/user-guide/integrations) over hvilke byggverktøy og IDEer som støtter linting. Vi anbefaler på det varmeste å gjøre lintingen til en del av arbeidsprosessen din, fordi man gjerne sparer mye tid underveis i utviklingen, får renere pull requests, og ikke minst lærer seg å skrive god JavaScript-kode.
 
 ## Formatering
 

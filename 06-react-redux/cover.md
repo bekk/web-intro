@@ -1,6 +1,6 @@
 # React og Redux
 
-> **BEKK Teknologiradar** med generelle besrkivelser av...
+> **Bekk Teknologiradar** med generelle besrkivelser av...
 
 -   ...[React](https://radar.bekk.no/tech2018/sprak-og-rammeverk/react)
 -   ...[Redux](https://radar.bekk.no/tech2018/sprak-og-rammeverk/redux)
