@@ -14,7 +14,7 @@ Det finnes to måter å lage en streng med variabler:
 // Gammeldags: Konkatenere strenger og variabler med +
 const text1 = 'Hei, ' + name + ', hvordan går det?';
 
-// Fremtiden: Template strings
+// Ny og kul JavaScript: Template strings
 const text2 = `Hei, ${name}, hvordan går det?`;
 ```
 Template strings har fordelen at du ikke trenger å bekymre deg for hvordan du skal få linjeskift inn i strengen og er enklere å lese.

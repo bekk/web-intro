@@ -7,13 +7,17 @@
 
 JavaScript er dynamisk typet, det vil si at vi ikke definerer hvilken type (int, boolean, string) en variabel er, slik man gjør i språk som Java og C#. Typer bestemmes underveis når et program kjøres, noe som også betyr at den samme variabelen kan bli satt til flere forskjellige verdier og dermed ha hatt flere typer i løpet av kjøringen.
 
-Det er tre måter å deklarere en variabel på i JavaScript, og av disse anbefaler vi at du benytter `let` og `const` så langt det er mulig:
+Det er tre måter å deklarere en variabel på i JavaScript, vist under, og av disse anbefaler vi at du bruker enten `let` eller `const`.
 
 ```javascript
 var a = 1;
 let b = 1;
 const c = 1;
 ```
+
+`const` brukes om alle konstanter som ikke skal endre seg senere. Dette gjør det lettere for deg selv og andre utviklere å lettere forstå
+koden din senere. Resten av variablene burde deklareres med `let`, som indikerer at innholdet kan endre seg over tid.
+
 **OBS!** Glemmer du å deklarere en variabel med `var`, `let` eller `const`, vil variabelen være global.
 
 #### Tips

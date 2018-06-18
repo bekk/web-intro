@@ -6,6 +6,10 @@ Det er vanskelig å holde oversikt over alle JS-rammeverkene, og til tider kan d
 
 ## To SPA or not SPA
 
-Når vi bruker React og Redux, får vi en [SPA (Single Page App)](https://en.wikipedia.org/wiki/Single-page_application). Men det er ikke alltid man trenger å dra inn et rammeverk. Enkle sider med statisk innhold klarer seg fint med VanillaJS og god filstruktur. Det er greit å huske på at byggetid og kompleksitet gjerne øker med antall rammeverk. Nicolay Hvidsten holdt lyntale om dette på BEKK Open fagdag, og gjør et poeng ut av at det ikke alltid er hensiktsmessig å dra inn rammeverk:
+Når vi bruker React og Redux, får vi en [SPA (Single Page App)](https://en.wikipedia.org/wiki/Single-page_application). Men det er ikke alltid man trenger å dra inn et rammeverk. Enkle sider med statisk innhold klarer seg fint med VanillaJS (kun plain JavaScript uten noe form for rammeverk) og god filstruktur. Det er greit å huske på at byggetid og kompleksitet gjerne øker med antall rammeverk. Nicolay Hvidsten holdt lyntale om dette på BEKK Open fagdag, og gjør et poeng ut av at det ikke alltid er hensiktsmessig å dra inn rammeverk:
 
 <iframe src="https://player.vimeo.com/video/208184341" width="640" height="238" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+## Typesikkerhet og profesjonalisering
+
+Frontendutvikling har i løpet av de siste årene gjennomgått en ganske heftig profesjonaliseringsprosess. I dag finnes det svære frontend-kodebaser, hvor nye teknikker og språk viser seg gjeldende for å kunne håndtere økt kompleksitet. Et programmeringsspråk som er spesielt i vinden om dagen er [Elm](https://radar.bekk.no/tech2018/sprak-og-rammeverk/elm), som bruker mange av de samme teknikkene som i React/Redux, men også blant annet tilbyr typesikkerhet og garanterer ingen kjøretidfeil (!). Se for eksempel [Redux Schmedux - Fremtidens webapp er laget i Elm](https://vimeo.com/208178713) om du har lyst til å høre mer.
