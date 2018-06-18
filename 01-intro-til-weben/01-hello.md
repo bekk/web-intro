@@ -7,7 +7,7 @@ Det første vi må gjøre i filen vår er å deklarere dokumenttypen slik at net
 
 `<!DOCTYPE html>`
 
-[`!DOCTYPE html`](https://www.w3.org/TR/html5/syntax.html#the-doctype) betyr at innholdet på nettsiden skal tolkes som  [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5), og dokumentet blir lest i det som kalles for [standard mode](https://developer.mozilla.org/en-US/docs/Quirks_Mode_and_Standards_Mode). Standard mode  gir oss forutsigbar oppførsel fordi nettleserne ikke kan bryte med kjente webformat-spesifikasjoner når de forsøker å vise innholdet på siden din.
+[`!DOCTYPE html`](https://www.w3.org/TR/html5/syntax.html#the-doctype) betyr at innholdet på nettsiden skal tolkes som [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5), og dokumentet blir lest i det som kalles for [standard mode](https://developer.mozilla.org/en-US/docs/Quirks_Mode_and_Standards_Mode). Standard mode gir oss forutsigbar oppførsel fordi nettleserne ikke kan bryte med kjente webformat-spesifikasjoner når de forsøker å vise innholdet på siden din.
 Etter dette kan vi legge til rotelementet og strukturen for innholdet vårt:
 
 ```html

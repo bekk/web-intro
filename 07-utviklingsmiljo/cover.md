@@ -13,6 +13,7 @@ Man kjører ofte bygget lokalt underveis mens man utvikler, og når man skal pro
 De mest populære verktøyene for implementering av en byggeprosess er Webpack, Gulp og Grunt.
 
 ## Håndtering av avhengigheter
+
 Alle avhengigheter, det vil si verktøy, rammeverk og biblioteker vi har lyst til å bruke i utviklingsprosessen, må håndteres på en eller annen måte. De to vanligste pakkehåndtererne (package managers) vi bruker å gjøre dette med, er [npm](https://www.npmjs.com/) og [yarn](https://yarnpkg.com/lang/en/).
 
 Filen `package.json` brukes til å spesifisere hvilke avhengigheter vi har, og kan skille på hva vi bare vil ha i utviklingsmiljøet og hva vi vil ha i produksjon. [Linteverktøy](/08-best-practices/linting.md) er for eksempel avhengigheter vi bare har lyst på i utviklingsmiljøet.

@@ -1,55 +1,58 @@
 # Typer og operatorer
 
 > **MDN**:
-* [Data types and data structures ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
-* [Expressions and operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
-* [Destructuring assignment](The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.)
+
+-   [Data types and data structures ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+-   [Expressions and operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
+-   [Destructuring assignment](The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.)
 
 JavaScript har syv datatyper:
-* boolean
-* null
-* undefined
-* number
-* string
-* symbol
-* Object
+
+-   boolean
+-   null
+-   undefined
+-   number
+-   string
+-   symbol
+-   Object
 
 Særlig bruken av null og undefined er en [kilde til forvirring](https://stackoverflow.com/questions/461966/why-is-there-a-null-value-in-javascript) i JavaScript-verdenen.
 
 Vi kan bruke **typeof**-operatoren for å sjekke type:
+
 ```javascript
-typeof {};          // 'object'
+typeof {}; // 'object'
 
-typeof [];          // 'object'     WTF?
+typeof []; // 'object'     WTF?
 
-typeof 1;           // 'number'
+typeof 1; // 'number'
 
-typeof '';          // 'string'
+typeof ''; // 'string'
 
-typeof true;        // 'boolean'
+typeof true; // 'boolean'
 
-typeof false;       // 'boolean'
+typeof false; // 'boolean'
 
-typeof minVar       // 'undefined'
+typeof minVar; // 'undefined'
 
-typeof null;        // 'object'     WTF?
+typeof null; // 'object'     WTF?
 ```
 
 Objekter kan ses på som en samling av key-value-par.
 
 ```javascript
-    const obj = {
-      key1: 'value1',
-      key2: 13,
-      navn: 'olav'
-    };
+const obj = {
+    key1: 'value1',
+    key2: 13,
+    navn: 'olav',
+};
 
-    obj.key1;         // 'value1'
-    obj['key2'];      // 13
-    obj.key3;         // undefined
+obj.key1; // 'value1'
+obj['key2']; // 13
+obj.key3; // undefined
 
-    delete obj.key1;
-    obj.key1;         // undefined
+delete obj.key1;
+obj.key1; // undefined
 ```
 
 I JS kan man bare slenge på og ta bort et key-value-par som man ønsker, runtime. Dette skiller seg ganske mye fra kompilerte språk som feks Java, hvor man typisk først må lage en klasse og definert at objekter av denne klassen vil ha et sett med attributter.
@@ -57,6 +60,7 @@ I JS kan man bare slenge på og ta bort et key-value-par som man ønsker, runtim
 Denne fleksibiliteten i JavaScript gjør det lett å referere til felter som ikke finnes og kan dermed skape trøbbel.
 
 ## Truthy and falsy
+
 På MDN sine sider finner dere dokumentasjon for alt av operatorer som finnes i JS. Men operatorene for sammenlikning er verdt litt ekstra oppmerksomhet, fordi JS i en boolsk kontekst kan sjekke om en verdi er [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) eller [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy). Hvis man i Java sjekker om to ting er like med `==`, er det en strikt likhetssjekk. I JavaScript, derimot, kan uttrykket bli evaluert til truthy og passere i en if-sjekk der vi egentlig forventer å få `false` tilbake. Derfor bør man i sammenlikninger bruke strict equal og strict not equal-operatorene `===` og `!==` for å unngå logiske feil under kjøring.
 
 ```js
@@ -74,12 +78,13 @@ if (6 === '6')
 ```
 
 ## Destrukturering
+
 Fra andre programmeringsspråk er man gjerne vant med å aksessere variabler og funksjoner på et objekt med dot-notasjon:
 
 ```js
 const artist = {
-  navn: 'Taylor Swift',
-  syng: () => 'Lalalala'
+    navn: 'Taylor Swift',
+    syng: () => 'Lalalala',
 };
 
 console.log(artist.navn); // Taylor Swift
@@ -89,15 +94,12 @@ console.log(artist.syng()); // Lalalala
 I stedet for å dotte oss til et attributt på et objekt, kan vi bruke destructuring assignment. Dette kan vi bruke både for arrays og objekter, men kan være særlig hendig for å hente ut verdier fra sistnevnte:
 
 ```js
-const {
-  navn,
-  syng
-} = artist;
+const { navn, syng } = artist;
 
 console.log(navn); // Taylor Swift
 console.log(syng()); // Lalalala
 ```
 
-
 ## Oppgaver
-* [Sett verdier i et objekt](https://jsbin.com/doqimip/2/edit?js,output)
+
+-   [Sett verdier i et objekt](https://jsbin.com/doqimip/2/edit?js,output)
