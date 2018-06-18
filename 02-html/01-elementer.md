@@ -1,11 +1,13 @@
 # HTML-elementer
 
 > **MDN**:
-* [Liste over alle tilgjengelige HTML-elementer](https://developer.mozilla.org/en/docs/Web/HTML/Element)
-* [Block level elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements)
-* [Inline elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements)
+
+-   [Liste over alle tilgjengelige HTML-elementer](https://developer.mozilla.org/en/docs/Web/HTML/Element)
+-   [Block level elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements)
+-   [Inline elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements)
 
 HTML-dokumenter inneholder en rekke elementer som enten er self closing, altså lukker seg selv, eller som har underelementer, ofte referert til som `children`. Disse elementene ser ut som følger:
+
 ```html
 <tag />
 
@@ -24,6 +26,7 @@ HTML-dokumenter inneholder en rekke elementer som enten er self closing, altså 
 I denne settingen er ikke `tag` et faktisk HTML-element vi pleier å bruke, men en placeholder for alle de mulige HTML-elementene som finnes - se lenken øverst for en oversikt.
 
 ## Attributter
+
 Et HTML-element kan ha flere attributter som bestemmer hvordan den skal oppføre seg eller se ut:
 
 ```html
@@ -34,9 +37,11 @@ Et HTML-element kan ha flere attributter som bestemmer hvordan den skal oppføre
     Innhold
 </tag>
 ```
+
 Hvilke attributter som er tilgjengelig på de ulike elementene, kan man finne i dokumentasjonen til HTML-elementene. Igjen anbefaler vi å bruke MDN som oppslagsverk, siden dokumentasjonen deres er grundig og oppdatert.
 
 ## Block og inline
+
 Vi har nå ulike HTML-elementer med egenskaper som bestemmes av hvilken tag eller type de har. En av disse egenskapene er hvordan elementet oppfører seg i nettleseren, og vi sier gjerne at HTML-elementer enten er _block-level_ eller _inline_.
 
 Block-level innebærer at elementer begynner på en ny linje, mens inline-elementer kan starte hvor som helst på en linje.

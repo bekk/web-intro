@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>Intro til webutvikling</title>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/bekk/remark/master/dist/bekk.css">
-    <link rel="stylesheet" href="slides.css">
-  </head>
-  <body class="bekk-black">
-    <textarea id="source">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Intro til webutvikling</title>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/bekk/remark/master/dist/bekk.css">
+  <link rel="stylesheet" href="slides.css">
+</head>
+
+<body class="bekk-black">
+  <textarea id="source">
 
 class: front-page
   # Intro til webutvikling
-  ## Sommer 2017
+  ## Sommer 2018
 
   <span class="today-date"></span>
 ???
@@ -100,15 +102,6 @@ En gang i tiden var det sykt kult å si at nettsiden din funket best i internet 
 ---
 
 class: fullscreen middle
-![](./images/kangax.png)
-
-???
-
-Verktøy for å se støtte av JS i nettlesere
-
----
-
-class: fullscreen middle
 ![](./images/caniuse.png)
 
 ???
@@ -119,14 +112,14 @@ Verktøy for å se støtte av HTML5 og CSS i nettlesere
 
 class: center middle background-white
 
-![mac_pc](./images/github-languages.jpg)
+![mac_pc](./images/github.png)
 
 ???
 
 En annen ting som har bidratt til den store utviklingen på web er JavaScript - webens eget programmeringspråk.
 Vi skal gå mer i detalj i dette senere idag, men i korte trekk har språket veldig få begrensninger og er veldig utvidbart.
-Dette har ført til en haug med rammeverk, nye måter å tenke på og stor innovasjon.
-Som vi ser JavaScript det mest populære språket på f.eks GitHub.
+Dette har ført til en haug med rammeverk, optimaliseringer nye måter å tenke på og stor innovasjon.
+Som vi ser er JavaScript det mest populære språket, her målt i antall Pull Requests (https://octoverse.github.com/)
 
 Tar man samme statistikk fra StackOverflow får vi samme resultat.
 
@@ -142,14 +135,52 @@ class: middle center yuge
 ## </> + {} + .js
 
 ???
-Økosystemet - hva er frontend? Før var backend the shit. Nå er frontend et eget fagfelt (Frontendtunge applikasjoner++). I BEKK har vi mye web og mobil-applikasjoner, sannsynligvis toucher man borti frontend på et eller annet tidspunkt
+Økosystemet - hva er frontend? Før var backend the shit. Nå er frontend et eget fagfelt (Frontendtunge applikasjoner++). I Bekk har vi mye web og mobil-applikasjoner, sannsynligvis toucher man borti frontend på et eller annet tidspunkt
+---
+
+class: cols three
+
+# Nettsidens bestanddeler
+
+.col[
+  .circle.red.centered[< />]
+
+  ## HTML
+
+  . . . beskriver innhold
+]
+
+.col[
+  .circle.green.centered[{ }]
+
+  ## CSS
+
+  . . . beskriver utseende
+]
+
+.col[
+  .circle.yellow.centered[.js]
+
+  ## JavaScript
+
+  . . . beskriver oppførsel
+]
+
+???
+HTML: definerer selve innholdet på nettsiden, semantisk og strukturert
+
+CSS: styling, utseende, animasjoner
+
+JAVASCRIPT: all magi - hva som skal skje når knapper blir trykket, når man scroller eller når noe spesielt inntreffer - gjør endringer på nettsiden
 ---
 
 class: fullscreen middle
 ![](./images/bekkno.png)
 
 ???
-Inspisere bekk.no i devtools. Se på HTML, CSS, JS, console, network, sources
+Inspisere bekk.no i devtools. Se på HTML, CSS, JS, console, network, sources, performance
+
+Endre h1-tag. Anbefaler å ha consollen oppe.
 ---
 
 # Intro til webutvikling
@@ -168,7 +199,6 @@ Inspisere bekk.no i devtools. Se på HTML, CSS, JS, console, network, sources
 ##Slack
 <div style="font-size: 2em">
   #frontend
-  #frontend-hjelp
   #reactjs
 </div>
 
@@ -187,28 +217,29 @@ class: center middle bekk-top
 ## Lykke til på prosjekt!
 
     </textarea>
-    <script src="https://cdn.rawgit.com/bekk/remark/master/vendor/remark.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      var slideshow = remark.create({
-        ratio: '16:9',
-        highlightLanguage: 'javascript',
-        highlightStyle: 'monokai',
-        navigation: {
-          scroll: false
-        }
-      });
+  <script src="https://cdn.rawgit.com/bekk/remark/master/vendor/remark.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var slideshow = remark.create({
+      ratio: '16:9',
+      highlightLanguage: 'javascript',
+      highlightStyle: 'monokai',
+      navigation: {
+        scroll: false
+      }
+    });
 
-      var dateStr = new Date().toLocaleString('nb-NO', { year: 'numeric', month: 'long', day: 'numeric' });
+    var dateStr = new Date().toLocaleString('nb-NO', { year: 'numeric', month: 'long', day: 'numeric' });
 
-      document.querySelector('.today-date').textContent = dateStr;
+    document.querySelector('.today-date').textContent = dateStr;
 
-      document.querySelector('#danse-ape').addEventListener('click', function(event) {
-        var src = event.currentTarget.getAttribute('src');
-        src = src.replace(/(gif|png)/, src.includes('png') ? 'gif' : 'png');
+    document.querySelector('#danse-ape').addEventListener('click', function (event) {
+      var src = event.currentTarget.getAttribute('src');
+      src = src.replace(/(gif|png)/, src.includes('png') ? 'gif' : 'png');
 
-        event.currentTarget.setAttribute('src', src);
-      });
-    </script>
+      event.currentTarget.setAttribute('src', src);
+    });
+  </script>
 
-  </body>
+</body>
+
 </html>

@@ -1,6 +1,7 @@
 # Flyt
 
 ## Display
+
 CSS-egenskapen `display` sier noe om hvordan et element skal legge seg i flyten på siden. Med flyten mener vi rekkefølgen på elementene i leseretning, fra øverst i venstre hjørne til nederst i høyre hjørne. Hvis man ikke definerer noe annet vil to sekvensielle HTML-elementer legge seg i den rekkefølgen de er definert i HTML-strukturen.
 
 De forskjellige HTML-elementene har forskjellig default-verdi for `display`:
@@ -34,7 +35,9 @@ Med `text-align` kan vi velge om tekst skal være venstre-, midt- eller høyreju
 ```
 
 ```css
-.midtstilt { text-align: center; }
+.midtstilt {
+    text-align: center;
+}
 ```
 
 <div style="text-align:center; background-color:lightgray;">Midtstilt?</div>
@@ -48,7 +51,9 @@ Med `text-align` kan vi velge om tekst skal være venstre-, midt- eller høyreju
 ```
 
 ```css
-.midtstilt { text-align: center; }
+.midtstilt {
+    text-align: center;
+}
 ```
 
 <span style="text-align:center; background-color:lightgray;">Midtstilt?</span>
@@ -65,9 +70,9 @@ Hvis vi vil midtstille et element innenfor sitt forelder-element kan vi bruke `m
 
 ```css
 .midtstilt-blokk {
-  width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 ```
 
@@ -92,5 +97,6 @@ Endre nå element B til å ha `position: absolute`. Hvor ble elementet av? Med a
 Se på `article`-elementet som ligger rundt A, B og C. Gi den `position: relative`. Hvor ble nå B av? Nå som `article` er posisjonert vil B forholde seg til den i stedet for rotelementet.
 
 ## Oppgaver
-* [Midtstilling](https://jsfiddle.net/Matsemann/wg8oLh8a/)
-* [Posisjonering](https://jsfiddle.net/Matsemann/b75wz3mj/1/)
+
+-   [Midtstilling](https://jsfiddle.net/Matsemann/wg8oLh8a/)
+-   [Posisjonering](https://jsfiddle.net/Matsemann/b75wz3mj/1/)

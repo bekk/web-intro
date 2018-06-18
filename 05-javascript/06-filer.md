@@ -31,8 +31,10 @@ Som regel skriver vi ikke script inne i html-filene, men har det i en egen `.js`
 ```
 
 #### Tips
+
 > JavaScript er som regel noe av det som tar langst tid å hente inn på en nettside. Derfor er det også greit å legge nederst i body, så alt av statisk innhold og stiler er lastet først. I tillegg må script-fila lastes _etter_ HTMLen hvis JavaScripten din skal bruke HTMLen. Dette fordi hvis scriptet lastes først, vil det ikke klare å få tak i HTML-elementene, fordi de ikke er tegnet ennå.
 
 ## Oppgaver
-* Utvid nettsiden du satte opp i kapittel 1 med scriptene over, og sjekk i consolet (DevTools) hva du får ut. Hvilket script ble kjørt først?
-* Lag en egen `.js`-fil som inneholder all JavaScripten din og importer den på siden.
+
+-   Utvid nettsiden du satte opp i kapittel 1 med scriptene over, og sjekk i consolet (DevTools) hva du får ut. Hvilket script ble kjørt først?
+-   Lag en egen `.js`-fil som inneholder all JavaScripten din og importer den på siden.

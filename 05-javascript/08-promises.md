@@ -1,7 +1,8 @@
 # Promises
 
-> * **MDN**: [Promise](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise)
-* Promises kan være litt forvirrende. Her er et blogginnlegg om hvordan man bør (og kanskje spesielt) _ikke_ bør bruke Promises: [We have a problem with promises](https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html)
+> -   **MDN**: [Promise](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+
+-   Promises kan være litt forvirrende. Her er et blogginnlegg om hvordan man bør (og kanskje spesielt) _ikke_ bør bruke Promises: [We have a problem with promises](https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html)
 
 Noen ganger trenger vi å gjøre en asynkron operasjon (en oppgave som ikke fullfører umiddelbart) uten at vi vil stå og vente på at den blir gjort. Vi vil kunne kaste en boomerang og få beskjed når den er tilbake. Da er det nyttig med **Promises**.
 
@@ -15,17 +16,18 @@ Prøv å lime inn dette eksempelet i JavaScript-konsollen i DevTools og følg me
 
 ```js
 const siHeiOmToSekunder = new Promise(resolve => {
-  setTimeout(() => resolve('Hei!'), 2000);
+    setTimeout(() => resolve('Hei!'), 2000);
 });
 
 siHeiOmToSekunder.then(melding => {
-  console.log(`Fikk et svar: ${melding}`);
+    console.log(`Fikk et svar: ${melding}`);
 });
 ```
 
 Et Promise lar deg jobbe videre uten å måtte stå og vente på svar. Vi kan fortelle det hva den skal gjøre når den er ferdig, og så gå videre med det vi gjør. En vanlig use case er når vi skal hente inn data fra et [web-API](/05-javascript/09-web-api.md) og ikke vet hvor lang tid det tar før APIet svarer. Da kan vi sende en forespørsel og vite at vi får beskjed når den enten blir besvart eller feiler.
 
 ## Oppgaver
-* [Promise](http://jsbin.com/nusaxuw/4/edit?js,output)
-* [Lenkede promises](http://jsbin.com/saboziv/1/edit?js,output)
-* [Promise-APIet](http://jsbin.com/camezap/2/edit?js,output)
+
+-   [Promise](http://jsbin.com/nusaxuw/4/edit?js,output)
+-   [Lenkede promises](http://jsbin.com/saboziv/1/edit?js,output)
+-   [Promise-APIet](http://jsbin.com/camezap/2/edit?js,output)
