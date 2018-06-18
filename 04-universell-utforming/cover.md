@@ -17,11 +17,7 @@ Det er viktig at vi lager nettsider som er universelt utformet. Ikke bare fordi 
 
 [På denne siden har DIFI en video](https://uu.difi.no/) som oppsummerer hvorfor UU er viktig, og gir noen konkrete tips til hvordan man kan få universelt utformede systemer.
 
-Vi har også en egen podcast i BEKK, og denne episoden er spesielt relevant hva UU gjelder (finnes også i diverse podcast-apper hvis man heller foretrekker å bruke det):
-
-<div style="text-align: center">
-  <iframe width="400" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/247815709&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-</div>
+Vi har også en egen podcast i Bekk, og [denne episoden](https://www.acast.com/bekkopenpodcast/10-den-om-tilgjengelighet-1) er spesielt relevant hva UU gjelder (finnes også i diverse podcast-apper hvis man heller foretrekker å bruke det):
 
 ## WAI-ARIA
 

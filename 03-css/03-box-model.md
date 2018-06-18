@@ -56,10 +56,13 @@ La oss endre på bredden på `border` for å se hva dette gjør:
 }
 ```
 
-<div style="width: 300px;  height: 100px;
+<div style="
+  width: 300px;
+  height: 100px;
   padding: 20px;
   background: cadetblue;
-  border: 15px solid gray;">Lorem ipsum</div>
+  border: 15px solid gray;"
+>Lorem ipsum</div>
 
 ---
 
@@ -75,7 +78,26 @@ Hvis vi legger til en ny boks ved siden av, kan vi se hvordan boksens ytre grens
 }
 ```
 
-<div style="width: 200px;  height: 100px; padding: 20px; background: cadetblue; border: 15px solid gray; display: inline-block;">Lorem ipsum</div><div style="width: 200px;  height: 100px; padding: 20px; background: cadetblue; border: 15px solid gray; display: inline-block;">Lorem ipsum</div>
+<div style="
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  background: cadetblue;
+  border: 15px solid gray;
+  display: inline-block;"
+>
+    Lorem ipsum
+</div>
+<div style="
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  background: cadetblue;
+  border: 15px solid gray;
+  display: inline-block;"
+>
+    Lorem ipsum
+</div>
 
 ---
 

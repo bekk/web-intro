@@ -30,7 +30,7 @@ Treffer alle elementer med den gitte klassen.
 
 **ID-selector:** `#hovedmeny`, `#animasjon`
 
-IDer må være unike, fordi regler for en ID gjelder for første matchende element.
+IDer må være unike, fordi regler for en ID gjelder for første matchende element. Som regel ønsker vi ikke å bruke ID-selectorer, fordi det er å foretrekke at vi har css-stiler som kan gjenbrukes. Hvis vi må style hvert element for seg, kan det fort bli vanskelig å vedlikeholde et konsekvent grensesnitt.
 
 ```css
 #hovedmeny {
@@ -79,4 +79,7 @@ a[attributt='verdi'] {
 -   Sett en bakgrunnsfarge på siden.
 -   Endre font, farge og skriftstørrelse på teller-verdien.
 -   Endre størrelse, bakgrunnsfarge, border/ramme og tekstfarge på knappene.
--   Bonus: øv deg på selectorer i spillet [CSS Diner](https://flukeout.github.io/)
+
+<!-- ## Bonus:
+
+Øv deg på selectorer i spillet [CSS Diner](https://flukeout.github.io/) -->

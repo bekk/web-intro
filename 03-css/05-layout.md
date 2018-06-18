@@ -15,6 +15,8 @@ Innenfor layout har det vokst frem mange spennende muligheter. Flexbox og CSS gr
 
 -   [Flexbox Froggy](http://flexboxfroggy.com/) er en klassiker. Her lærer du å bruke flexbox for å redde Froggy til vannliljen sin.
 
+## Bonus
+
 -   [Flexbox Defense](http://www.flexboxdefense.com/) er også et spill der man lærer flexbox. Dette er et tower defense-spill der du beskytter tårnet ditt med CSS!
 
 -   [CSS Grid Garden](http://cssgridgarden.com/) er et spill for å lære CSS grid layout - noe av det ferskeste innen CSS, som ble støttet i de største nettleserne så nylig som i mars 2017! Her skal vi passe på gulrothagen vår med CSS.
