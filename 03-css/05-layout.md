@@ -9,7 +9,7 @@ Hvis man synes `position: relative` blir for mye knot og at `position: static` b
 
 > Layout er et stort nok tema til at vi kunne ha brukt hele dagen på en egen [layoutworkshop](https://github.com/kentandersen/layout-workshop). Ta gjerne en titt på den - slidene er også fine for eksempler på hvordan diverse css-properties oppfører seg.
 
-Innenfor layout har det vokst frem mange spennende muligheter. Flexbox og CSS grid er nye måter å løse avansert layout på utviklervennlige måter. Vi mener at en av de beste måtene å lære seg hvordan de funker, å ta dem i bruk.
+Innenfor layout har det vokst frem mange spennende muligheter, og flexbox og CSS grid er anbefalt når man skal løse avansert layout på en utviklervennlig måte. Vi mener at en av de beste måtene å lære seg hvordan de funker, å ta dem i bruk.
 
 ## Oppgaver
 

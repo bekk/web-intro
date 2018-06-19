@@ -48,5 +48,4 @@ Koden over blir rendret som følgende, med både linjeskift og indentering intak
 
 ## Oppgaver
 
--   [String basics](https://jsbin.com/mocopic/1/edit?js,output)
--   [String multiline](https://jsbin.com/rafesak/1/edit?js,output)
+-   [String](https://jsbin.com/mocopic/1/edit?js,output)
