@@ -115,4 +115,4 @@ arr[0]; // 0
 ## Oppgaver
 
 -   [let](https://jsbin.com/tehakud/edit?html,js,output)
--   [const](https://jsbin.com/huqodog/1/edit?js,console)
+-   [const](https://jsbin.com/yazemuv/2/edit?js,console)
