@@ -3,7 +3,7 @@
 Vi kan deklarere en ren streng på to måter:
 
 ```javascript
-const dobbeltfnutter = 'JavaScript';
+const dobbeltfnutter = "JavaScript";
 const enkeltfnutter = 'JavaScript';
 ```
 
