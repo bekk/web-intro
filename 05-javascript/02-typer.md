@@ -55,7 +55,16 @@ delete obj.key1;
 obj.key1; // undefined
 ```
 
-I JS kan man bare slenge på og ta bort et key-value-par som man ønsker, runtime. Dette skiller seg ganske mye fra kompilerte språk som feks Java, hvor man typisk først må lage en klasse og definert at objekter av denne klassen vil ha et sett med attributter.
+I JS kan man bare slenge på og ta bort et key-value-par som man ønsker, runtime. Dette skiller seg ganske mye fra kompilerte språk som feks Java, hvor man typisk først må lage en klasse og definert at objekter av denne klassen vil ha et sett med attributter. Vi kan sette verdier på tre måter: når vi initialiserer objektet, og ved å aksessere gjennom nøkler. Dersom vi bruker en nøkkel som ikke finnes i objektet fra før, vil det legges til:
+
+```javascript
+const bil = {
+    seter: 3,
+};
+
+bil.merke = 'Toyota';
+bil['år'] = '1994';
+```
 
 Denne fleksibiliteten i JavaScript gjør det lett å referere til felter som ikke finnes og kan dermed skape trøbbel.
 
