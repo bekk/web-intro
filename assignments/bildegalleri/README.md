@@ -11,7 +11,7 @@ Før du starter må du laste ned og installere [Node.js](https://nodejs.org/).
 
 For å kjøre serveren
 ```javascript
-cd del2/assignment
+cd assignment/
 npm install
 npm start
 ```
