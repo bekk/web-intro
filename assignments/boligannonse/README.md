@@ -1,10 +1,10 @@
 # Oppgavebeskrivelse
-I denne oppgaven skal du lage en visning av leilighetsannonser ala finn.no/hybel.no/airbnb. Du står fritt til å implementere ditt eget desgin, men du kan også ta utgangspunkt i løsningsforslaget hvis du ønsker det. Løsningsforslaget har valgt å fokusere på tittel, pris, kvadratmeter og adresse i tillegg til en bildekarusell som det viktigste.
+I denne oppgaven skal du lage en visning av leilighetsannonser à la finn.no/hybel.no/airbnb. Du står fritt til å implementere ditt eget design, men du kan også ta utgangspunkt i løsningsforslaget hvis du ønsker det. Løsningsforslaget har valgt å fokusere på tittel, pris, kvadratmeter og adresse i tillegg til en bildekarusell som det viktigste.
 
-Prekode og løsningsforslag finner du i `layout`-mappa under `assignments`. Oppgavebeskrivelsen ligger også tilgjengelig i README-fila i denne mappen.
+Prekode og løsningsforslag finner du i `boligannonse`-mappa under `assignments`. Oppgavebeskrivelsen ligger også tilgjengelig i README-fila i denne mappen.
 
 ## Annonser
-Under mappen annonser finner du 8 forskjellige annonser hvor hver annonse inneholder et sett med bilder og en details.json-fil. JSON-filen beskriver nøkkelinformasjon til hver annonse. Se eksempelet under:
+Under mappen annonser finner du 8 forskjellige annonser, hvor hver annonse inneholder et sett med bilder og en `details.json`-fil. JSON-filen beskriver nøkkelinformasjon til hver annonse. Se eksempelet under:
 ```javascript
 {
   "omradetittel": "Grunerløkka",
@@ -16,7 +16,10 @@ Under mappen annonser finner du 8 forskjellige annonser hvor hver annonse inneho
 ```
 
 ## Løsningsforslaget
-Forslag til løsning ligger under `solutions`. For å se løsningforslaget - følg stegene under "For å starte opp serveren" og i stedet for å åpne `localhost:6001` åpner du `localhost:6002`.
+
+I denne oppgaven kan det være fint å se på løsningsforslaget i nettleseren i forkant for å forstå bedre hva man skal gjøre.
+
+Forslag til løsning ligger i mappen `solutions`. For å se løsningforslaget - følg stegene under "For å starte opp serveren" og i stedet for å åpne `localhost:6001` åpner du `localhost:6002`.
 
 ## Oppgave uten javascript
 Hvis du ønsker kan denne oppgaven løses helt uten javascript, dog må man skrive mye mer html-kode selv.
@@ -26,10 +29,10 @@ Hvis du ønsker kan denne oppgaven løses helt uten javascript, dog må man skri
  ```html
 <img src="../annonser/annonse1/1.jpg" />
 ```
-Siden annonser ligger høyere oppe i mappestrukturen enn home.html (som er utgangspunktet vårt),  må vi skrive ../ foran for å finne riktig fil. Første ../ vil gå ett steg opp i mappestrukturen. Da vil man kunne aksessere mappen client, server osv. Deretter kan vi traversere oss ned til det første bildet.
+Siden annonser ligger høyere oppe i mappestrukturen enn home.html (som er utgangspunktet vårt),  må vi skrive `../` foran for å finne riktig fil. Første `../` vil gå ett steg opp i mappestrukturen. Da vil man kunne aksessere mappen client, server osv. Deretter kan vi traversere oss ned til det første bildet.
 * Html-elementer som kan være nyttig er -
   ```html
-      <aticle>, <section>, <img>, <main>, <h1>, <h2>, <h3>, <a>, <div>, <p>
+      <article>, <section>, <img>, <main>, <h1>, <h2>, <h3>, <a>, <div>, <p>
   ```
 * Legg på klassenavn du føler gir mening - tenk på gjenbrukbarhet
 * Style innholdet ditt slik du ønsker det i styling.css-filen
@@ -37,12 +40,12 @@ Siden annonser ligger høyere oppe i mappestrukturen enn home.html (som er utgan
 * Se nederst på dette dokumentet for stylingstips
 
 ## Oppgave med javascript
-Ta utgangspunkt i `index.html`-filen som inkluderer `script.js` og `styling.css` for henholdsvis javascript og styling.
+Ta utgangspunkt i `index.html`-filen under client-mappen, som inkluderer `script.js` og `styling.css` for henholdsvis javascript og styling.
 Overordnet går oppgaven ut på at man først gjør et kall mot serveren for å få alle annonsedataene, for deretter å lage en html-representasjon av disse.
 
 
 ### For å starte opp serveren:
-Naviger til layout-mappen og skriv inn følgende kommandoer:
+Naviger til `boligannonse/assignment` og skriv inn følgende kommandoer:
 ```sh
 $ npm install
 $ npm start
