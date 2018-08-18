@@ -1,7 +1,7 @@
 # Webutvikling101: Del2
 Nå skal vi dykke litt mer ned i hva frontendområdet har å by på. Målet med denne
 delen er å se hvilke teknikker og metoder som finnes for å lage en moderne
-single page application. Du finner slides på [bekk.github.io/sommerstudenter-frontendkurs/del2/slides](http://bekk.github.io/sommerstudenter-frontendkurs/del2/slides)
+single page application. Du finner slides under [/slides](https://github.com/bekk/web-intro/tree/master/assignments/bildegalleri/slides)
 
 ## Oppgaver
 Oppgavene finner du i slidene.
