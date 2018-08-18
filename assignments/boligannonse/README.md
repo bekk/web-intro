@@ -32,7 +32,7 @@ Hvis du ønsker kan denne oppgaven løses helt uten javascript, dog må man skri
 Siden annonser ligger høyere oppe i mappestrukturen enn home.html (som er utgangspunktet vårt),  må vi skrive `../` foran for å finne riktig fil. Første `../` vil gå ett steg opp i mappestrukturen. Da vil man kunne aksessere mappen client, server osv. Deretter kan vi traversere oss ned til det første bildet.
 * Html-elementer som kan være nyttig er -
   ```html
-      <aticle>, <section>, <img>, <main>, <h1>, <h2>, <h3>, <a>, <div>, <p>
+      <article>, <section>, <img>, <main>, <h1>, <h2>, <h3>, <a>, <div>, <p>
   ```
 * Legg på klassenavn du føler gir mening - tenk på gjenbrukbarhet
 * Style innholdet ditt slik du ønsker det i styling.css-filen
