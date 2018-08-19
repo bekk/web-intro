@@ -1,4 +1,4 @@
-# Oppgavebeskrivelse
+# Boligannonser
 
 I denne oppgaven skal du lage en visning av leilighetsannonser à la _finn.no_, _hybel.no_ eller _Airbnb_. Du står fritt til å implementere ditt eget design, men du kan også ta utgangspunkt i designet til løsningsforslaget hvis du ønsker det. Løsningsforslaget har valgt å fokusere på tittel, pris, kvadratmeter og adresse i tillegg til en bildekarusell som det viktigste.
 
