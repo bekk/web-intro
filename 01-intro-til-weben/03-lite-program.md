@@ -4,18 +4,19 @@ I denne oppgaven skal du lage et lite grensesnitt som ser ut som en kalkulator. 
 
 Hvis du alternativt vil programmere den som en faktisk kalkulator, må du gjerne gjøre det også.
 
+> **OBS!** Når man først begynner å knote med CSS, kan man bruke en evighet på å få det akkurat som man vil. I denne oppgaven kan det være fint å gå videre til JavaScript-delen når du er middels fornøyd med HTML og CSS, og heller gå tilbake til å fikse på hvordan den ser ut når nedtelleren er funksjonell.
+
 ## Sett opp nedtelleren
 
 -   Ta utgangspunkt i HTMLen og CSSen i `nedteller`-mappa under `assignments` i dette [repoet](https://github.com/johhorn/web-intro/tree/master/assignments/nedteller)
 -   Gi `main`-elementet en bredde og midtstill det.
 -   Midtstill teksten til telleren.
--   Gjør noen av de første oppgave om [Flexbox Froggy](https://flexboxfroggy.com/), og prøv deretter å bruk det du har lært om flexbox på beholderen med alle knappene for å få dem til å ligge som vist på bildet under.
+-   Gjør noen av de første oppgavene om [Flexbox Froggy](https://flexboxfroggy.com/), og prøv deretter å bruk det du har lært om flexbox på beholderen med alle knappene for å få dem til å ligge som vist på bildet under.
 
 #### Farger:
 
 > -   Gråfarge: #262626
-
--   Rødfarge: #fd5158
+> -   Rødfarge: #fd5158
 
 <div style="width:27em;">
   <img src="../resources/nedteller.png" />
@@ -77,7 +78,3 @@ container.addEventListener('click', function(event) {
 > const id = setInterval(enFunksjon, 1000);
 > clearInterval(id);
 > ```
-
-```
-
-```
