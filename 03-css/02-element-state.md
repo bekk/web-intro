@@ -10,7 +10,7 @@ selector:pseudo-class {
 }
 ```
 
-En slik pseudo-klasse er et nøkkelord lagt til en spesifikk selector for å indikere hvilken _state_ elementet er i. `:hover` er kanskje en av de mest kjente pseudo-klassene, som lar deg style hvordan en lenke eller knapp skal se ut når du flytter musa over den.
+En slik pseudo-klasse er et nøkkelord lagt til en spesifikk selector for å indikere hvilken _state_ elementet er i. `:hover` er kanskje en av de mest kjente pseudo-klassene, som lar deg style hvordan en lenke eller knapp skal se ut når du flytter musepekeren over den.
 
 ## Oppgaver
 

@@ -1,10 +1,9 @@
 # HTML-elementer
 
 > **MDN**:
-
--   [Liste over alle tilgjengelige HTML-elementer](https://developer.mozilla.org/en/docs/Web/HTML/Element)
--   [Block level elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements)
--   [Inline elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements)
+> -   [Liste over alle tilgjengelige HTML-elementer](https://developer.mozilla.org/en/docs/Web/HTML/Element)
+> -   [Block level elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements)
+> -   [Inline elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements)
 
 HTML-dokumenter inneholder en rekke elementer som enten er self closing, altså lukker seg selv, eller som har underelementer, ofte referert til som `children`. Disse elementene ser ut som følger:
 
@@ -48,11 +47,11 @@ Block-level innebærer at elementer begynner på en ny linje, mens inline-elemen
 Mange browsere har ny linje både før _og_ etter block-level-elementer, så man kan forestille seg disse elementene som et tårn med bokser som ligger oppå hverandre.
 
 ```html
-<p>This <span>span</span> is an inline element; its background has been colored to display both the beginning and end of the inline element's influence</p>
+<p>This <span>span</span> is an inline element; its background has been colored to display both the beginning and end of the inline element.</p>
 
-<p>This paragraph is a block-level element; its background has been colored to display the paragraph's parent element.</p>
+<p>This paragraph is a block-level element; its background has been colored to display the beginning and end of the block element.</p>
 ```
 
-<p>This <span style="background-color: #8ABB55">span</span> is an inline element; its background has been colored to display both the beginning and end of the inline element's influence</p>
+<p>This <span style="background-color: #8ABB55">span</span> is an inline element; its background has been colored to display both the beginning and end of the inline element.</p>
 
-<p style="background-color: #8ABB55">This paragraph is a block-level element; its background has been colored to display the paragraph's parent element.</p>
+<p style="background-color: #8ABB55">This paragraph is a block-level element; its background has been colored to display the beginning and end of the block element.</p>

@@ -10,6 +10,7 @@ Treffer alle elementer med den gitte taggen.
 body {
     background-color: aliceblue;
 }
+
 button {
     color: #1234ab;
 }
@@ -23,6 +24,7 @@ Treffer alle elementer med den gitte klassen.
 .btn-danger {
     background-color: red;
 }
+
 .btn-ok {
     background-color: green;
 }

@@ -1,13 +1,12 @@
 # Object Models
 
 > **MDN**:
-
--   [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
--   [CSS Object Model](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model)
+> -   [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+> -   [CSS Object Model](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model)
 
 ## Document Object Model (DOM)
 
-DOM-en er nettleserens programmatiske representasjon av en nettside. Den er bygget opp av et node-hierarki som representerer HTML-strukturen i en objekt-orientert modell.
+DOM-en er nettleserens programmatiske representasjon av en nettside. Den er bygget opp av et node-hierarki som representerer HTML-strukturen i en objektorientert modell.
 
 JavaScript kan bruke DOM-en til å lese, endre og overvåke en gitt nettside. Vi kan bruke de eksponerte objektene `document` og `window` til dette. Mer om dette i [kapittel 5](/05-javascript/07-dom-apiet.md).
 

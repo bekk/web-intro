@@ -4,7 +4,7 @@
 
 CSS-egenskapen `display` sier noe om hvordan et element skal legge seg i flyten på siden. Med flyten mener vi rekkefølgen på elementene i leseretning, fra øverst i venstre hjørne til nederst i høyre hjørne. Hvis man ikke definerer noe annet vil to sekvensielle HTML-elementer legge seg i den rekkefølgen de er definert i HTML-strukturen.
 
-De forskjellige HTML-elementene har forskjellig default-verdi for `display`:
+Nederst i [kapittelet om HTML-elementer](02-html/01-elementer.md) beskrev vi hvordan block- og inline-elementer oppfører seg. De forskjellige HTML-elementene har alle forskjellig default-verdi for `display`:
 
 ```html
 <div>
@@ -13,7 +13,7 @@ De forskjellige HTML-elementene har forskjellig default-verdi for `display`:
   <button>En knapp</button>        <!-- inline-block -->
   <button>Enda en knapp</button>
   <a href="#">Lenke</a>            <!-- inline -->
-  <div>mer tekst</div>             <!-- blokk -->
+  <div>mer tekst</div>             <!-- block -->
 </div>
 ```
 
@@ -28,7 +28,7 @@ De forskjellige HTML-elementene har forskjellig default-verdi for `display`:
 
 ## Midtstilling
 
-Med `text-align` kan vi velge om tekst skal være venstre-, midt- eller høyrejustert innenfor et blokk-element.
+Med `text-align` kan vi velge om tekst skal være venstre-, midt- eller høyrejustert innenfor et block-element.
 
 ```html
 <div class="midtstilt">Midtstilt?</div>
@@ -42,7 +42,7 @@ Med `text-align` kan vi velge om tekst skal være venstre-, midt- eller høyreju
 
 <div style="text-align:center; background-color:lightgray;">Midtstilt?</div>
 
-`div` er et blokk-element og teksten blir midtstilt.
+`div` er et block-element og teksten blir midtstilt.
 
 ---
 
@@ -58,7 +58,7 @@ Med `text-align` kan vi velge om tekst skal være venstre-, midt- eller høyreju
 
 <span style="text-align:center; background-color:lightgray;">Midtstilt?</span>
 
-Siden `span` er et inline-element kan vi ikke posisjonere tekst innenfor elementet.
+Siden `span` er et inline-element kan vi ikke posisjonere tekst innenfor elementet, det har rett og slett ikke noe ledig rom rundt seg det kan plassere seg relativt til.
 
 ---
 
@@ -77,6 +77,9 @@ Hvis vi vil midtstille et element innenfor sitt forelder-element kan vi bruke `m
 ```
 
 <div style="background-color:lightgray; width: 400px; margin: 0 auto;">Midtstilt blokk</div>
+
+#### Tips
+>Som dere snart vil finne ut, er det flere egenskaper som bare fungerer på block- eller inline-block-elementer. Dette gjelder både `text-align`, som forklart over, i tillegg til `margin`. Dette kan være en kilde til vanskelig debugging når stilene våre tilsynelatende ikke treffer. Heldigivs pleier DevTools å vise oss hvilke stiler som ikke fungerer fordi de ikke er gyldige i Styles-panelet når vi inspiserer koden vår.
 
 ## Posisjonering
 

@@ -15,7 +15,7 @@ Men hva er forskjellen på innholdet i `head` og `body`?
 
 # Head
 
-I `head`-elementet legger vi metadata vi ønsker å tilføye på dokuemntet, men som ikke vises på selve siden. I seksjonen hvor vi [satte opp en liten nettside](/01-intro-til-weben/01-hello.md), la vi blant annet inn `charset` for å fortelle nettleseren hva slags tegnsett vi hadde lyst til å legge inn.
+I `head`-elementet legger vi metadata vi ønsker å tilføye på dokumentet, men som ikke vises på selve siden. I seksjonen hvor vi [satte opp en liten nettside](/01-intro-til-weben/01-hello.md), la vi blant annet inn `charset` for å fortelle nettleseren hva slags tegnsett vi hadde lyst til å legge inn.
 
 Metadataene vi setter i HTML head er også viktige for blant annet søkemotorer og [search engine optimization (SEO)](https://developer.mozilla.org/en-US/docs/Glossary/SEO). Ved å sette de følgende to elementene, gir vi god informasjon til crawlerne som skal indeksere siden om hva innholdet er.
 
