@@ -1,8 +1,7 @@
 # DOM-apiet
 
 > **MDN**:
-
--   [Oversikt over DOM- og HTML-interfaces](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+> -   [Oversikt over DOM- og HTML-interfaces](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 
 Javascript gir oss et rikt API mot [DOMen](/02-html/07-dom.md) via document-objektet.
 Hvis HTML-en inneholder dette...
@@ -32,7 +31,7 @@ boks.textContent; // Klikk her for å lære mer
 
 ## Hendelser
 
-Med DOM-apiet kan vi også legge til hendelser når noe skjer med et dom-element.
+Med DOM-apiet kan vi også legge til hendelser når noe skjer med et DOM-element.
 Vi gjør dette ved å legge på lyttere som venter på at en gitt hendelse skal skje, f.eks. et klikk på en knapp:
 
 ```js

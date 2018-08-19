@@ -82,6 +82,6 @@ a[attributt='verdi'] {
 -   Endre font, farge og skriftstørrelse på teller-verdien.
 -   Endre størrelse, bakgrunnsfarge, border/ramme og tekstfarge på knappene.
 
-<!-- ## Bonus:
+## Bonus:
 
-Øv deg på selectorer i spillet [CSS Diner](https://flukeout.github.io/) -->
+Øv deg på selectorer i spillet [CSS Diner](https://flukeout.github.io/)

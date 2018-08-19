@@ -1,11 +1,10 @@
 # Responsivt design
 
 > **MDN**:
+> -   [Using media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
+> -   [Values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units)
 
--   [Using media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
--   [Values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units)
-
-Når vi jobber med web, må vi tilpasse oss det faktum at brukerne våre kan aksessere siden vår fra en mengde forskjellige skjermstørrelser. Det er viktig at vi tilpasser oss dette, og lager gode sider både på desktop og mobile enheter, og som skalerer godt. Det gjelder også for brukere som zoomer inn på siden.
+Når vi jobber med web, må vi tilpasse oss det faktum at brukerne våre kan aksessere siden vår fra en mengde forskjellige skjermstørrelser. Det er viktig at vi tenker på dette og lager gode sider både på desktop og mobile enheter som skalerer bra. Det gjelder også for brukere som zoomer inn på siden.
 
 ## Media queries
 

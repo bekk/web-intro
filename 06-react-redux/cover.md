@@ -1,16 +1,14 @@
 # React og Redux
 
 > **Bekk Teknologiradar** med generelle besrkivelser av...
-
--   ...[React](https://radar.bekk.no/tech2018/sprak-og-rammeverk/react)
--   ...[Redux](https://radar.bekk.no/tech2018/sprak-og-rammeverk/redux)
--   ...[create-react-app](https://radar.bekk.no/tech2018/verktoy/create-react-app)
+> -   ...[React](https://radar.bekk.no/tech2018/sprak-og-rammeverk/react)
+> -   ...[Redux](https://radar.bekk.no/tech2018/sprak-og-rammeverk/redux)
+> -   ...[create-react-app](https://radar.bekk.no/tech2018/verktoy/create-react-app)
 
 > **React**:
-
--   [Create react app](https://github.com/facebookincubator/create-react-app)
+> - [Create react app](https://github.com/facebookincubator/create-react-app)
     er et fint sted å starte hvis vil lage en React-app. Når du kjører dette programmet, får du alt du trenger av oppsett og byggeverktøy for en SPA.
--   React-tutorial: [Lag spillet tre på rad (tic-tac-toe) i React](https://facebook.github.io/react/tutorial/tutorial.html)
+> -   React-tutorial: [Lag spillet tre på rad (tic-tac-toe) i React](https://facebook.github.io/react/tutorial/tutorial.html)
 
 > **Redux**:
 > Redux har en veldig god [dokumentasjon](http://redux.js.org/), det finnes også en god [videoserie](https://egghead.io/courses/getting-started-with-redux) laget av mannen bak biblioteket, Dan Abramov.
@@ -31,7 +29,7 @@ function MyCoolComponent() {
 }
 ```
 
-Det ser litt merkelig ut - HTML inn i JavaScript-en!? Det kan umulig være riktig, eller?
+Det ser litt merkelig ut - HTML inn i JavaScripten!? Det kan umulig være riktig, eller?
 Kort fortalt, så kalles denne syntaksen JSX. JSX lar oss skrive komponentene våre som om de var HTML-elementer, og så vil React passe på at det blir helt vanlig HTML når programmet kjøres i nettleseren.
 
 I likhet med funksjoner kan komponenter også ta inn ulike parametere:
@@ -40,7 +38,11 @@ I likhet med funksjoner kan komponenter også ta inn ulike parametere:
 function MyCoolComponent(props) {
     return (
         <div>
-            {props.name} {props.likesApples ? 'likes' : 'dislikes'} apples
+            {props.name} 
+            {props.likesApples 
+                ? 'likes' 
+                : 'dislikes'
+            } apples
         </div>
     );
 }

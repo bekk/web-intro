@@ -1,15 +1,10 @@
 # Avansert layout
 
 > **MDN**:
+> -   [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)
+> -   [Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
 
--   [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)
--   [Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
-
-Hvis man synes `position: relative` blir for mye knot og at `position: static` blir for kjedelig, kan man knalle til med skikkelig avansert layout á la 2017.
-
-> Layout er et stort nok tema til at vi kunne ha brukt hele dagen på en egen [layoutworkshop](https://github.com/kentandersen/layout-workshop). Ta gjerne en titt på den - slidene er også fine for eksempler på hvordan diverse css-properties oppfører seg.
-
-Innenfor layout har det vokst frem mange spennende muligheter, og flexbox og CSS grid er anbefalt når man skal løse avansert layout på en utviklervennlig måte. Vi mener at en av de beste måtene å lære seg hvordan de funker, å ta dem i bruk.
+Hvis man synes `position: relative` blir for mye knot og at `position: static` blir for kjedelig, kan man knalle til med skikkelig avansert layout-syntaks som har kommet de siste årene. Innenfor layout har det vokst frem mange spennende muligheter, og flexbox og CSS grid er anbefalt når man skal løse avansert layout på en utviklervennlig måte. Vi mener at en av de beste måtene å lære seg hvordan de funker, er å ta dem i bruk.
 
 ## Oppgaver
 

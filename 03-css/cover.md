@@ -1,12 +1,11 @@
 # CSS
 
 > -   [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) er som vanlig din beste venn. Søker du på "søkeord" + "CSS" + "MDN" på google finner du som regel frem til gode svar (men husk å bruke googles søkefelt, ikke det interne på MDN...).
-
--   [caniuse.com](http://caniuse.com/) gir deg oversikt over nettleserstøtte for de forskjellige reglene som finnes i CSS.
--   På Difis nettsider for universell utforming finner du blant annet regelverk for [bruk av farger](https://uu.difi.no/krav-og-regelverk/losningsforslag-web/bruk-av-farger) og [krav til kontrast](https://uu.difi.no/krav-og-regelverk/losningsforslag-web/kontrast).
--   Når du vil sjekke om to farger har tilstrekkelig kontrast for UU-kravene kan du bruke [denne kontrastkalkulatoren](http://leaverou.github.io/contrast-ratio/).
--   Er du usikker på hvilken av to regler som prioriteres? Sjekk ut denne [spesifisitetskalkulatoren](https://specificity.keegan.st/).
--   [Specifics on CSS Specificity](https://css-tricks.com/specifics-on-css-specificity/)
+> -   [caniuse.com](http://caniuse.com/) gir deg oversikt over nettleserstøtte for de forskjellige reglene som finnes i CSS.
+> -   På Difis nettsider for universell utforming finner du blant annet regelverk for [bruk av farger](https://uu.difi.no/krav-og-regelverk/losningsforslag-web/bruk-av-farger) og [krav til kontrast](https://uu.difi.no/krav-og-regelverk/losningsforslag-web/kontrast).
+> -   Når du vil sjekke om to farger har tilstrekkelig kontrast for UU-kravene kan du bruke [denne kontrastkalkulatoren](http://leaverou.github.io/contrast-ratio/).
+> -   Er du usikker på hvilken av to regler som prioriteres? Sjekk ut denne [spesifisitetskalkulatoren](https://specificity.keegan.st/).
+> -   [Specifics on CSS Specificity](https://css-tricks.com/specifics-on-css-specificity/)
 
 Cascading Style Sheets, eller CSS, tar seg av stylingen av HTML. Man kan blant annet definere hvordan elementene skal presenteres på skjermen, og kan spesifisere egne regler ved forskjellige skjermbredder, ved utskrift, og når de blir interagert med.
 
@@ -52,6 +51,6 @@ body {
 }
 ```
 
-Iblant kan CSS føles unødvendig knotete å jobbe med, spesielt når man jobber med ukjente mengder legacy-CSS-kode eller når man prøver å få en stilig animasjon til å fungere i IE10. Andre ganger kan du juble av følelsen av å lage noe innmari stilig uten å behøve JavaScript! Når du skal jobbe med CSS handler det om å holde tungen rett i munnen og bruke DevTools for alt det er verdt.
+Iblant kan CSS føles unødvendig knotete å jobbe med, spesielt når man jobber med ukjente mengder legacy-CSS eller når man prøver å få en stilig animasjon til å fungere i IE10. Andre ganger kan du juble av følelsen av å lage noe innmari kult uten å behøve JavaScript! Når du skal jobbe med CSS handler det om å holde tungen rett i munnen og bruke DevTools for alt det er verdt.
 
 ![Family Guy CSS](../resources/css-family-guy.gif)

@@ -1,8 +1,7 @@
 # Ecmascript-standarden
 
 > -   [Oversikt over hva de ulike nettleserne støtter i ES2015 (ES6)](http://kangax.github.io/compat-table/es6/)
-
--   [Oversikt over hva de ulike nettleserne støtter i ES2016+](http://kangax.github.io/compat-table/es2016plus/)
+>-   [Oversikt over hva de ulike nettleserne støtter i ES2016+](http://kangax.github.io/compat-table/es2016plus/)
 
 Hvert år siden 2015 har det kommet en oppdatert versjon av EcmaScript-standarden. I 2015 kom en gigantisk revisjon av JavaScript, ES2015 (også referert til som ES6). Alle nye standarder må implementeres av nettleserne for at en nettside med den nyeste syntaksen skal rendres riktig. Dessverre er enkelte nettlesere (_IE_) som har ganske lite støtte for ES2015-specen. Hvis man må støtte browsere som ikke har en js-feature du ønsker å bruke, må du [polyfille](https://en.wikipedia.org/wiki/Polyfill) eller [transpilere](https://en.wikipedia.org/wiki/Source-to-source_compiler) det som ikke er støttes, om man ikke ønsker å bruke eldre syntaks.
 

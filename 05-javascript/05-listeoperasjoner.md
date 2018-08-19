@@ -1,16 +1,15 @@
 # Listeoperasjoner
 
 > **MDN**:
-
--   [Oversikt over alle listeoperasjoner](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
--   [`map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map?v=control)
--   [`reduce`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce?v=control)
--   [`filter`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter?v=control)
--   [Spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator)
--   [Destructuring assignment](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+> -   [Oversikt over alle listeoperasjoner](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+> -   [`map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map?v=control)
+> -   [`reduce`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce?v=control)
+> -   [`filter`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter?v=control)
+> -   [Spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator)
+> -   [Destructuring assignment](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
 Fra skolebenken er vi veldig vant med å bruke for-loops når vi ønsker å modifisere lister.
-I JavaScript har vi en del innebygde listeoperasjoner som er gode å lese, og som vi anbefaler å bruke i stedet for å skrive en egen listeiterasjon. Enkelte av disse er også funksjonelle - det vil si, endrer ikke den opprinnelige listen du kaller listeoperasjonen på, men returnerer en ny liste. Det er ofte en fordel å bruke funksjonelle prosedyrer, fordi de ikke har [sideeffekter](https://en.wikipedia.org/wiki/Side_effect_(computer_science) og kan gjøre programmet ditt forutsigbart og mulig å teste. Under har vi lagt inn eksempler på noen funksjonelle listeoperasjoner som er fine å kjenne til, men det finnes mange flere i MDN sin oversikt over listeoperasjoner som er praktiske å bruke i ulike situasjoner i stedet for loops.
+I JavaScript har vi en del innebygde listeoperasjoner som er gode å lese, og som vi anbefaler å bruke i stedet for å skrive en egen listeiterasjon. Enkelte av disse er også funksjonelle - det vil si, endrer ikke den opprinnelige listen du kaller listeoperasjonen på, men returnerer en ny liste. Det er ofte en fordel å bruke funksjonelle prosedyrer, fordi de ikke har [sideeffekter](https://en.wikipedia.org/wiki/Side_effect_(computer_science)) og kan gjøre programmet ditt forutsigbart og mulig å teste. Under har vi lagt inn eksempler på noen funksjonelle listeoperasjoner som er fine å kjenne til, men det finnes mange flere i MDN sin oversikt over listeoperasjoner som er praktiske å bruke i ulike situasjoner i stedet for loops.
 
 ## Map
 

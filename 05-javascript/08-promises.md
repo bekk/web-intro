@@ -1,8 +1,7 @@
 # Promises
 
 > -   **MDN**: [Promise](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise)
-
--   Promises kan være litt forvirrende. Her er et blogginnlegg om hvordan man bør (og kanskje spesielt) _ikke_ bør bruke Promises: [We have a problem with promises](https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html)
+> -   Promises kan være litt forvirrende. Her er et blogginnlegg om hvordan man bør (og kanskje spesielt) _ikke_ bør bruke Promises: [We have a problem with promises](https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html)
 
 Noen ganger trenger vi å gjøre en asynkron operasjon (en oppgave som ikke fullfører umiddelbart) uten at vi vil stå og vente på at den blir gjort. Vi vil kunne kaste en boomerang og få beskjed når den er tilbake. Da er det nyttig med **Promises**.
 

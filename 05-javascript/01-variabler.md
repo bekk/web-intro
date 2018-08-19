@@ -1,9 +1,8 @@
 # Variabler
 
 > **MDN**
-
--   [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
--   [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+> -   [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
+> -   [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
 
 JavaScript er dynamisk typet, det vil si at vi ikke definerer hvilken type (int, boolean, string) en variabel er, slik man gjør i språk som Java og C#. Typer bestemmes underveis når et program kjøres, noe som også betyr at den samme variabelen kan bli satt til flere forskjellige verdier og dermed ha hatt flere typer i løpet av kjøringen.
 
@@ -15,8 +14,7 @@ let b = 1;
 const c = 1;
 ```
 
-`const` brukes om alle konstanter som ikke skal endre seg senere. Dette gjør det lettere for deg selv og andre utviklere å lettere forstå
-koden din senere. Resten av variablene burde deklareres med `let`, som indikerer at innholdet kan endre seg over tid.
+`const` brukes om alle konstanter som ikke skal endre seg senere. Resten av variablene burde deklareres med `let`, som indikerer at innholdet kan endre seg over tid.
 
 **OBS!** Glemmer du å deklarere en variabel med `var`, `let` eller `const`, vil variabelen være global.
 

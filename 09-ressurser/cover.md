@@ -6,7 +6,7 @@ Noen har kanskje blitt nevnt andre steder i gitbooken, men for oversiktens skyld
 
 ## Podcaster
 
-> Vi lenker til nettressurser der disse finnes, men de vil som regel også være tilgjengelige på din favoritt-podcastplattform.
+Vi lenker til nettressurser der disse finnes, men de vil som regel også være tilgjengelige på din favoritt-podcastplattform.
 
 -   [Resilient Web Design](https://resilientwebdesign.com/#audio) om webens historie, viktigheten av å lære av fortiden for å bli bedre forberedt på fremtiden. **Veldig anbefalt!!**
 -   [BartJS](https://soundcloud.com/bartjs) om JavaScript
@@ -23,8 +23,7 @@ Noen har kanskje blitt nevnt andre steder i gitbooken, men for oversiktens skyld
 
 ## Kursserier
 
-> [Egghead.io](https://egghead.io/) er en veldig god ressurs man kan finne videoserier på de fleste JavaScript-rammeverk. Noen av våre favoritter er listet under.
-
+- [Egghead.io](https://egghead.io/) er en veldig god ressurs man kan finne videoserier på de fleste JavaScript-rammeverk. Noen av våre favoritter er listet under.
 -   [Getting started with redux](https://egghead.io/courses/getting-started-with-redux)
 
 ## Tutorials
@@ -40,7 +39,7 @@ Noen har kanskje blitt nevnt andre steder i gitbooken, men for oversiktens skyld
 
 ## Misc
 
-> Det finnes masse [meetups](meetup.com) man kan melde seg på! Lister noen vi kan anbefale som går på frontendprogrammering under, men det er bare å søke seg rundt og finne grupper som driver med det du har lyst til å lære eller er interessert i.
+Det finnes masse [meetups](meetup.com) man kan melde seg på! Lister noen vi kan anbefale som går på frontendprogrammering under, men det er bare å søke seg rundt og finne grupper som driver med det du har lyst til å lære eller er interessert i.
 
 -   [Pils og Programmering Oslo](https://www.meetup.com/Pils-og-Programmering-Oslo/) avholdes som regel på Skuret en gang i måneden, men det er mange utenfor Bekk som deltar. Du kan ta med et hobbyprosjekt eller bare en interesse, og få hjelp av andre på meetupen eller plundre for deg selv. Blir servert pizza og øl.
 -   [Oslo Elm Meetup](https://www.meetup.com/oslo-elm-meetup/) er en ganske aktiv gjeng med Elm-entusiaster som har arrangement på Skuret en gang i måneden. Blir servert pizza og øl.
