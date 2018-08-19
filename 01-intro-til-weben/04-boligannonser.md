@@ -1,12 +1,12 @@
-# Oppgavebeskrivelse
+# Boligannonser
 
 I denne oppgaven skal du lage en visning av leilighetsannonser à la finn.no/hybel.no/airbnb. Du står fritt til å implementere ditt eget design, men du kan også ta utgangspunkt i løsningsforslaget hvis du ønsker det. Løsningsforslaget har valgt å fokusere på tittel, pris, kvadratmeter og adresse i tillegg til en bildekarusell som det viktigste.
 
-Prekode og løsningsforslag finner du i `boligannonse`-mappa under `assignments`. Oppgavebeskrivelsen ligger også tilgjengelig i README-fila i denne mappen.
+Prekode og løsningsforslag finner du i `boligannonse`-mappa under `assignments`. Oppgavebeskrivelsen ligger også tilgjengelig i README-fila i den mappen.
 
-## Annonser
+## Annonsene
 
-Under mappen annonser finner du 8 forskjellige annonser, hvor hver annonse inneholder et sett med bilder og en `details.json`-fil. JSON-filen beskriver nøkkelinformasjon til hver annonse. Se eksempelet under:
+Under mappen `annonser` finner du 8 forskjellige boligannonser, hvor hver annonse inneholder et sett med bilder og en `details.json`-fil. JSON-filen beskriver nøkkelinformasjon til hver annonse. Se eksempelet under:
 
 ```javascript
 {
@@ -20,7 +20,7 @@ Under mappen annonser finner du 8 forskjellige annonser, hvor hver annonse inneh
 
 ## Løsningsforslaget
 
-I denne oppgaven kan det være fint å se på løsningsforslaget i nettleseren i forkant for å forstå bedre hva man skal gjøre.
+I denne oppgaven kan det være fint å se på løsningsforslaget i nettleseren (men ikke selve koden, det er juks 😏) i forkant for å forstå bedre hva man skal gjøre.
 
 Forslag til løsning ligger i mappen `solutions`. For å se løsningforslaget - følg stegene under "For å starte opp serveren" og i stedet for å åpne `localhost:6001` åpner du `localhost:6002`.
 
@@ -77,31 +77,31 @@ Forventet resultat er en liste med annonser hvor hver annonse inneholder en ny l
 
 ### Oppgave 4 - styling
 
-1. Du står helt fritt til å designe annonsene som du selv vil, men det er ingenting i veien for å kopiere layouten fra løsningsforslaget. I løsningsforslaget er det brukt noe css som vi ikke har gått gjennom tidligere. Se gjerne nedenfor for tips til fremgangsmåte.
+1. Du står helt fritt til å designe annonsene som du selv vil, men det er ingenting i veien for å kopiere løsningsforslaget. I løsningsforslaget er det brukt noe css som vi ikke har gått gjennom tidligere. Se gjerne nedenfor for tips til fremgangsmåte.
 2. Gjør nødvendige tilpasninger så det også ser fint ut på mobil.
 
 #### Tips
 
-> Hvis du vil se hvordan siden blir seendes ut på én type mobiltelefon kan du velge type mobilmodell ved å trykke på mobil/tablet-ikonet øverst i venstre hjørnet i DevTools.
+> Hvis du vil se hvordan siden blir seendes ut på én type mobiltelefon kan du i chrome velge type mobilmodell ved å trykke på mobil/tablet-ikonet øverst i venstre hjørnet i DevTools.
 
-### Oppgave 5 - bildekarusell
+## Bildekarusell
 
-Lag en bildekarusell av annonsene med JavaScript! Tanken her er at man skal kunne trykke på piler for å se flere bilder av leiligheten.
+Uavhengig av om man har valgt å løse oppgaven med eller uten javascript kan man lage en bildekarusell av annonsene - men nå med javascript ;) Tanken her er at man skal kunne trykke på piler for å se flere bilder av leiligheten.
 
-#### Steg 1 - vise alle bildene
+### Oppgave 1 - vise alle bildene
 
 Per nå viser vi bare første bilde i hver annonse
 
 1. Lag en ny funksjon som tar inn en annonse og som lager markup for alle bildene tilhørende den annonsen
 2. Kall denne funksjonen for hver annonse slik at alle bildene vises på siden
 
-#### Steg 2 - skjule alle bildene utenom det første
+### Oppgave 2 - skjule alle bildene utenom det første
 
 1. Lag en klasse i css-filen som skjuler bilder
 2. Legg til denne klassen på alle bildene utenom det første. Da er vi tilbake til at bare første bilde i hver annonse vises.
    Tips: for å skjule elementer kan man sette display:none
 
-#### Steg 3 - legg til pil-ikoner
+### Oppgave 3 - legg til pil-ikoner
 
 1. For at brukeren skal skjønne at det går an å bla i bildene må det finnes noe som vedkommende kan klikke på. Legg til et "bla-fremover"-ikon og "bla-bakover"-ikon.
    Under img-mappen ligger to pil-ikoner som kan brukes.
@@ -118,7 +118,7 @@ For å ta i bruk bilde-ikonene som ligger i img-mappen setter man src-attributte
 
 Vil man bruke noen andre ikoner kan disse legges under img-mappen.
 
-#### Steg 4 - bla fremover og bakover
+### Oppgave 3 - bla fremover og bakover
 
 1. Legg til en eventListener som lytter på click-eventer på main-elementet
 2. Sjekk at elementet som ble klikket på er ett av pilikonene
@@ -131,10 +131,11 @@ Vil man bruke noen andre ikoner kan disse legges under img-mappen.
 
 -   For å sjekke om et element har en klasse: element.classList.contains("enklasse")
 
-### Oppgave 6 - bonus
+### Oppgave 4 - bonus
 
 1. Legg til transitions for å gi siden mer liv
 2. Legg til filtere for å få bildene i samme stil
+3. Finn på noe kult
 
 ## Stylingtips
 
