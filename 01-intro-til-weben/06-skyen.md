@@ -14,12 +14,12 @@ Hvilken plattform man ønsker å lagre det på kan man velge selv, men i Bekk br
 
 Når du er innlogget og står på forsiden til [GitHub](https://github.com/), trykk på den grønne knappen det står "New repository" på. Pass på å gjøre det på din private bruker, og med mindre du betaler for den, kommer repoet til å være public og tilgjengelig for hvem som helst. Kall repositoryet det du vil. Siden vi tenker å legge deres første nettside der, trenger dere heller ikke å initialisere den med `README` eller `.gitignore`.
 
-Vi har lyst til å dytte nettsiden du begynte på i [første kapittel](/01-intro-til-weben/01-hello.md) til git. Siden vi allerede har mappen, vil vi gjøre den om til et git-repository som beskrevet under _…or create a new repository on the command line_:
+Vi har lyst til å dytte nettsiden du begynte på i [første kapittel](/01-intro-til-weben/01-hello.md) til git. Siden vi allerede har mappen, vil vi gjøre den om til et git-repository som beskrevet under overskriften _…or create a new repository on the command line_ på siden man kommer til etter at man har opprettet et repo:
 
 #### 2. Først legger vi til en README med bare en header i repoet:
 
 ```sh
-echo "# portfolio" >> README.md
+echo "# MIN TITTEL" >> README.md
 ```
 
 #### 3. Også greit å ha med en `.gitignore`
@@ -44,7 +44,7 @@ git init
 git add .
 ```
 
-#### 5. Vi må lage en initiell commit
+#### 5. Og til slutt lager vi en initiell commit og dytter til remote
 
 ```
 git commit -m "first commit"
