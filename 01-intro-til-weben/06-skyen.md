@@ -6,7 +6,7 @@ Ikke noe som å vise stolt frem ting man har laget til venner og familie 😌
 
 ## Sett opp versjonskontroll på koden
 
-Når vi utvikler er det greit å ha versjonskontroll på koden vår, og [Git](https://git-scm.com/) er bransjestandarden alle bruker i dag. Versjonskontroll er ikke bare bra for å finne tilbake til fordums kodetider gjennom en super historikk, men brukes også aktivt når vi utvikler kode sammen i team, ved at vi oppretter pull requests og har [code review](08-best-practices/code-review.md) før koden blir merget inn.
+Når vi utvikler er det greit å ha versjonskontroll på koden vår, og [Git](https://git-scm.com/) er bransjestandarden alle bruker i dag. Versjonskontroll er ikke bare bra for å finne tilbake til fordums kodetider gjennom en super historikk, men brukes også aktivt når vi utvikler kode sammen i team, ved at vi oppretter pull requests og har [code review](/08-best-practices/code-review.md) før koden blir merget inn.
 
 Hvilken plattform man ønsker å lagre det på kan man velge selv, men i Bekk bruker vi ofte [BitBucket](https://bitbucket.org/), [GitHub](https://github.com/) eller [VSTS](https://visualstudio.microsoft.com/team-services/). I denne oppgaven lenker vi til ressurser for å få det på GitHub, men du står fritt til å velge hvilken remote du ønsker.
 
@@ -14,7 +14,7 @@ Hvilken plattform man ønsker å lagre det på kan man velge selv, men i Bekk br
 
 Når du er innlogget og står på forsiden til [GitHub](https://github.com/), trykk på den grønne knappen det står "New repository" på. **Obs!** pass på å gjøre det på din private bruker, og med mindre du betaler for den, kommer repoet til å være public og tilgjengelig for hvem som helst. Kall repositoryet det du vil. Siden vi tenker å legge deres første nettside der, trenger dere heller ikke å initialisere den med `README` eller `.gitignore`.
 
-Vi har lyst til å dytte nettsiden du begynte på i [første kapittel](01-intro-til-weben/01-hello.md) til git. Siden vi allerede har mappen, vil vi gjøre den om til et git-repository som beskrevet under _…or create a new repository on the command line_:
+Vi har lyst til å dytte nettsiden du begynte på i [første kapittel](/01-intro-til-weben/01-hello.md) til git. Siden vi allerede har mappen, vil vi gjøre den om til et git-repository som beskrevet under _…or create a new repository on the command line_:
 
 #### 2. Først legger vi til en README med bare en header i repoet:
 
