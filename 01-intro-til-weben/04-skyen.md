@@ -60,16 +60,18 @@ Urlen til repositoryet ditt står på siden du er på allerede, mest sannsynlig.
 Lag deg en bruker på [Heroku](heroku.com). Heroku er en skyplattform som er ganske enkel å komme igang med, og som vi skal lansere applikasjonen vår på.
 
 > Det finnes mange andre gode skyleverandører der ute, ikke minst de tre store: AWS, Google Cloud og Azure. Når det gjelder små hobbyprosjekter, er Heroku og [Firebase](https://firebase.google.com) to veldig enkle og gode alternativer.
+>
+>**Obs!** Noen av tjenestene til andre skyleverandører, inkludert Firebase, er betal-tjenester, noe som ikke er nødvendig i de fleste hobbyprosjekter.
 
 #### 1. Lag en ny app
 
-I høyre hjørne når du har logget deg inn, er det en knapp med teksten "New". Trykk på denne og velg "Create new app". Velg et navn som ikke finnes allerede - det er ikke veldig farlig akkurat hva den heter. Du kan enkelt sette opp siden med et [domene du har kjøpt](domeneshop.com) senere.
+I høyre hjørne når du har logget deg inn på Heroku, er det en knapp med teksten "New". Trykk på denne og velg "Create new app". Velg et navn som ikke finnes allerede - det er ikke veldig farlig akkurat hva den heter. Du kan enkelt sette opp siden med et domene du har kjøpt senere. Det finnes mange tilbydere for domener og hosting, blant annet domeneshop.com, one.com og GoDaddy.
 
 #### 2. Koble appen til GitHub.
 
-Gå til fanen "Deploy" inne på Heroku-appen din hvis du ikke er der allerede. Som du ser er det flere måter man kan sette opp deploy, men den aller mest sømløse er å koble til GitHub. Titt gjerne på hva som dukker opp av instruksjoner hvis dere trykker på "Heroku Git" - men end til slutt opp på GitHub-alternativet. Her kan dere søke etter et repository å koble til (man må koble seg til GitHub først hvis det ikke allerede er på plass). Når riktig repository dukker opp, er det bare å trykke `connect`. Videre anbefaler vi å enable Automatic Deploys - slik at siden din alltid vil bli oppdatert på Heroku når ny kode finner veien inn i `master`-branchen.
+Gå til fanen "Deploy" inne på Heroku-appen din, hvis du ikke er der allerede. Som du ser er det flere måter man kan sette opp deploy, men den aller mest sømløse er å koble til GitHub. Titt gjerne på hva som dukker opp av instruksjoner hvis dere trykker på "Heroku Git" - men end til slutt opp på GitHub-alternativet. Her kan dere søke etter et repository å koble til (man må koble seg til GitHub først hvis det ikke allerede er på plass). Når riktig repository dukker opp, er det bare å trykke `connect`. Videre anbefaler vi å enable Automatic Deploys - slik at siden din alltid vil bli oppdatert på Heroku når ny kode finner veien inn i `master`-branchen.
 
-Og stort mer er det ikke som skal til for å få opp sin første nettside på web.
+Og stort mer er det ikke som skal til for å få opp sin første nettside på web. Gratulerer, du har produksjonsatt ditt første prosjekt! 🎉
 
 #### Bonus: Sett opp custom domene
 
