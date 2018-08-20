@@ -16,7 +16,7 @@ function buttonsClickHandler(event) {
         currentNumber === '0' ? number : currentNumber + number;
 }
 
-function startClickHandler(event) {
+function startClickHandler() {
     const interval = setInterval(() => {
         const currentNumber = output.textContent;
 
