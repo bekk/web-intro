@@ -9,11 +9,11 @@ function renderImages(data) {
     for (let i = 0; i < data.length; i++) {
         let img = data[i];
         html += `
-      <figure>
-        <img src="${img.url}" />
-        <figcaption>${img.title}</figcaption>
-      </figure>
-    `;
+          <figure>
+            <img src="${img.url}" />
+            <figcaption>${img.title}</figcaption>
+          </figure>
+        `;
     }
 
     return html;

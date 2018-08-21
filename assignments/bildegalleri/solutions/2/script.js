@@ -3,23 +3,16 @@ async function getPhotos(tag) {
     return await response.json();
 }
 
-function renderImages(data) {
-    let html = '';
+const renderImages = images =>
+    images.map(
+        img => `
+            <figure>
+                <img src="${img.url}" />
+                <figcaption>${img.title}</figcaption>
+            </figure>`
+    );
 
-    for (let i = 0; i < data.length; i++) {
-        const img = data[i];
-        html += `
-      <figure>
-        <img src="${img.url}" />
-        <figcaption>${img.title}</figcaption>
-      </figure>
-    `;
-    }
-
-    return html;
-}
-
-getPhotos('bekk').then(function(data) {
-    const html = renderImages(data);
+getPhotos('bekk').then(function (data) {
+    const html = renderImages(data).join('');
     document.querySelector('main').innerHTML = html;
 });
