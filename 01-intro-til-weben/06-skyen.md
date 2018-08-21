@@ -57,7 +57,7 @@ Urlen til repositoryet ditt står på siden du er på allerede, mest sannsynlig.
 
 ## Publiser koden på Heroku
 
-Lag deg en bruker på [Heroku](heroku.com). Heroku er en skyplattform som er ganske enkel å komme igang med, og som vi skal lansere applikasjonen vår på.
+Lag deg en bruker på [Heroku](https://heroku.com). Heroku er en skyplattform som er ganske enkel å komme igang med, og som vi skal lansere applikasjonen vår på.
 
 > Det finnes mange andre gode skyleverandører der ute, ikke minst de tre store: AWS, Google Cloud og Azure. Når det gjelder små hobbyprosjekter, er Heroku og [Firebase](https://firebase.google.com) to veldig enkle og gode alternativer.
 >

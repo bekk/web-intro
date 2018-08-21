@@ -3,27 +3,17 @@ async function getPhotos(tag) {
     return await response.json();
 }
 
-function renderImages(data) {
-    let html = '';
+const renderImages = data => data
+    .map(renderOneImage)
+    .join("");
 
-    for (let i = 0; i < data.length; i++) {
-        const img = data[i];
-        html += renderOneImage(img);
-    }
-
-    return html;
-}
-
-function renderOneImage(img) {
-    return `
+const renderOneImage = img => `
     <figure class="fullwidth">
         <img src="${img.url}" />
         <figcaption>${img.title}</figcaption>
-    </figure>
-  `;
-}
+    </figure>`;
 
-function router() {
+async function router() {
     const url = window.location.pathname;
 
     if (url == '/') {
@@ -34,17 +24,15 @@ function router() {
     const tag = urlDeler[1];
     const bildeId = urlDeler[2];
 
-    getPhotos(tag).then(function (data) {
-        let html;
+    const photos = await getPhotos(tag);
 
-        if (bildeId) {
-            html = renderOneImage(data[bildeId]);
-        } else {
-            html = renderImages(data);
-        }
+    if (bildeId) {
+        html = renderOneImage(photos[bildeId]);
+    } else {
+        html = renderImages(photos);
+    }
 
-        document.querySelector('main').innerHTML = html;
-    });
+    document.querySelector('main').innerHTML = html;
 }
 
 document.querySelector('form').addEventListener('submit', function (event) {
@@ -53,10 +41,6 @@ document.querySelector('form').addEventListener('submit', function (event) {
     history.pushState(null, '', tag);
     router();
 });
-
-window.addEventListener('popstate', router);
-
-router();
 
 document.querySelector('main').addEventListener('click', function (event) {
     const parent = event.target.parentNode;
@@ -68,3 +52,6 @@ document.querySelector('main').addEventListener('click', function (event) {
         router();
     }
 });
+
+window.addEventListener('popstate', router);
+router();

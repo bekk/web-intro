@@ -3,6 +3,6 @@ async function getPhotos(tag) {
     return await response.json();
 }
 
-getPhotos('bekk').then(function(data) {
+getPhotos('bekk').then(function (data) {
     console.log(data);
 });
