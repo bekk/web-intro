@@ -71,7 +71,23 @@ I høyre hjørne når du har logget deg inn på Heroku, er det en knapp med teks
 
 Gå til fanen "Deploy" inne på Heroku-appen din, hvis du ikke er der allerede. Som du ser er det flere måter man kan sette opp deploy, men den aller mest sømløse er å koble til GitHub. Titt gjerne på hva som dukker opp av instruksjoner hvis dere trykker på "Heroku Git" - men end til slutt opp på GitHub-alternativet. Her kan dere søke etter et repository å koble til (man må koble seg til GitHub først hvis det ikke allerede er på plass). Når riktig repository dukker opp, er det bare å trykke `connect`. Videre anbefaler vi å enable Automatic Deploys - slik at siden din alltid vil bli oppdatert på Heroku når ny kode finner veien inn i `master`-branchen.
 
+#### 3. Endre navn på html-filen din
+
+Men hva er dette? 
+
+```
+! No default language could be detected for this app.
+HINT: This occurs when Heroku cannot detect the buildpack to use for this application automatically.
+See https://devcenter.heroku.com/articles/buildpacks
+! Push failed
+```
+
+...push failed!?
+ De fleste appene som kjører på Heroku er satt opp med rammeverk, og bruker gjerne webpack eller andre byggsystemer. Vår første lille nettside har ikke noe `package.json` eller kjører med node - alt vi trenger er å åpne html-fila. Men dette skjønner dessverre ikke Heroku uten en liten hack. Bytt navnet på html-filen din til `index.php` og dytt til master. 
+
 Og stort mer er det ikke som skal til for å få opp sin første nettside på web. Gratulerer, du har produksjonsatt ditt første prosjekt! 🎉
+
+[Her](https://medium.com/@topspinj/deploying-plain-html-and-js-onto-heroku-4e24023c1d08) kan du lese om hvorfor dette er nødvendig]. Hvis du har et byggsystem på plass for appen din, trenger man heldigvis ikke å gjøre dette. [Her er en guide](https://devcenter.heroku.com/articles/node-best-practices) på hvordan du setter opp et lite node-prosjekt som kan deployes på Heroku. Alternativt kan man bruke [Create React App](https://github.com/facebook/create-react-app) som gir deg en liten React-app med webpack-bygg.
 
 #### Bonus: Sett opp custom domene
 
