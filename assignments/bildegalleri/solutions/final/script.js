@@ -1,15 +1,14 @@
-function getPhotos(tag) {
-  return fetch('/sok?tag=' + tag).then(function(resp) {
-    return resp.json();
-  });
+async function getPhotos(tag) {
+    const response = await fetch('/sok?tag=' + tag);
+    return await response.json();
 }
 
 function renderImages(data) {
-  let html = '';
+    let html = '';
 
-  for (let i = 0; i < data.length; i++) {
-    const img = data[i];
-    html += `
+    for (let i = 0; i < data.length; i++) {
+        const img = data[i];
+        html += `
       <figure>
       <a href="${window.location.pathname}/${i}">
         <img src="${img.url}" />
@@ -17,13 +16,13 @@ function renderImages(data) {
         <figcaption>${img.title}</figcaption>
       </figure>
     `;
-  }
+    }
 
-  return html;
+    return html;
 }
 
 function renderOneImage(img) {
-  return `
+    return `
     <figure class="fullwidth">
         <img src="${img.url}" />
         <figcaption>${img.title}</figcaption>
@@ -32,46 +31,47 @@ function renderOneImage(img) {
 }
 
 function router() {
-  const url = window.location.pathname;
+    const url = window.location.pathname;
 
-  if (url == "/") { return; }
-
-  const urlDeler = url.split('/');
-  const tag = urlDeler[1];
-  const bildeId = urlDeler[2];
-
-  getPhotos(tag).then(function(data) {
-    let html;
-
-    if (bildeId) {
-      html = renderOneImage(data[bildeId]);
-    } else {
-      html = renderImages(data);
+    if (url == '/') {
+        return;
     }
 
-    document.querySelector('main').innerHTML = html;
-  });
+    const urlDeler = url.split('/');
+    const tag = urlDeler[1];
+    const bildeId = urlDeler[2];
+
+    getPhotos(tag).then(function(data) {
+        let html;
+
+        if (bildeId) {
+            html = renderOneImage(data[bildeId]);
+        } else {
+            html = renderImages(data);
+        }
+
+        document.querySelector('main').innerHTML = html;
+    });
 }
 
 document.querySelector('form').addEventListener('submit', function(event) {
-  event.preventDefault();
-  const tag = event.target.querySelector('input').value;
-  history.pushState(null, '', tag);
-  router();
+    event.preventDefault();
+    const tag = event.target.querySelector('input').value;
+    history.pushState(null, '', tag);
+    router();
 });
-
 
 window.addEventListener('popstate', router);
 
 router();
 
 document.querySelector('main').addEventListener('click', function(event) {
-  const parent = event.target.parentNode;
+    const parent = event.target.parentNode;
 
-  if(parent.tagName === 'A') {
-    event.preventDefault();
-    const href = parent.getAttribute('href');
-    history.pushState(undefined, '', href);
-    router();
-  }
+    if (parent.tagName === 'A') {
+        event.preventDefault();
+        const href = parent.getAttribute('href');
+        history.pushState(undefined, '', href);
+        router();
+    }
 });
