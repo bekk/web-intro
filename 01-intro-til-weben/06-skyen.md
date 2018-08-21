@@ -89,7 +89,7 @@ See https://devcenter.heroku.com/articles/buildpacks
 
 Og stort mer er det ikke som skal til for å få opp sin første nettside på web. Gratulerer, du har produksjonsatt ditt første prosjekt! 🎉
 
-[Her](https://medium.com/@topspinj/deploying-plain-html-and-js-onto-heroku-4e24023c1d08) kan du lese om hvorfor dette er nødvendig]. Hvis du har et byggsystem på plass for appen din, trenger man heldigvis ikke å gjøre dette. [Her er en guide](https://devcenter.heroku.com/articles/node-best-practices) på hvordan du setter opp et lite node-prosjekt som kan deployes på Heroku. Alternativt kan man bruke [Create React App](https://github.com/facebook/create-react-app) som gir deg en liten React-app med webpack-bygg.
+[Her](https://medium.com/@topspinj/deploying-plain-html-and-js-onto-heroku-4e24023c1d08) kan du lese om hvorfor vi må hacke til med `index.php`. Hvis du har et byggsystem på plass for appen din, trenger du heldigvis ikke å gjøre dette. [Her er en guide](https://devcenter.heroku.com/articles/node-best-practices) på hvordan du setter opp et lite node-prosjekt som kan deployes på Heroku. Alternativt kan man bruke [Create React App](https://github.com/facebook/create-react-app) som gir deg en liten React-app med webpack-bygg.
 
 #### Bonus: Sett opp custom domene
 
