@@ -75,4 +75,4 @@ Og stort mer er det ikke som skal til for å få opp sin første nettside på we
 
 #### Bonus: Sett opp custom domene
 
-Hvis du eier et domene, kan du gå på Settings-fanen inne på Heroku-appen din og legge det inn som custom domain. Du må også sette opp en peker tilbake til heroku-appen hos DNS-leverandøren din, dvs. de du kjøpte domenet fra. Typisk setter man CNAME eller ALIAS, og Heroku har en ganske [grundig guide](https://devcenter.heroku.com/articles/custom-domains) som dekker stegene man må ta for å få appen opp på eget domene.
+Hvis du eier et domene, kan du gå på Settings-fanen inne på Heroku-appen din og legge det inn som custom domain. Du må også sette opp en peker tilbake til heroku-appen hos DNS-leverandøren din, dvs. de du kjøpte domenet fra. Typisk setter man `CNAME` eller `ALIAS`, og Heroku har en ganske [grundig guide](https://devcenter.heroku.com/articles/custom-domains) som dekker stegene man må ta for å få appen opp på eget domene.
