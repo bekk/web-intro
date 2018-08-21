@@ -2,7 +2,7 @@
 
 Async-await-mønsteret er en mer moderne måte å håndtere asynkronitet på enn med [Promises](/05-javascript/08-async-await.md).
 
-Syntaksen er som følgr:
+Syntaksen er som følger:
 
 ```js
 async function hentData() {
