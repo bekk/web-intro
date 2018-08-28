@@ -24,7 +24,7 @@ Lenke-elementer kan ha forskjellige funksjoner. De kan brukes til å lenke innad
 </h1>
 ```
 
-## Oppgave
+## Oppgaver
 
-Legg inn en ny `html`-fil i samme mappe som fila du lagde [i kapittel 1](../cover/01-hello.md). Lag en meny som lenker til denne \(og eventuelt flere andre sider du måtte ha lyst til å lenke til\). Tenk semantisk html, og når du kommer til kapittelet om [css](https://bekk.gitbook.io/web-intro/~/drafts/-LL0_YohSxmoAH0gD0sW/primary/cover-2) kan du begynne å style den til å se ut som du selv vil.
+* Legg inn en ny html-fil i samme mappe som fila du lagde i kapittel 1. Lag en meny som lenker til denne \(og eventuelt flere andre sider du måtte ha lyst til å lenke til\). Tenk semantisk html, og når du kommer til kapittelet om [css](../cover-2/) kan du begynne å [style den til å se ut som du selv vil](../cover-2/05-layout.md#oppgaver).
 

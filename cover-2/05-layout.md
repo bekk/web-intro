@@ -9,7 +9,8 @@ Hvis man synes `position: relative` blir for mye knot og at `position: static` b
 
 ## Oppgaver
 
-* [Flexbox Froggy](http://flexboxfroggy.com/) er en klassiker. Her lærer du å bruke flexbox for å redde Froggy til vannliljen sin.
+* [Flexbox Froggy](http://flexboxfroggy.com/) er en klassiker. Her lærer du å bruke flexbox for å redde Froggy til vannliljen sin. Gå gjennom de aller første oppgavene her. Du vil trenge lærdommen fra spillet i neste oppgave.
+* Ta utgangspunkt i lenkene du lagde i [oppgaven under lenker](../cover-1/05-lenker.md#oppgaver), og gi lenkene styling med flexbox for å få det til å bli en kul meny!
 
 ## Bonus
 
