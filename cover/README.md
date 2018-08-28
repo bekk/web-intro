@@ -2,7 +2,7 @@
 
 I dette kapittelet skal vi se på hvordan man kan sette opp en nettside som vil danne grunnlaget for mange av oppgavene som kommer senere. Når du har fulgt instruksjonene i denne delen og nettsiden er oppe, kan du fortsette videre gjennom de neste kapitlene for å lære hvordan du legger til elementer, stiler og JavaScript for å få nettsiden din til å oppføre seg som du vil at den skal.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 **Tips!**   
   
 Når du søker deg rundt etter dokumentasjon knyttet til CSS, HTML og JavaScript, vil du ofte få opp siden **w3schools.com**. Dette er en side som driftes av en [familie i Rogaland](https://www.dn.no/staticprojects/special/2017/04/07/2100/gullgruvene/rogaland/), og har ikke noe med World Wibe Web Consortium \(forkortet W3C\) å gjøre.   

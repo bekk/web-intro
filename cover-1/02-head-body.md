@@ -1,9 +1,5 @@
 # Head og body
 
-## Head og body
-
-> **MDN**: [Whats in the head? Metadata in HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)
-
 Vi så tidligere at et HTML-dokument har følgende struktur:
 
 ```markup
@@ -16,6 +12,10 @@ Vi så tidligere at et HTML-dokument har følgende struktur:
 Men hva er forskjellen på innholdet i `head` og `body`?
 
 ## Head
+
+{% hint style="info" %}
+**Dokumentasjon fra MDN**: [Whats in the head? Metadata in HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)
+{% endhint %}
 
 I `head`-elementet legger vi metadata vi ønsker å tilføye på dokumentet, men som ikke vises på selve siden. I seksjonen hvor vi [satte opp en liten nettside](../cover/01-hello.md), la vi blant annet inn `charset` for å fortelle nettleseren hva slags tegnsett vi hadde lyst til å legge inn.
 

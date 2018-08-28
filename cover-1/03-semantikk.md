@@ -1,7 +1,7 @@
 # Semantikk
 
 {% hint style="info" %}
-**MDN:** [Liste over alle tilgjengelige HTML-elementer](https://developer.mozilla.org/en/docs/Web/HTML/Element)
+**Dokumentasjon fra MDN:** [Liste over alle tilgjengelige HTML-elementer](https://developer.mozilla.org/en/docs/Web/HTML/Element)
 {% endhint %}
 
 ## Definisjon

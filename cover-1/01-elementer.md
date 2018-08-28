@@ -1,10 +1,14 @@
 # Elementer
 
-> **MDN**:
->
-> * [Liste over alle tilgjengelige HTML-elementer](https://developer.mozilla.org/en/docs/Web/HTML/Element)
-> * [Block level elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements)
-> * [Inline elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements)
+{% hint style="info" %}
+**Dokumentasjon fra MDN**:
+
+* [Liste over alle tilgjengelige HTML-elementer](https://developer.mozilla.org/en/docs/Web/HTML/Element)
+* [Block level elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements)
+* [Inline elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements)
+{% endhint %}
+
+\*\*\*\*
 
 HTML-dokumenter inneholder en rekke elementer som enten er self closing, altså lukker seg selv, eller som har underelementer, ofte referert til som `children`. Disse elementene ser ut som følger:
 
