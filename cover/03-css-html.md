@@ -18,7 +18,7 @@ Her kan det lønne seg å lese om [head og body](../cover-1/02-head-body.md) i k
 ## Legg til innhold
 
 * Legg til flere elementer på siden din, f.eks. en paragraf om deg selv og en overskrift. 
-* Legg til et bilde
+* Legg til et valgfritt bilde i `index.html` fra kapittel 1.
 
 {% hint style="info" %}
 Les på siden om [elementer](../cover-1/01-elementer.md) for å friske opp hva som var forskjellen på `block` og `inline`, og siden om [semantikk](../cover-1/03-semantikk) for hint om hvilke tags dere kan bruke.
