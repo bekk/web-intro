@@ -18,7 +18,5 @@ En viktig ting å huske på når du legger til bilder og grafikk på nettsiden d
 
 > Trenger du en placeholder? Sjekk ut [LoremFlickr](http://loremflickr.com/).
 
-## Oppgave
 
-Legg til et valgfritt bilde i `hello.html` fra kapittel 1.
 

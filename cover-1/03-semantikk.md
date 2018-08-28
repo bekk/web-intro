@@ -1,7 +1,3 @@
----
-description: Semantikk betyr at typen til en HTML-tag sier noe om hva slags innhold den har
----
-
 # Semantikk
 
 {% hint style="info" %}
