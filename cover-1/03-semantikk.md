@@ -1,10 +1,14 @@
+---
+description: Semantikk betyr at typen til en HTML-tag sier noe om hva slags innhold den har
+---
+
 # Semantikk
 
-> **MDN**: [Liste over alle tilgjengelige HTML-elementer](https://developer.mozilla.org/en/docs/Web/HTML/Element)
+{% hint style="info" %}
+**MDN:** [Liste over alle tilgjengelige HTML-elementer](https://developer.mozilla.org/en/docs/Web/HTML/Element)
+{% endhint %}
 
-Semantikk betyr at typen til en HTML-tag sier noe om hva slags innhold den har.
-
-### Definisjon
+## Definisjon
 
 > **Semantikk** er den grenen av lingvistikken \(språkvitenskapen\) som studerer ordenes betydning, både enkeltvis og i sammenstilte strukturer \(setninger\). _Kilde:_ [_Wikipedia_](https://no.wikipedia.org/wiki/Semantikk)
 
@@ -18,7 +22,7 @@ Før brukte vi ofte bare div og span til å bygge en side. Med HTML5 fikk vi man
 <div id="sidebar">..</div>      <aside>..</aside>
 ```
 
-### Husk
+## Husk
 
 > Hovedregelen er at alle tagger trenger å åpnes og lukkes, eksempel: `<main></main>`. Enkelte elementer **kan ikke** ha innhold og avsluttes direkte: `<br />`
 

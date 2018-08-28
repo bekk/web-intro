@@ -1,6 +1,6 @@
 # Universell utforming
 
-> **DIFI**: 
+> **DIFI**:
 >
 > * [Standarden for UU \(WCAG 2.0\)](https://uu.difi.no/krav-og-regelverk/wcag-20-standarden)
 > * [Veiledning og løsningsforslag for å følge WCAG 2.0](https://uu.difi.no/krav-og-regelverk/losningsforslag-web)
