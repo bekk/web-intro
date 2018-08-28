@@ -7,12 +7,11 @@ description: >-
 # DevTools
 
 {% hint style="info" %}
-Gode ressurser:
-
-> * [Dokumentasjonen for DevTools i Chrome](https://developers.google.com/web/tools/chrome-devtools/) er veldig bra, så ta gjerne en titt på den for å lese mer om mulighetene i DevTools, og om de andre fanene vi ikke har beskrevet her.
-> * [Noen kule tips og triks til DevTools i Chrome](https://medium.freecodecamp.org/cool-chrome-devtools-tips-and-tricks-you-wish-you-knew-already-f54f65df88d2?source=linkShare-d0807c085137-1534676644)
-> * [Firefox har også DevTools](https://developer.mozilla.org/son/docs/Tools)
-> * Alternativt kan man laste ned [developer edition](https://www.mozilla.org/en-US/firefox/developer/) av Firefox
+**Gode ressurser:**
+* [Dokumentasjonen for DevTools i Chrome](https://developers.google.com/web/tools/chrome-devtools/) er veldig bra, så ta gjerne en titt på den for å lese mer om mulighetene i DevTools, og om de andre fanene vi ikke har beskrevet her.
+* [Noen kule tips og triks til DevTools i Chrome](https://medium.freecodecamp.org/cool-chrome-devtools-tips-and-tricks-you-wish-you-knew-already-f54f65df88d2?source=linkShare-d0807c085137-1534676644)
+* [Firefox har også DevTools](https://developer.mozilla.org/son/docs/Tools)
+* Alternativt kan man laste ned [developer edition](https://www.mozilla.org/en-US/firefox/developer/) av Firefox
 {% endhint %}
 
 ## Elements
