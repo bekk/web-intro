@@ -32,3 +32,8 @@ Det finnes mye annen informasjon man kan legge som metadata, for eksempel bildet
 
 Elementene som ligger som children til `body`-tagen er ganske enkelt det innholdet vi viser på siden.
 
+## Oppgaver
+
+* Legg til en tittel på nettsiden din som vises i fanen \(taben\) i nettleseren.
+* Legg til et lite bilde som også vises i fanen \(taben\).
+

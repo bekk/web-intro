@@ -4,7 +4,6 @@
 * [Din første nettside](cover/README.md)
   * [Hello World](cover/01-hello.md)
   * [DevTools](cover/02-devtools.md)
-  * [Legg til innhold og stiler](cover/03-css-html.md)
 * [HTML](cover-1/README.md)
   * [Elementer](cover-1/01-elementer.md)
   * [Head og body](cover-1/02-head-body.md)
