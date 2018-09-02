@@ -1,85 +1,36 @@
 # Flyt
 
-## Flyt
-
-### Display
+## Display
 
 CSS-egenskapen `display` sier noe om hvordan et element skal legge seg i flyten på siden. Med flyten mener vi rekkefølgen på elementene i leseretning, fra øverst i venstre hjørne til nederst i høyre hjørne. Hvis man ikke definerer noe annet vil to sekvensielle HTML-elementer legge seg i den rekkefølgen de er definert i HTML-strukturen.
 
-Nederst i [kapittelet om HTML-elementer](https://github.com/bekk/web-intro/tree/645b85b7c83346bcb1576cba234407c4d12e6175/03-css/02-html/01-elementer.md) beskrev vi hvordan block- og inline-elementer oppfører seg. De forskjellige HTML-elementene har alle forskjellig default-verdi for `display`:
+Nederst i [kapittelet om HTML-elementer](https://github.com/bekk/web-intro/tree/645b85b7c83346bcb1576cba234407c4d12e6175/03-css/02-html/01-elementer.md) beskrev vi hvordan block- og inline-elementer oppfører seg. De forskjellige HTML-elementene har alle forskjellig default-verdi for `display`, som man kan se i følgende codepen:
 
-```markup
-<div>
-  <h1>Overskrift</h1>              <!-- block -->
-  <p>Litt tekst</p>                <!-- block -->
-  <button>En knapp</button>        <!-- inline-block -->
-  <button>Enda en knapp</button>
-  <a href="#">Lenke</a>            <!-- inline -->
-  <div>mer tekst</div>             <!-- block -->
-</div>
-```
+{% embed data="{\"url\":\"https://codepen.io/johhorn/pen/XPMBvr \",\"type\":\"rich\",\"title\":\"Flyt: Html-elementer\",\"description\":\"...\",\"icon\":{\"type\":\"icon\",\"url\":\"https://codepen.io/favicons/favicon-192x192.png\",\"width\":192,\"height\":192,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://s3-us-west-2.amazonaws.com/m.cdpn.io/screenshot-coming-soon-small.png\",\"width\":400,\"height\":225,\"aspectRatio\":0.5625},\"embed\":{\"type\":\"app\",\"url\":\"https://codepen.io/johhorn/embed/preview/XPMBvr?height=300&slug-hash=XPMBvr&default-tabs=html,result&host=https://codepen.io&embed-version=2\",\"html\":\"<iframe src=\\\"https://codepen.io/johhorn/embed/preview/XPMBvr?height=300&amp;slug-hash=XPMBvr&amp;default-tabs=html,result&amp;host=https://codepen.io&amp;embed-version=2\\\" style=\\\"border: 0; width: 100%; height: 300px;\\\" allowfullscreen></iframe>\",\"height\":300,\"aspectRatio\":null}}" %}
 
-## Overskrift
+## Midtstilling
 
-Litt tekst En knapp Enda en knapp [Lenke](04-flyt.md)mer tekst
+Med `text-align` kan vi velge om tekst skal være venstre-, midt- eller høyrejustert innenfor et block-element:
 
-### Midtstilling
+{% embed data="{\"url\":\"https://codepen.io/johhorn/pen/yxMxBw\",\"type\":\"rich\",\"title\":\"Text-align\",\"description\":\"...\",\"icon\":{\"type\":\"icon\",\"url\":\"https://codepen.io/favicons/favicon-192x192.png\",\"width\":192,\"height\":192,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://s3-us-west-2.amazonaws.com/m.cdpn.io/screenshot-coming-soon-small.png\",\"width\":400,\"height\":225,\"aspectRatio\":0.5625},\"embed\":{\"type\":\"app\",\"url\":\"https://codepen.io/johhorn/embed/preview/yxMxBw?height=300&slug-hash=yxMxBw&default-tabs=css,result&host=https://codepen.io&embed-version=2\",\"html\":\"<iframe src=\\\"https://codepen.io/johhorn/embed/preview/yxMxBw?height=300&amp;slug-hash=yxMxBw&amp;default-tabs=css,result&amp;host=https://codepen.io&amp;embed-version=2\\\" style=\\\"border: 0; width: 100%; height: 300px;\\\" allowfullscreen></iframe>\",\"height\":300,\"aspectRatio\":null}}" %}
 
-Med `text-align` kan vi velge om tekst skal være venstre-, midt- eller høyrejustert innenfor et block-element.
+`div` er et block-element og teksten blir midtstilt, men siden `span` er et inline-element kan vi ikke posisjonere tekst innenfor elementet, det har rett og slett ikke noe ledig rom rundt seg det kan plassere seg relativt til.
 
-```markup
-<div class="midtstilt">Midtstilt?</div>
-```
+Hvis vi vil midtstille et element innenfor sitt forelder-element kan vi bruke automatisk `margin` til høyre og venstre for elementet, sammen med en forhåndsdefinert bredde, slik at nettleseren kan regne seg frem til hvor mye plass marginen kan ha:
 
-```css
-.midtstilt {
-    text-align: center;
-}
-```
+{% embed data="{\"url\":\"https://codepen.io/johhorn/pen/jvBvPX\",\"type\":\"rich\",\"title\":\"Margin: auto\",\"description\":\"...\",\"icon\":{\"type\":\"icon\",\"url\":\"https://codepen.io/favicons/favicon-192x192.png\",\"width\":192,\"height\":192,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://s3-us-west-2.amazonaws.com/m.cdpn.io/screenshot-coming-soon-small.png\",\"width\":400,\"height\":225,\"aspectRatio\":0.5625},\"embed\":{\"type\":\"app\",\"url\":\"https://codepen.io/johhorn/embed/preview/jvBvPX?height=300&slug-hash=jvBvPX&default-tabs=css,result&host=https://codepen.io&embed-version=2\",\"html\":\"<iframe src=\\\"https://codepen.io/johhorn/embed/preview/jvBvPX?height=300&amp;slug-hash=jvBvPX&amp;default-tabs=css,result&amp;host=https://codepen.io&amp;embed-version=2\\\" style=\\\"border: 0; width: 100%; height: 300px;\\\" allowfullscreen></iframe>\",\"height\":300,\"aspectRatio\":null}}" %}
 
-Midtstilt?
+{% hint style="info" %}
+**Tips!**
 
-`div` er et block-element og teksten blir midtstilt.
+Som dere snart vil finne ut, er det flere egenskaper som bare fungerer på block- eller inline-block-elementer. Dette gjelder både `text-align`, som forklart over, i tillegg til `margin` over og under et element. Dette kan være en kilde til vanskelig debugging når stilene våre tilsynelatende ikke treffer. Heldigivs pleier DevTools å vise oss hvilke stiler som ikke fungerer fordi de vises som ugyldige i Styles-panelet når vi inspiserer koden vår.
+{% endhint %}
 
-```markup
-<span class="midtstilt">Midtstilt?</div>
-```
+## Posisjonering
 
-```css
-.midtstilt {
-    text-align: center;
-}
-```
+Åpne følgende code-pen:
 
-Midtstilt?
-
-Siden `span` er et inline-element kan vi ikke posisjonere tekst innenfor elementet, det har rett og slett ikke noe ledig rom rundt seg det kan plassere seg relativt til.
-
-Hvis vi vil midtstille et element innenfor sitt forelder-element kan vi bruke `margin`.
-
-```markup
-<div class="midtstilt-blokk">Midstilt blokk</div>
-```
-
-```css
-.midtstilt-blokk {
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-}
-```
-
-Midtstilt blokk
-
-#### Tips
-
-> Som dere snart vil finne ut, er det flere egenskaper som bare fungerer på block- eller inline-block-elementer. Dette gjelder både `text-align`, som forklart over, i tillegg til `margin`. Dette kan være en kilde til vanskelig debugging når stilene våre tilsynelatende ikke treffer. Heldigivs pleier DevTools å vise oss hvilke stiler som ikke fungerer fordi de ikke er gyldige i Styles-panelet når vi inspiserer koden vår.
-
-### Posisjonering
-
-Inspiser disse elementene i DevTools:
-
- A B C
+{% embed data="{\"url\":\"https://codepen.io/johhorn/pen/wEJEMx\",\"type\":\"rich\",\"title\":\"Posisjonering\",\"description\":\"...\",\"icon\":{\"type\":\"icon\",\"url\":\"https://codepen.io/favicons/favicon-192x192.png\",\"width\":192,\"height\":192,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://s3-us-west-2.amazonaws.com/m.cdpn.io/screenshot-coming-soon-small.png\",\"width\":400,\"height\":225,\"aspectRatio\":0.5625},\"embed\":{\"type\":\"app\",\"url\":\"https://codepen.io/johhorn/embed/preview/wEJEMx?height=300&slug-hash=wEJEMx&default-tabs=css,result&host=https://codepen.io&embed-version=2\",\"html\":\"<iframe src=\\\"https://codepen.io/johhorn/embed/preview/wEJEMx?height=300&amp;slug-hash=wEJEMx&amp;default-tabs=css,result&amp;host=https://codepen.io&amp;embed-version=2\\\" style=\\\"border: 0; width: 100%; height: 300px;\\\" allowfullscreen></iframe>\",\"height\":300,\"aspectRatio\":null}}" %}
 
 Elementene har statisk posisjon. Det betyr at de plasseres slik de ligger i HTMLen og ikke blir påvirket av posisjonsegenskapene `top`, `right`, `left`, `bottom` og `z-index`.
 
