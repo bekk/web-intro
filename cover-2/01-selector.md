@@ -34,9 +34,11 @@ Treffer alle elementer med den gitte klassen.
 }
 ```
 
-**ID-selector:** `#hovedmeny`, `#animasjon`
+## **ID-selectorer**
 
-IDer må være unike, fordi regler for en ID gjelder for første matchende element. Som regel ønsker vi ikke å bruke ID-selectorer, fordi det er å foretrekke at vi har css-stiler som kan gjenbrukes. Hvis vi må style hvert element for seg, kan det fort bli vanskelig å vedlikeholde et konsekvent grensesnitt.
+`#hovedmeny`, `#animasjon`
+
+IDer må være unike, fordi css-regler for en ID gjelder for første matchende element. Som regel ønsker vi ikke å bruke ID-selectorer, fordi det er å foretrekke at vi har css-stiler som kan gjenbrukes. Hvis vi må style hvert element for seg, kan det fort bli vanskelig å vedlikeholde et konsekvent grensesnitt.
 
 ```css
 #hovedmeny {
@@ -50,7 +52,7 @@ IDer må være unike, fordi regler for en ID gjelder for første matchende eleme
 
 ## **Avanserte selectorer**
 
-Selector inni selector, attributtmatching, tilstandsselector, her må man holde tungen rett i munnen!
+Det er helt uproblematisk å style ting ved å definere selectors inni selectors, bruke attributtmatching, tilstandsselectorer osv:
 
 ```css
 a {
@@ -78,6 +80,8 @@ a[attributt='verdi'] {
     ...;
 } /* matcher på attributt, a:[href^="https://"] */
 ```
+
+Men her må man holde tungen rett i munnen! Det enkleste er ofte det beste i css-verdenen, og flere mener det er best practice å ikke lage for kompliserte css-regler. På den måten blir det enklere både for fremtidige deg og for alle andre som skal jobbe med de samme stilene. Det er forøvrig ikke alltid like lett å vite hva salgs css-praksis som er lett å vedlikeholde over tid. [Denne artikkelen](https://medium.com/@fat/mediums-css-is-actually-pretty-fucking-good-b8e2a6c78b06) forklarer hvordan Medium utviklet sine css-konvensjoner gjennom flere faser til de til slutt landet på noe de var rimelig fornøyd med.
 
 ## Oppgave
 
