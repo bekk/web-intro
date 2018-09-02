@@ -1,9 +1,11 @@
 # Variabler
 
-> **MDN**
->
-> * [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
-> * [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+{% hint style="info" %}
+**Dokumentasjon fra MDN**
+
+* [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
+* [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+{% endhint %}
 
 JavaScript er dynamisk typet, det vil si at vi ikke definerer hvilken type \(int, boolean, string\) en variabel er, slik man gjør i språk som Java og C\#. Typer bestemmes underveis når et program kjøres, noe som også betyr at den samme variabelen kan bli satt til flere forskjellige verdier og dermed ha hatt flere typer i løpet av kjøringen.
 
@@ -19,9 +21,9 @@ const c = 1;
 
 **OBS!** Glemmer du å deklarere en variabel med `var`, `let` eller `const`, vil variabelen være global.
 
-### Tips
-
-> Du finner flere gode grunner til å velge `let` og `const` over `var` i avsnittene under. Men en annen fordel med `let` og `const` er at du kommuniserer til andre som leser koden hva som er meningen med en variabel. Skal den kunne endres eller ikke?
+{% hint style="info" %}
+Du finner flere gode grunner til å velge `let` og `const` over `var` i avsnittene under. Men en annen fordel med `let` og `const` er at du kommuniserer til andre som leser koden hva som er meningen med en variabel. Skal den kunne endres eller ikke?
+{% endhint %}
 
 ## Var
 
@@ -99,10 +101,10 @@ Men hvis vi deklarerer en variabel med `const`, er det ikke mulig å tildele den
 
 ```javascript
 const x = 'I am a const';
-x = "Can't change you?"; // TypeError: Assignment to constant variable.
+x = 'Can not change you?'; // TypeError: Assignment to constant variable.
 ```
 
-Innholdet kan forøvrig fortsatt endres:
+Innholdet kan forøvrig fortsatt endres, siden det kun er referansen som er uforanderlig - en liste kan ikke plutselig bli satt til å være et tall eller en annen liste, men man kan fortsatt legge til elementer i den:
 
 ```javascript
 const arr = [1, 2];
@@ -114,5 +116,5 @@ arr[0]; // 0
 ## Oppgaver
 
 * [let](https://jsbin.com/tehakud/edit?html,js,output)
-* [const](https://jsbin.com/yazemuv/2/edit?js,console)
+* [const](https://jsbin.com/wiwamufici/1/edit?js,output)
 

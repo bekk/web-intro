@@ -1,10 +1,14 @@
 # Typer og operatorer
 
-> **MDN**:
->
-> * [Data types and data structures ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
-> * [Expressions and operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
-> * [Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+{% hint style="info" %}
+**Dokumentasjon fra MDN**:
+
+* [Data types and data structures ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+* [Expressions and operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
+* [Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+{% endhint %}
+
+## Datatyper
 
 JavaScript har syv datatyper:
 

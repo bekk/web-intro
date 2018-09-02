@@ -1,7 +1,11 @@
 # JavaScript
 
-> * **MDN:** [What is JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript) - et nybegynnerkurs i JS
-> * [Eloquent Javascript](http://eloquentjavascript.net/) - en bok om JavaScript og programmering \(gratis på nett\)
+{% hint style="info" %}
+**Dokumentasjon fra MDN:** [What is JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript) - et nybegynnerkurs i J[S](http://exploringjs.com/impatient-js/toc.html)
+
+* [JavaScript for impatient programmers](http://exploringjs.com/impatient-js/toc.html) - en bok som går gjennom JavaScript raskt og forklarer det meste man trenger å vite om JavaScript på en enkel måte  \(halve boken gratis på nett\)
+* [Eloquent Javascript](http://eloquentjavascript.net/) - en bok om JavaScript og programmering \(gratis på nett\)
+{% endhint %}
 
 JavaScript \(JS\) er programmeringsspråket vi bruker for å implementere komplekse ting på nettsider, det vil si sider som gjør mer enn bare å vise statisk informasjon. I korte trekk har JS veldig få begrensninger og er veldig utvidbart, noe som har ført til en haug med [rammeverk](https://github.com/bekk/web-intro/tree/645b85b7c83346bcb1576cba234407c4d12e6175/05-javascript/rammeverk.md), nye måter å tenke på og stor innovasjon.
 
@@ -9,7 +13,11 @@ Hvis du hører begrepet _Vanilla JS_, er det [en referanse til vanlig JavaScript
 
 Når man begynner å jobbe med JavaScript, kommer man også fort over begrepet _EcmaScript_. Det er egentlig to sider av samme sak, men EcmaScript kan ses på som [standarden](10-ecmascript.md), og JavaScript språket som implementerer denne.
 
-## Tips
+{% hint style="info" %}
+**Tips!**
 
-> JavaScript kan [skrus av i nettleseren](https://productforums.google.com/forum/#!msg/chrome/BYOQskiuGU0/5PRO2P-1WWwJ). Men siden de aller fleste nettsider i dag bruker JS, kan sidene du besøker slutte å fungere eller oppføre seg uventet.
+JavaScript kan [skrus av i nettleseren](https://productforums.google.com/forum/#!msg/chrome/BYOQskiuGU0/5PRO2P-1WWwJ). Men siden de aller fleste nettsider i dag bruker JS, kan sidene du besøker slutte å fungere eller oppføre seg uventet. Som regel pleier man å legge inn en [noscript](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript)-tag i HTML-koden for å si fra til brukerne sine om at de må ha JavaScript på for at siden skal fungere som normalt:
+
+`<noscript>Nettleseren din støtter ikke JavaScript :(</noscript>`
+{% endhint %}
 
