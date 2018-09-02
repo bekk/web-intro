@@ -1,10 +1,12 @@
 # Funksjoner
 
-> **MDN-dokumentasjon**:
+{% hint style="info" %}
+**Dokumentasjon fra MDN:**
 
 * [Function statements \(function declarations\) ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)
 * [Function expressions ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function)
 * [Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+{% endhint %}
 
 Man kan definere en funksjon i JavaScript på ulike måter, som igjen kan gi ulik oppførsel. Sjekk MDN-dokumentasjonen vi har lenket til øverst for å bli kjent med hva som skiller dem fra hverandre og ikke minst _hvorfor_ de oppfører seg sånn.
 

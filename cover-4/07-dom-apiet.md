@@ -1,8 +1,14 @@
 # DOM-apiet
 
-> **MDN**:
->
-> * [Oversikt over DOM- og HTML-interfaces](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+{% hint style="info" %}
+**Dokumentasjon fra MDN**
+
+[Oversikt over DOM- og HTML-interfaces](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+{% endhint %}
+
+I seksjonen om [DOM-en](../cover-1/07-dom.md) beskrev vi hvordan nettleserne representerer HTML og CSS som trær, og særlig førstnevnte kan brukes sammen med JavaScript til å utvide brukeropplevelsen på nett.
+
+## Aksessere HTML-elementer
 
 Javascript gir oss et rikt API mot [DOMen](../cover-1/07-dom.md) via document-objektet. Hvis HTML-en inneholder dette...
 
@@ -34,22 +40,21 @@ boks.textContent; // Klikk her for å lære mer
 Med DOM-apiet kan vi også legge til hendelser når noe skjer med et DOM-element. Vi gjør dette ved å legge på lyttere som venter på at en gitt hendelse skal skje, f.eks. et klikk på en knapp:
 
 ```javascript
-document.querySelector('#boks').addEventListener('click', function() {
+document.querySelector('#boks').addEventListener('click', () => {
     // Gjør noe gøy når boks har blitt trykket på!
 });
 ```
 
-Vi kan også erstatte innhold med noe annet. Kjør den følgende kodesnutten i consolet på denne siden. Ser du ut fra koden hva som skjer når du nå trykker på bildet av apen?
+Vi kan også erstatte innhold med noe annet
 
 ```javascript
-document.querySelector('#danse-ape').addEventListener('click', function() {
-    const el = document.querySelector('#danse-ape');
-    const src = el.getAttribute('src').replace('.png', '.gif');
-    el.setAttribute('src', src);
-});
+document
+    .querySelector('#hypotetisk-boks-med-bilde')
+    .addEventListener('click', () => {
+        const el = '#hypotetisk-boks-med-bilde';
+        el.setAttribute('src', 'nyttbilde');
+    });
 ```
-
-![](../.gitbook/assets/danse-ape.png)
 
 ## Oppgaver
 
