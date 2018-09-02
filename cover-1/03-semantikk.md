@@ -4,11 +4,13 @@
 **Dokumentasjon fra MDN:** [Liste over alle tilgjengelige HTML-elementer](https://developer.mozilla.org/en/docs/Web/HTML/Element)
 {% endhint %}
 
-## Definisjon
+{% hint style="info" %}
+**Semantikk** er den grenen av lingvistikken \(språkvitenskapen\) som studerer ordenes betydning, både enkeltvis og i sammenstilte strukturer \(setninger\). _Kilde:_ [_Wikipedia_](https://no.wikipedia.org/wiki/Semantikk)
+{% endhint %}
 
-> **Semantikk** er den grenen av lingvistikken \(språkvitenskapen\) som studerer ordenes betydning, både enkeltvis og i sammenstilte strukturer \(setninger\). _Kilde:_ [_Wikipedia_](https://no.wikipedia.org/wiki/Semantikk)
+## Fordeler med semantikk
 
-Før brukte vi ofte bare div og span til å bygge en side. Med HTML5 fikk vi mange flere tagger slik at vi kan lage mer beskrivende HTML-strukturer. Dette er både nyttig for utviklere og brukere av nettsiden. Utviklere får bedre oversikt over HTML-dokumentet og hva den semantiske betydningen av de ulike delene er. Samtidig har brukere som avhenger av skjermleser eller andre spesialverktøy stor verdi av semantiske strukturer, fordi skjermleseren kan forstå hensikten med elementene. Om den oppdager en `nav`-tag i nettsiden kan den vite at den inneholder navigasjonselementer, noe som ikke nødvendigvis er like åpenbart med en `<div id="navigation"></div>`. I tillegg er en semantisk struktur lettere å tolke for søkemotorer, og dermed bedre for søkemotoroptimalisering av nettsiden.
+Før brukte vi ofte bare `div` og `span` til å bygge en side. Med HTML5 fikk vi mange flere tagger slik at vi kan lage mer beskrivende HTML-strukturer. Dette er både nyttig for utviklere og brukere av nettsiden. Utviklere får bedre oversikt over HTML-dokumentet og hva den semantiske betydningen av de ulike delene er. Samtidig har brukere som avhenger av skjermleser eller andre spesialverktøy stor verdi av semantiske strukturer, fordi skjermleseren kan forstå hensikten med elementene. Om den oppdager en `nav`-tag i nettsiden kan den vite at den inneholder navigasjonselementer, noe som ikke nødvendigvis er like åpenbart med en `<div id="navigation"></div>`. I tillegg er en semantisk struktur lettere å tolke for søkemotorer, og dermed bedre for søkemotoroptimalisering av nettsiden. I kodeblokken under har vi listet ut ikke-semantiske elementer til venstre, og det foretrukne semantiske elementet vi heller bør bruke til høyre.
 
 ```markup
 <div id="header">..</div>       <header>..</header>
@@ -18,34 +20,13 @@ Før brukte vi ofte bare div og span til å bygge en side. Med HTML5 fikk vi man
 <div id="sidebar">..</div>      <aside>..</aside>
 ```
 
-## Husk
+{% hint style="info" %}
+Hovedregelen er at alle tagger trenger å åpnes og lukkes, eksempel: `<main></main>`. Enkelte elementer **kan ikke** ha innhold og avsluttes direkte: `<br />`
+{% endhint %}
 
-> Hovedregelen er at alle tagger trenger å åpnes og lukkes, eksempel: `<main></main>`. Enkelte elementer **kan ikke** ha innhold og avsluttes direkte: `<br />`
+## Bruk av ikke-semantiske elementer
 
-Ikke-semantiske tagger kan fortsatt være nyttige for styling, men man bør ha et bevisst forhold til bruken av dem.
-
-Eksempler på semantiske tagger:
-
-```markup
-<header></header>
-<nav></nav>
-<main></main>
-<article></article>
-<section></section>
-<h1></h1>
-<p></p>
-<a></a>
-<button></button>
-<aside></aside>
-<footer></footer>
-```
-
-Eksempler på ikke-semantiske tagger:
-
-```markup
-<div></div>
-<span></span>
-```
+De ikke-semantiske taggene `div` og `span` kan fortsatt være nyttige for styling, men man bør ha et bevisst forhold til bruken av dem. 
 
 ## Oppgaver
 

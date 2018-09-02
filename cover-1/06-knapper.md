@@ -1,7 +1,9 @@
 # Knapper
 
-> * **MDN**; [`button`-taggen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)
-> * **DIFI**: [Krav og anbefalinger for knapper og klikkflater](https://uu.difi.no/krav-og-regelverk/losningsforslag-web/klikkeflate-navigasjon)
+{% hint style="info" %}
+**Dokumentasjon fra MDN:**[`button`-taggen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)  
+**Dokumentasjon fra DIFI**: [Krav og anbefalinger for knapper og klikkflater](https://uu.difi.no/krav-og-regelverk/losningsforslag-web/klikkeflate-navigasjon)
+{% endhint %}
 
 Knapper representeres med taggen `button` i HTML.
 
