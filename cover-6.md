@@ -6,7 +6,7 @@ En skikkelig frontendrigg består av mange deler, og varierer også gjerne fra p
 
 ## Bygging
 
-Byggeprosessen er en rekke tasks, eller oppgaver om du vil, som løper over prosjektfilene dine og kompilerer koden. Man har også gjerne et byggesteg hvor man kjører tester, slik at kode som feiler ikke vil bli produksjonssatt. Man kjører ofte bygget lokalt underveis mens man utvikler, og når man skal produksjonssette \(også kalt deploye\) lager byggeprosessen en produksjonsversjon av prosjektet. Deploy-versjonene er ofte \[minifiserte\]\([https://en.wikipedia.org/wiki/Minification\_\(programming](https://en.wikipedia.org/wiki/Minification_%28programming)\) versjoner av det du har kjørt lokalt, for å gjøre det som skal kjøres i nettleseren til brukerne dine så lite og raskt som mulig.
+Byggeprosessen er en rekke tasks, eller oppgaver om du vil, som løper over prosjektfilene dine og kompilerer koden. Man har også gjerne et byggesteg hvor man kjører tester, slik at kode som feiler ikke vil bli produksjonssatt. Man kjører ofte bygget lokalt underveis mens man utvikler, og når man skal produksjonssette \(også kalt deploye\) lager byggeprosessen en produksjonsversjon av prosjektet. Deploy-versjonene er ofte [minifiserte](https://en.wikipedia.org/wiki/Minification_%28programming%29) versjoner av det du har kjørt lokalt, for å gjøre det som skal kjøres i nettleseren til brukerne dine så lite og raskt som mulig.
 
 De mest populære verktøyene for implementering av en byggeprosess er Webpack, Gulp og Grunt.
 

@@ -1,25 +1,5 @@
 # React og Redux
 
-> **Bekk Teknologiradar** med generelle besrkivelser av...
->
-> * ...[React](https://radar.bekk.no/tech2018/sprak-og-rammeverk/react)
-> * ...[Redux](https://radar.bekk.no/tech2018/sprak-og-rammeverk/redux)
-> * ...[create-react-app](https://radar.bekk.no/tech2018/verktoy/create-react-app)
->
-> **React**:
->
-> * [Create react app](https://github.com/facebookincubator/create-react-app)
->
->     er et fint sted å starte hvis vil lage en React-app. Når du kjører dette programmet, får du alt du trenger av oppsett og byggeverktøy for en SPA.
->
-> * React-tutorial: [Lag spillet tre på rad \(tic-tac-toe\) i React](https://facebook.github.io/react/tutorial/tutorial.html)
->
-> **Redux**: Redux har en veldig god [dokumentasjon](http://redux.js.org/), det finnes også en god [videoserie](https://egghead.io/courses/getting-started-with-redux) laget av mannen bak biblioteket, Dan Abramov.
-
-## Workshop
-
-React-Redux-workshopen som kjøres under frontendkurset finner du [her](https://github.com/ewendel/redux-workshop)
-
 ## Grunnleggende om React
 
 React lar oss representere GUI-et som en mengde av funksjoner. Disse funksjonene kan man se på som transformasjoner som tar inn en datastruktur og returnerer en representasjon som sier noe om hvordan datastrukturen skal rendres som HTML. Det høres kanskje komplekst og vanskelig ut, men React handler egentlig bare om funksjoner som tar inn objekter som f.eks. `{ name: 'John', likesApples: true }` og returner HTML: `<div>John likes apples</div>`. Vi kaller en slik funksjon som representerer GUI-et for en _React component_ eller bare en "komponent".
@@ -84,5 +64,39 @@ function MyView() {
         </div>
     );
 }
+
 ```
+
+## Læringsressurser
+
+{% hint style="info" %}
+**Ressurser for React**:
+
+* [Create react app](https://github.com/facebookincubator/create-react-app) er et fint sted å starte hvis vil lage en React-app. Når du kjører dette programmet, får du alt du trenger av oppsett og byggeverktøy.
+* React har god dokumentasjon, blant annet [denne guiden som dekker hovedkonseptene](https://reactjs.org/docs/hello-world.html) i rammeverket
+* React-tutorial: [Lag spillet tre på rad \(tic-tac-toe\) i React](https://facebook.github.io/react/tutorial/tutorial.html)
+{% endhint %}
+
+{% hint style="info" %}
+**Ressurser for Redux**
+
+* Redux har også god [dokumentasjon](http://redux.js.org/)
+* Det finnes en bra [videoserie](https://egghead.io/courses/getting-started-with-redux) laget av mannen bak biblioteket, Dan Abramov.
+{% endhint %}
+
+{% hint style="info" %}
+**Bekk Teknologiradar** har anbefalinger og generelle beskrivelser av...
+
+* ...[React](https://radar.bekk.no/tech2018/sprak-og-rammeverk/react)
+* ...[Redux](https://radar.bekk.no/tech2018/sprak-og-rammeverk/redux)
+* ...[create-react-app](https://radar.bekk.no/tech2018/verktoy/create-react-app)
+{% endhint %}
+
+{% hint style="info" %}
+**Workshop**
+
+React-Redux-workshopen som kjøres under frontendkurset finner du [her](https://github.com/ewendel/redux-workshop)
+{% endhint %}
+
+
 
