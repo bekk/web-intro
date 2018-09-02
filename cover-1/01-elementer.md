@@ -8,8 +8,6 @@
 * [Inline elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements)
 {% endhint %}
 
-\*\*\*\*
-
 HTML-dokumenter inneholder en rekke elementer som enten er self closing, altså lukker seg selv, eller som har underelementer, ofte referert til som `children`. Disse elementene ser ut som følger:
 
 ```markup
@@ -42,7 +40,7 @@ Et HTML-element kan ha flere attributter som bestemmer hvordan den skal oppføre
 </tag>
 ```
 
-Hvilke attributter som er tilgjengelig på de ulike elementene, kan man finne i dokumentasjonen til HTML-elementene. Igjen anbefaler vi å bruke MDN som oppslagsverk, siden dokumentasjonen deres er grundig og oppdatert.
+Hvilke attributter som er tilgjengelig på de ulike elementene, kan man finne i dokumentasjonen til HTML-elementene. Igjen anbefaler vi å bruke [MDN](https://developer.mozilla.org/en-US/) som oppslagsverk, siden dokumentasjonen deres er grundig og oppdatert.
 
 ## Block og inline
 
@@ -51,12 +49,14 @@ Vi har nå ulike HTML-elementer med egenskaper som bestemmes av hvilken tag elle
 Block-level innebærer at elementer begynner på en ny linje, mens inline-elementer kan starte hvor som helst på en linje. Mange browsere har ny linje både før _og_ etter block-level-elementer, så man kan forestille seg disse elementene som et tårn med bokser som ligger oppå hverandre.
 
 ```markup
-<p>This <span>span</span> is an inline element; its background has been colored to display both the beginning and end of the inline element.</p>
+<p>This <span>span</span> is an inline element; its background has been 
+colored to display both the beginning and end of the inline element.</p>
 
-<p>This paragraph is a block-level element; its background has been colored to display the beginning and end of the block element.</p>
+<p>This paragraph is a block-level element; its background has been colored 
+to display the beginning and end of the block element.</p>
 ```
 
-This span is an inline element; its background has been colored to display both the beginning and end of the inline element.
+![](../.gitbook/assets/block-inline-element%20%281%29.png)
 
-This paragraph is a block-level element; its background has been colored to display the beginning and end of the block element.
+
 

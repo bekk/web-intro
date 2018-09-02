@@ -26,14 +26,16 @@ Metadataene vi setter i HTML head er også viktige for blant annet søkemotorer 
 <meta name="description" content="Livet på Sesam Stasjon">
 ```
 
-Det finnes mye annen informasjon man kan legge som metadata, for eksempel bildet og beskrivelsen du har lyst til at skal komme opp hvis noen deler siden din på Facebook. Alle mulighetene finner du i MDN-dokumentasjonen vi lenket til øverst på denne siden.
+Det finnes mye annen informasjon man kan legge som metadata, for eksempel bildet og beskrivelsen du har lyst til at skal komme opp hvis noen deler siden din på Facebook. Det lille bildet man får øverst i fanen på en nettside settes også i head. Alle mulighetene finner du i MDN-dokumentasjonen vi lenket til øverst på denne siden.
 
 ## Body
 
-Elementene som ligger som children til `body`-tagen er ganske enkelt det innholdet vi viser på siden.
+Elementene som ligger som children til `body`-tagen er ganske enkelt det innholdet vi viser på siden. I [neste kapittel](03-semantikk.md) om semantikk lister vi opp en del av de ulike elementene man kan sette i body.
 
 ## Oppgaver
 
 * Legg til en tittel på nettsiden din som vises i fanen \(taben\) i nettleseren.
-* Legg til et lite bilde som også vises i fanen \(taben\).
+* Legg til et lite bilde som også vises i fanen \(taben\). Dette bildet er ofte referert til som et favicon.
+
+
 
