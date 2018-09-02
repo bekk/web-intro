@@ -1,9 +1,11 @@
 # Layout
 
-> **MDN**:
->
-> * [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)
-> * [Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+{% hint style="info" %}
+**Dokumentasjon fra MDN**:
+
+* [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)
+* [Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+{% endhint %}
 
 Hvis man synes `position: relative` blir for mye knot og at `position: static` blir for kjedelig, kan man knalle til med skikkelig avansert layout-syntaks som har kommet de siste årene. Innenfor layout har det vokst frem mange spennende muligheter, og flexbox og CSS grid er anbefalt når man skal løse avansert layout på en utviklervennlig måte. Vi mener at en av de beste måtene å lære seg hvordan de funker, er å ta dem i bruk.
 

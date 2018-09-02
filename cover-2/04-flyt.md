@@ -4,7 +4,7 @@
 
 CSS-egenskapen `display` sier noe om hvordan et element skal legge seg i flyten på siden. Med flyten mener vi rekkefølgen på elementene i leseretning, fra øverst i venstre hjørne til nederst i høyre hjørne. Hvis man ikke definerer noe annet vil to sekvensielle HTML-elementer legge seg i den rekkefølgen de er definert i HTML-strukturen.
 
-Nederst i [kapittelet om HTML-elementer](https://github.com/bekk/web-intro/tree/645b85b7c83346bcb1576cba234407c4d12e6175/03-css/02-html/01-elementer.md) beskrev vi hvordan block- og inline-elementer oppfører seg. De forskjellige HTML-elementene har alle forskjellig default-verdi for `display`, som man kan se i følgende codepen:
+Nederst i [kapittelet om HTML-elementer](https://github.com/bekk/web-intro/tree/645b85b7c83346bcb1576cba234407c4d12e6175/03-css/02-html/01-elementer.md) beskrev vi hvordan block- og inline-elementer oppfører seg. De forskjellige HTML-elementene har alle forskjellig default-verdi for `display`, som man kan se i følgende CodePen:
 
 {% embed data="{\"url\":\"https://codepen.io/johhorn/pen/XPMBvr \",\"type\":\"rich\",\"title\":\"Flyt: Html-elementer\",\"description\":\"...\",\"icon\":{\"type\":\"icon\",\"url\":\"https://codepen.io/favicons/favicon-192x192.png\",\"width\":192,\"height\":192,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://s3-us-west-2.amazonaws.com/m.cdpn.io/screenshot-coming-soon-small.png\",\"width\":400,\"height\":225,\"aspectRatio\":0.5625},\"embed\":{\"type\":\"app\",\"url\":\"https://codepen.io/johhorn/embed/preview/XPMBvr?height=300&slug-hash=XPMBvr&default-tabs=html,result&host=https://codepen.io&embed-version=2\",\"html\":\"<iframe src=\\\"https://codepen.io/johhorn/embed/preview/XPMBvr?height=300&amp;slug-hash=XPMBvr&amp;default-tabs=html,result&amp;host=https://codepen.io&amp;embed-version=2\\\" style=\\\"border: 0; width: 100%; height: 300px;\\\" allowfullscreen></iframe>\",\"height\":300,\"aspectRatio\":null}}" %}
 
@@ -28,7 +28,7 @@ Som dere snart vil finne ut, er det flere egenskaper som bare fungerer på block
 
 ## Posisjonering
 
-Åpne følgende code-pen:
+Åpne følgende codepen ved å trykke på "Edit on CodePen" øverst i høyre hjørne:
 
 {% embed data="{\"url\":\"https://codepen.io/johhorn/pen/wEJEMx\",\"type\":\"rich\",\"title\":\"Posisjonering\",\"description\":\"...\",\"icon\":{\"type\":\"icon\",\"url\":\"https://codepen.io/favicons/favicon-192x192.png\",\"width\":192,\"height\":192,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://s3-us-west-2.amazonaws.com/m.cdpn.io/screenshot-coming-soon-small.png\",\"width\":400,\"height\":225,\"aspectRatio\":0.5625},\"embed\":{\"type\":\"app\",\"url\":\"https://codepen.io/johhorn/embed/preview/wEJEMx?height=300&slug-hash=wEJEMx&default-tabs=css,result&host=https://codepen.io&embed-version=2\",\"html\":\"<iframe src=\\\"https://codepen.io/johhorn/embed/preview/wEJEMx?height=300&amp;slug-hash=wEJEMx&amp;default-tabs=css,result&amp;host=https://codepen.io&amp;embed-version=2\\\" style=\\\"border: 0; width: 100%; height: 300px;\\\" allowfullscreen></iframe>\",\"height\":300,\"aspectRatio\":null}}" %}
 
@@ -40,7 +40,7 @@ Endre nå element B til å ha `position: absolute`. Hvor ble elementet av? Med a
 
 Se på `article`-elementet som ligger rundt A, B og C. Gi den `position: relative`. Hvor ble nå B av? Nå som `article` er posisjonert vil B forholde seg til den i stedet for rotelementet.
 
-### Oppgaver
+## Oppgaver
 
 * [Midtstilling](https://jsfiddle.net/Matsemann/wg8oLh8a/)
 * [Posisjonering](https://jsfiddle.net/Matsemann/b75wz3mj/1/)
