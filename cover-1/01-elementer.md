@@ -56,7 +56,7 @@ colored to display both the beginning and end of the inline element.</p>
 to display the beginning and end of the block element.</p>
 ```
 
-![](../.gitbook/assets/block-inline-element%20%281%29.png)
+![](../.gitbook/assets/block-inline-element.png)
 
 
 
