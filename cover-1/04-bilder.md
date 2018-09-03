@@ -22,7 +22,7 @@ En viktig ting å huske på når du legger til bilder og grafikk på nettsiden d
 
 ## Oppgave
 
-Legg til et valgfritt bilde i `index.html` fra kapittel 1
+Legg til et valgfritt bilde i `index.html` fra [kapittel 1](../cover/01-hello.md#definer-struktur-og-innhold-pa-siden)
 
 
 
