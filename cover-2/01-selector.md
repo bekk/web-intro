@@ -90,7 +90,5 @@ Men her må man holde tungen rett i munnen! Det enkleste er ofte det beste i css
 * Endre font, farge og skriftstørrelse på teller-verdien.
 * Endre størrelse, bakgrunnsfarge, border/ramme og tekstfarge på knappene.
 
-## Bonus
 
-Øv deg på selectorer i spillet [CSS Diner](https://flukeout.github.io/)
 

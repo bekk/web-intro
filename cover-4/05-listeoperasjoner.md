@@ -90,8 +90,3 @@ console.log(c); // 2
 * [Map & filter](http://jsbin.com/pocunot/1/edit?js,console)
 * [Spread](http://jsbin.com/pajizet/1/edit?js,output)
 
-## Bonus
-
-* [Reduce](http://jsbin.com/jumujuq/1/edit?js,console)
-* [Destrukturering](http://jsbin.com/rujowed/1/edit?js,output)
-

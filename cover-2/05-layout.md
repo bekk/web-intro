@@ -14,8 +14,3 @@ Hvis man synes `position: relative` blir for mye knot og at `position: static` b
 * [Flexbox Froggy](http://flexboxfroggy.com/) er en klassiker. Her lærer du å bruke flexbox for å redde Froggy til vannliljen sin. Gå gjennom de aller første oppgavene her. Du vil trenge lærdommen fra spillet i neste oppgave.
 * Ta utgangspunkt i lenkene du lagde i [oppgaven under lenker](../cover-1/05-lenker.md#oppgaver), og gi lenkene styling med flexbox for å få det til å bli en kul meny!
 
-## Bonus
-
-* [Flexbox Defense](http://www.flexboxdefense.com/) er også et spill der man lærer flexbox. Dette er et tower defense-spill der du beskytter tårnet ditt med CSS!
-* [CSS Grid Garden](http://cssgridgarden.com/) er et spill for å lære CSS grid layout - noe av det ferskeste innen CSS, som ble støttet i de største nettleserne så nylig som i mars 2017! Her skal vi passe på gulrothagen vår med CSS.
-
