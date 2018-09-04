@@ -90,3 +90,7 @@ console.log(c); // 2
 * [Map & filter](http://jsbin.com/pocunot/1/edit?js,console)
 * [Spread](http://jsbin.com/pajizet/1/edit?js,output)
 
+### Ønsker du en litt annen forklaring på listeoperasjoner? 
+
+Denne karen har [sammenlignet listeoperasjoner med hvordan lage en fruktbolle](https://codepen.io/andersschmidt/full/MqaBxG).
+
