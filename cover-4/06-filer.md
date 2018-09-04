@@ -39,5 +39,5 @@ JavaScript er som regel noe av det som tar langst tid å hente inn på en nettsi
 ## Oppgaver
 
 * Utvid nettsiden du satte opp i [kapittel 1](../cover/) med de to scriptene i det øverste kodeeksempelet på denne siden og sjekk i consolet \(DevTools\) hva du får ut. Hvilket script ble kjørt først?
-* Lag en egen `.js`-fil som inneholder en egen console.log, og importer det på siden. **Obs!** Husk å importere det nederst på siden, så vi kan få tak i HTML-elementene på siden fra JavaScripen \(les tipset over for å skjønne hvorfor\)
+* Lag en egen `.js`-fil som inneholder en egen console.log, og importer det på siden. **Obs!** Husk å importere det nederst i `body`, så vi kan få tak i HTML-elementene på siden fra JavaScripten \(les tipset over for å skjønne hvorfor\)
 

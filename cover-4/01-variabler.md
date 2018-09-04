@@ -116,5 +116,5 @@ arr[0]; // 0
 ## Oppgaver
 
 * [let](https://jsbin.com/tehakud/edit?html,js,output)
-* [const](https://jsbin.com/wiwamufici/1/edit?js,output)
+* [const](https://jsbin.com/punetoxase/1/edit?js,output)
 
