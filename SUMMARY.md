@@ -4,6 +4,7 @@
 * [Din første nettside](cover/README.md)
   * [Hello World](cover/01-hello.md)
   * [DevTools](cover/02-devtools.md)
+  * [Dytt det til skyen!](cover/untitled.md)
 * [HTML](cover-1/README.md)
   * [Elementer](cover-1/01-elementer.md)
   * [Head og body](cover-1/02-head-body.md)
