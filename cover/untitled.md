@@ -22,6 +22,8 @@ Fra terminal, kjør følgende kommando:
 echo "# MIN TITTEL" >> README.md
 ```
 
+\(Kommandoen skriver argumentet, `"# MIN TITTEL"` til filen `README.md` uansett om filen finnes fra før eller ikke.\)
+
 ### 3. Også greit å ha med en \`.gitignore\`
 
 Kjør ny kommando i terminal:
@@ -30,7 +32,7 @@ Kjør ny kommando i terminal:
 echo ".DS_Store" >> .gitignore
 ```
 
-I `.gitignore` legger vi filer vi ikke trenger å ta vare på, typisk midlertidige filer som \`.DS\_Store\` som dukker opp på macer i hytt og pine og andre filer vi ikke 
+I `.gitignore` legger vi filer vi ikke trenger å ta vare på, typisk midlertidige filer som \`.DS\_Store\` som dukker opp på macer i hytt og pine og andre filer vi ikke har behov for å ha i versjonskontroll.
 
 {% hint style="info" %}
 **Tips!**
@@ -70,7 +72,8 @@ Urlen til ditt nye repository står på siden du mest sannsynlig allerede er på
 Lag deg en bruker på [Heroku](https://heroku.com). Heroku er en skyplattform som er ganske enkel å komme igang med, og som vi skal lansere applikasjonen vår på.
 
 {% hint style="info" %}
-Det finnes mange andre gode skyleverandører der ute, ikke minst de tre store: AWS, Google Cloud og Azure. Når det gjelder små hobbyprosjekter, er Heroku og [Firebase](https://firebase.google.com) to veldig enkle og gode alternativer.&gt;&gt;\*\*Obs!\*\* Noen av tjenestene til andre skyleverandører, inkludert Firebase, er betal-tjenester, noe som ikke er nødvendig i de fleste hobbyprosjekter.
+Det finnes mange andre gode skyleverandører der ute, ikke minst de tre store: AWS, Google Cloud og Azure. Når det gjelder små hobbyprosjekter, er Heroku og [Firebase](https://firebase.google.com) to veldig enkle og gode alternativer.  
+**Obs!** Noen av tjenestene til andre skyleverandører, inkludert Firebase, er betal-tjenester, noe som ikke er nødvendig i de fleste hobbyprosjekter.
 {% endhint %}
 
 ### 1. Lag en ny app
@@ -79,7 +82,7 @@ I høyre hjørne når du har logget deg inn på Heroku, er det en knapp med teks
 
 ### 2. Endre navn på html-filen din
 
-De fleste appene som kjører på Heroku er satt opp med rammeverk, og bruker gjerne webpack eller andre byggsystemer. Vår første lille nettside har ikke noe `package.json` eller kjører med node - alt vi trenger er å åpne html-fila. Men dette skjønner dessverre ikke Heroku uten en liten hack, fordi Heroku forventer en app med fullt byggoppsett - og det har vi droppet å ha i denne workshopen. Bytt navnet på html-filen din til `index.php` og dytt til master. Dette gjør at Heroku tror vi har en `php`-app, noe vi ikke har \(🤷‍♀️🤷‍♂️\) men da setter den opp et byggmiljø som gjør at vi får opp siden vår.
+De fleste appene som kjører på Heroku er satt opp med rammeverk, og bruker gjerne webpack eller andre byggsystemer. Vår første lille nettside har ikke noe `package.json` eller kjører med node - alt vi trenger er å åpne html-fila. Men dette skjønner dessverre ikke Heroku uten en liten hack, fordi Heroku forventer en app med fullt byggoppsett - og det har vi droppet å ha i denne workshopen. Bytt navnet på html-filen din til `index.php` og dytt til master. Dette gjør at Heroku tror vi har en `php`-app, noe vi ikke har \(😇\) men da setter den opp et byggmiljø som gjør at vi får opp siden vår.
 
  Et lite triks for å bytte navn, er å kjøre følgende kommando i terminal der filen er:
 
