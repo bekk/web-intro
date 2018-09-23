@@ -21,7 +21,7 @@ Ved å høyreklikke på en nettside og velge "Inspect element", eller å trykke 
 
 I DevTools-fanen "Elements" kan vi inspisere nettsiden vi er på, og se hvordan den har blitt rendret. Vi kan gjøre midlertidige endringer i både HTML og CSS for å se hvordan resultatet vil bli i nettleseren, og vi kan se hvordan brukerens oppførsel på en dynamisk side påvirker innholdet.
 
-Inspiser `p`-elementet i `hello.html` og åpne "Styles"-panelet under "Elements". Under "element.style" kan vi legge til og teste vår egen CSS. Legg til en bakgrunnsfarge og bredde ved å skrive noe tilsvarende dette:
+Inspiser `p`-elementet i `index.html` og åpne "Styles"-panelet under "Elements". Under "element.style" kan vi legge til og teste vår egen CSS. Legg til en bakgrunnsfarge og bredde ved å skrive noe tilsvarende dette:
 
 ```text
 width: 50%;
