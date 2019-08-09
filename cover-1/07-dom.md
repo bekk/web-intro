@@ -41,5 +41,5 @@ DOM-en til den følgende html-siden er som vist under:
 
 ## CSS Object Model \(CSSOM\)
 
-Tilsvarende har vi CSS Object Model, som lar oss manipulere CSS med JavaScript. CSSOM-en har som DOM-en en trestruktur som representerer CSS-reglene som gjelder for siden. Når nettleseren skal forstå hvilken regel som gjelder for en node vil den navigere treet fra den mest generelle regelen som treffer noden, rekursivt ned til den mest spesifikke regelen som skal brukes.
+Tilsvarende har vi CSS Object Model som lar oss manipulere CSS med JavaScript. CSSOM-en har som DOM-en en trestruktur som representerer CSS-reglene som gjelder for siden. Når nettleseren skal forstå hvilken regel som gjelder for en node vil den navigere treet fra den mest generelle regelen som treffer noden rekursivt ned til den mest spesifikke regelen som skal brukes.
 
