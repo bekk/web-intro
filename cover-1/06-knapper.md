@@ -15,7 +15,7 @@ Knapper får automatisk en default styling av nettleseren, som du kan velge å o
 
 ## Oppgave
 
-Bruk HTML-elementene `<button>` og `<output>` til å lage layouten under på nettsiden din. Du trenger ikke å implementere noe funksjonalitet, det tar vi senere.
+Bruk HTML-elementene `<button>` og `<output>` til å lage layouten under på nettsiden din. Du trenger ikke å implementere noe funksjonalitet. Det tar vi senere.
 
 ![Pluss- og minusknapper](../.gitbook/assets/counter.png)
 
