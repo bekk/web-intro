@@ -40,7 +40,7 @@ Et HTML-element kan ha flere attributter som bestemmer hvordan den skal oppføre
 </tag>
 ```
 
-Hvilke attributter som er tilgjengelig på de ulike elementene, kan man finne i dokumentasjonen til HTML-elementene. Igjen anbefaler vi å bruke [MDN](https://developer.mozilla.org/en-US/) som oppslagsverk, siden dokumentasjonen deres er grundig og oppdatert.
+Hvilke attributter som er tilgjengelig på de ulike elementene kan man finne i dokumentasjonen til HTML-elementene. Igjen anbefaler vi å bruke [MDN](https://developer.mozilla.org/en-US/) som oppslagsverk siden dokumentasjonen deres er grundig og oppdatert.
 
 ## Block og inline
 
