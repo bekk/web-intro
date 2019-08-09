@@ -8,7 +8,7 @@
 * [Inline elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements)
 {% endhint %}
 
-HTML-dokumenter inneholder en rekke elementer som enten er self closing, altså lukker seg selv, eller som har underelementer, ofte referert til som `children`. Disse elementene ser ut som følger:
+HTML-dokumenter inneholder en rekke elementer som enten er self closing, altså lukker seg selv; eller som har underelementer, ofte referert til som `children`. Disse elementene ser ut som følger:
 
 ```markup
 <tag />
@@ -25,7 +25,7 @@ HTML-dokumenter inneholder en rekke elementer som enten er self closing, altså 
 </tag>
 ```
 
-I denne settingen er ikke `tag` et faktisk HTML-element vi pleier å bruke, men en placeholder for alle de mulige HTML-elementene som finnes - se lenken øverst for en oversikt.
+I denne settingen er ikke `tag` et faktisk HTML-element vi pleier å bruke, men en placeholder for alle de mulige HTML-elementene som finnes. Se lenken øverst for en oversikt.
 
 ## Attributter
 
@@ -40,7 +40,7 @@ Et HTML-element kan ha flere attributter som bestemmer hvordan den skal oppføre
 </tag>
 ```
 
-Hvilke attributter som er tilgjengelig på de ulike elementene, kan man finne i dokumentasjonen til HTML-elementene. Igjen anbefaler vi å bruke [MDN](https://developer.mozilla.org/en-US/) som oppslagsverk, siden dokumentasjonen deres er grundig og oppdatert.
+Hvilke attributter som er tilgjengelig på de ulike elementene kan man finne i dokumentasjonen til HTML-elementene. Igjen anbefaler vi å bruke [MDN](https://developer.mozilla.org/en-US/) som oppslagsverk siden dokumentasjonen deres er grundig og oppdatert.
 
 ## Block og inline
 

@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [Introduksjon](README.md)
 * [Din første nettside](cover/README.md)
   * [Hello World](cover/01-hello.md)
   * [DevTools](cover/02-devtools.md)
