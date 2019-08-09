@@ -34,5 +34,5 @@ De ikke-semantiske taggene `div` og `span` kan fortsatt være nyttige for stylin
 * Med samme chrome-extension, skru av CSS-en \(_CSS_ → _Disable all styles_\). Hvordan ser sidene ut?
 * Diskuter med sidemannen hvilke HTML-elementer dere ville ha brukt for å representere følgende navigasjonsmeny:
 
-  ![Navigasjonsmeny p&#xE5; forside.bekk.no](../.gitbook/assets/nav-html.png)
+  ![](../.gitbook/assets/nav-html.png)
 
