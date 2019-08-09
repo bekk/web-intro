@@ -26,7 +26,7 @@ Metadataene vi setter i HTML head er også viktige for blant annet søkemotorer 
 <meta name="description" content="Livet på Sesam Stasjon">
 ```
 
-Det finnes mye annen informasjon man kan legge som metadata, for eksempel bildet og beskrivelsen du har lyst til at skal komme opp hvis noen deler siden din på Facebook. Det lille bildet man får øverst i fanen på en nettside settes også i head. Alle mulighetene finner du i MDN-dokumentasjonen vi lenket til øverst på denne siden.
+Det finnes mye annen informasjon man kan legge som metadata, for eksempel bildet og beskrivelsen du har lyst til at skal komme opp hvis noen deler siden din på Facebook. Det lille bildet man får øverst i fanen på en nettside (favicon) settes også i head. Alle mulighetene finner du i MDN-dokumentasjonen vi lenket til øverst på denne siden.
 
 ## Body
 
