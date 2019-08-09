@@ -8,7 +8,7 @@
 * [Inline elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements)
 {% endhint %}
 
-HTML-dokumenter inneholder en rekke elementer som enten er self closing, altså lukker seg selv, eller som har underelementer, ofte referert til som `children`. Disse elementene ser ut som følger:
+HTML-dokumenter inneholder en rekke elementer som enten er self closing, altså lukker seg selv; eller som har underelementer, ofte referert til som `children`. Disse elementene ser ut som følger:
 
 ```markup
 <tag />
