@@ -25,7 +25,7 @@ HTML-dokumenter inneholder en rekke elementer som enten er self closing, altså 
 </tag>
 ```
 
-I denne settingen er ikke `tag` et faktisk HTML-element vi pleier å bruke, men en placeholder for alle de mulige HTML-elementene som finnes - se lenken øverst for en oversikt.
+I denne settingen er ikke `tag` et faktisk HTML-element vi pleier å bruke, men en placeholder for alle de mulige HTML-elementene som finnes. Se lenken øverst for en oversikt.
 
 ## Attributter
 
