@@ -9,6 +9,6 @@ HTML sier ingenting om utseende eller oppførsel. De oppgavene er overlatt henho
 {% hint style="info" %}
 Tips!
 
-Ved å skru av CSS får du god oversikt over HTMLen på siden din, og du kan avdekke problemer i semantikk eller struktur. For brukere med skjermlesere er en god struktur og semantikk avgjørende for at de enkelt kan finne det de trenger på siden din. Mer om dette i [seksjonen om universell utforming](../cover-3.md)
+Ved å skru av CSS får du god oversikt over HTML-en på siden din, og du kan avdekke problemer i semantikk eller struktur. For brukere med skjermlesere er en god struktur og semantikk avgjørende for at de enkelt kan finne det de trenger på siden din. Mer om dette i [seksjonen om universell utforming](../cover-3.md)
 {% endhint %}
 
