@@ -30,7 +30,7 @@ De ikke-semantiske taggene `div` og `span` kan fortsatt være nyttige for stylin
 
 ## Oppgaver
 
-* Last ned [denne chrome-extensionen](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm?hl=no). Med den installert, gå til [vg.no](https://www.vg.no), åpne extensionen og velg _Information_ → _View document outline_. Se på hvordan siden er strukturert - har du forslag til forbedringer? Hvordan er konkurrenten [dagbladet.no](https://github.com/bekk/web-intro/tree/645b85b7c83346bcb1576cba234407c4d12e6175/02-html/dagbladet.no) til sammenlikning?
+* Last ned [denne chrome-extensionen](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm?hl=no). Med den installert, gå til [vg.no](https://www.vg.no), åpne extensionen og velg _Information_ → _View document outline_. Se på hvordan siden er strukturert - har du forslag til forbedringer? Hvordan er konkurrenten [dagbladet.no](https://www.dagbladet.no) til sammenlikning?
 * Med samme chrome-extension, skru av CSSen \(_CSS_ → _Disable all styles_\). Hvordan ser sidene ut?
 * Diskuter med sidemannen hvilke HTML-elementer dere ville ha brukt for å representere følgende navigasjonsmeny:
 
