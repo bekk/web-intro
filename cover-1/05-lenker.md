@@ -7,7 +7,7 @@
 
 Noen ganger trenger du en lenke, og noen ganger trenger du en knapp. Begge gangene bør du tenke gjennom hvilken HTML-tag du skal bruke, fordi de kommer med hver sine egenskaper som [passer i ulike settinger](https://marcysutton.com/links-vs-buttons-in-modern-web-applications/). Ikke minst brukes de i ulike semantiske settinger. Lenker brukes som regel når vi vil navigere til en ny side eller ressurs \(med interne lenker som unntaket\), mens knapper brukes når vi vil trigge en hendelse i grensesnittet vi står i, f.eks. toggling av innhold.
 
-Hvis du skal lage en lenke bruker du taggen `a`.
+Hvis du skal lage en lenke bruker du taggen `a`:
 
 ```markup
 <a href="https://www.bekk.no">bekk.no</a>
