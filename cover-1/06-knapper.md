@@ -11,7 +11,7 @@ Knapper representeres med taggen `button` i HTML.
 <button type="button">Trykk på meg!</button>
 ```
 
-Knapper får automatisk en default styling av nettleseren, som du kan velge å overstyre med din egen CSS. Hvis du ikke spesifiserer et type-attributt på knappen vil nettleseren anta at typen er `submit`, altså at knappen utløser en skjemainnsending for nærmeste `form`-element. Om du vil ha en knapp som ikke har default-oppførsel men styres av klient-kode \(JavaScript\) kan du sette typen til `type="button"` slik som i eksempelet over.
+Knapper får automatisk en default styling av nettleseren, som du kan velge å overstyre med din egen CSS. Hvis du ikke spesifiserer et `type`-attributt på knappen vil nettleseren anta at typen er `submit`, altså at knappen utløser en skjemainnsending for nærmeste `form`-element. Om du vil ha en knapp som ikke har default-oppførsel men styres av klient-kode \(JavaScript\) kan du sette typen til `type="button"` slik som i eksempelet over.
 
 ## Oppgave
 
