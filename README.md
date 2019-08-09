@@ -1,6 +1,6 @@
-# Introduction
+# Introduksjon
 
-Dokumentasjon, oppgaver og anbefalinger som kan hjelpe deg i gang med webprogrammering.
+**tl;dr:** Dokumentasjon, oppgaver og anbefalinger som kan hjelpe deg i gang med webprogrammering.
 
 ## Den lengre versjonen:
 
