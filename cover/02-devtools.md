@@ -6,7 +6,7 @@ description: >-
 
 # DevTools
 
-Ved å høyreklikke på en nettside og velge "Inspect element", eller å trykke cmd+alt+i, får du opp utviklerverktøyene \(DevTools\) i Chrome.
+Ved å høyreklikke på en nettside og velge "Inspect element", eller å trykke command+option+i, får du opp utviklerverktøyene \(DevTools\) i Chrome.
 
 {% hint style="info" %}
 **Gode ressurser:**
