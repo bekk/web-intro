@@ -42,5 +42,5 @@ I "Sources"-fanen kan du se hvilke filer som lastes inn sammen med nettsiden. Om
 
 ## Network
 
-"Network"-fanen lar deg se på nettverkstrafikken som genereres av nettsiden, for eksempel for å se på hvilke API-kall som gjøres, eller se hva resultatet av en spørring er. Du kan også se på tidsbruken under innlasting av siden, og bruke throttling for simulere dårligere nedlastingshastigheter.
+"Network"-fanen lar deg se på nettverkstrafikken som genereres av nettsiden, for eksempel for å se på hvilke API-kall som gjøres, eller se hva resultatet av en spørring er. Du kan også se på tidsbruken under innlasting av siden, og bruke throttling for simulere dårligere nedlastingshastigheter. Her kan man også huke av for "Disable cache" som kan være veldig greit når man utvikler lokalt. Da slipper man å gjøre hard refresh til stadighet for å tvinge nettleseren til å laste inn oppdaterte filer på nytt.
 
