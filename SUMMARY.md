@@ -32,7 +32,7 @@
   * [Web-APIer](cover-3/09-web-api.md)
   * [ESNext](cover-3/10-ecmascript.md)
   * [Rammeverk](cover-3/11-rammeverk.md)
-* [Universell utforming](cover-3.md)
+* [Universell utforming](cover-4.md)
 * [React og Redux](cover-5.md)
 * [Utviklingsmiljø](cover-6/README.md)
   * [Dytt det til skyen!](cover-6/untitled.md)
