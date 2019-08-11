@@ -11,7 +11,7 @@
 
 DOM-en er nettleserens programmatiske representasjon av en nettside. Den er bygget opp av et node-hierarki som representerer HTML-strukturen i en objektorientert modell.
 
-JavaScript kan bruke DOM-en til å lese, endre og overvåke en gitt nettside. Vi kan bruke de eksponerte objektene `document` og `window` til dette. Mer om dette i [delen om JavaScript](../cover-3/07-dom-apiet.md).
+JavaScript kan bruke DOM-en til å lese, endre og overvåke en gitt nettside. Vi kan bruke de eksponerte objektene `document` og `window` til dette. Mer om dette i [delen om JavaScript](../cover-3/07-dom-apiet.md)
 
 DOM-en til den følgende html-siden er som vist under:
 
