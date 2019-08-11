@@ -16,5 +16,5 @@ Alle avhengigheter, det vil si verktøy, rammeverk og biblioteker vi har lyst ti
 
 Filen `package.json` brukes til å spesifisere hvilke avhengigheter vi har, og kan skille på hva vi bare vil ha i utviklingsmiljøet og hva vi vil ha i produksjon. [Linteverktøy](../cover-7/linting.md) er for eksempel avhengigheter vi bare har lyst på i utviklingsmiljøet.
 
-Hvis du setter opp en enkel React-app med [Create react app](https://github.com/facebookincubator/create-react-app), kan du se at den setter opp en rekke avhengigheter for deg, slik at du har et lite byggmiljø du kan bruke til å utvikle appen din i.
+Hvis du setter opp en enkel React-app med [Create react app](https://github.com/facebookincubator/create-react-app), kan du se at den setter opp en rekke avhengigheter for deg, slik at du har et lite byggmiljø du kan bruke til å utvikle appen din i. 
 
