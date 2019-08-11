@@ -15,10 +15,6 @@ Vi lenker til nettressurser der disse finnes, men de vil som regel også være t
 * [Inclusive design patterns](https://shop.smashingmagazine.com/products/inclusive-design-patterns): om å bruke kjente mønstre for webutvikling, og på den måten gjøre nettsider tilgjengelig for alle.
 * [Eloquent JavaScript](http://eloquentjavascript.net/): om JavaScript og webprogrammering \(tilgjengelig gratis på nett\).
 
-## Foredrag \(video\)
-
-* Etter hver fagdag legges foredragene som har vært på [Bekk sin vimeo](https://vimeo.com/bekk). Her finnes det mange spennende og inspirerende videoer fra alle fagområdene våre.
-
 ## Kursserier
 
 * [Egghead.io](https://egghead.io/) er en veldig god ressurs man kan finne videoserier på de fleste JavaScript-rammeverk. Noen av våre favoritter er listet under.
