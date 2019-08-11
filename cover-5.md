@@ -1,4 +1,4 @@
-# React og Redux
+# React
 
 ## Grunnleggende om React
 
@@ -74,7 +74,7 @@ function MyView() {
 
 * [Create react app](https://github.com/facebookincubator/create-react-app) er et fint sted å starte hvis vil lage en React-app. Når du kjører dette programmet, får du alt du trenger av oppsett og byggeverktøy.
 * React har god dokumentasjon, blant annet [denne guiden som dekker hovedkonseptene](https://reactjs.org/docs/hello-world.html) i rammeverket
-* React-tutorial: [Lag spillet tre på rad \(tic-tac-toe\) i React](https://facebook.github.io/react/tutorial/tutorial.html)
+* Bekk sin egen [introduksjons-workshop om React](https://github.com/bekk/react-intro)
 {% endhint %}
 
 {% hint style="info" %}
@@ -91,12 +91,5 @@ function MyView() {
 * ...[Redux](https://radar.bekk.no/tech2018/sprak-og-rammeverk/redux)
 * ...[create-react-app](https://radar.bekk.no/tech2018/verktoy/create-react-app)
 {% endhint %}
-
-{% hint style="info" %}
-**Workshop**
-
-React-Redux-workshopen som kjøres under frontendkurset finner du [her](https://github.com/ewendel/redux-workshop)
-{% endhint %}
-
 
 

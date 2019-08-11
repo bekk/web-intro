@@ -41,7 +41,7 @@
 ## Neste steg
 
 * [Universell utforming](cover-4.md)
-* [React og Redux](cover-5.md)
+* [React](cover-5.md)
 * [Utviklingsmiljø](cover-6/README.md)
   * [Dytt det til skyen!](cover-6/untitled.md)
 * [Best practices](cover-7/README.md)
