@@ -4,7 +4,7 @@ I [første del](../cover/01-hello.md) satte vi opp en liten nettside som besto a
 
 ## Sett opp versjonskontroll på koden
 
-Når vi utvikler er det greit å ha versjonskontroll på koden vår, og [Git](https://git-scm.com/) er bransjestandarden alle bruker i dag. Versjonskontroll er ikke bare bra for å finne tilbake til fordums kodetider gjennom en super historikk, men brukes også aktivt når vi utvikler kode sammen i team, ved at vi oppretter pull requests og har [code review](../cover-7/code-review.md) før koden blir merget inn.
+Når vi utvikler er det greit å ha versjonskontroll på koden vår, og [Git](https://git-scm.com/) er bransjestandarden alle bruker i dag. Versjonskontroll er ikke bare bra for å finne tilbake til fordums kodetider gjennom en super historikk, men brukes også aktivt når vi utvikler kode sammen i team, ved at vi oppretter pull requests og har [code review](../cover-7/code-review.md) før koden blir merget inn. 
 
 Hvilken plattform man ønsker å lagre det på kan man velge selv, men i Bekk bruker vi ofte [BitBucket](https://bitbucket.org/), [GitHub](https://github.com/) eller [VSTS](https://visualstudio.microsoft.com/team-services). I denne oppgaven lenker vi til ressurser for å få det på GitHub, men du står fritt til å velge en annen tilbyder
 
