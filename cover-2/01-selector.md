@@ -85,7 +85,7 @@ Men her må man holde tungen rett i munnen! Det enkleste er ofte det beste i css
 
 ## Oppgave
 
-* Lag en CSS-fil og link til den i HTML-filen med knapper fra [kapittel 2](../cover-1/06-knapper.md).
+* Lag en CSS-fil og link til den i HTML-filen med knapper fra [del 2](../cover-1/06-knapper.md).
 * Sett en bakgrunnsfarge på siden.
 * Endre font, farge og skriftstørrelse på teller-verdien.
 * Endre størrelse, bakgrunnsfarge, border/ramme og tekstfarge på knappene.

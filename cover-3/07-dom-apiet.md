@@ -59,7 +59,7 @@ document
 ## Oppgaver
 
 * [Test ut DOM-apiet](http://jsbin.com/povoyoz/24/edit?js,console)
-* Fortsett med knappene du lagde i [kapittel 2](https://github.com/bekk/web-intro/tree/645b85b7c83346bcb1576cba234407c4d12e6175/02-html/06-knapper/README.md).
+* Fortsett med knappene du lagde i [del 2](https://github.com/bekk/web-intro/tree/645b85b7c83346bcb1576cba234407c4d12e6175/02-html/06-knapper/README.md).
   * Legg til unike `id`-attributter på `output` og `button`-elementene.
   * Legg til hendelseshåndtering av knappene i JS-filen du lagde i forrige seksjon. Legg til en click event handler som legger til 1 på tallet i `output` når man trykker på plussknappen.
   * Legg til en click event handler som trekker fra 1 fra tallet i `output` når man trykker på minusknappen.

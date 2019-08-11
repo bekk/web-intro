@@ -1,6 +1,6 @@
 # Utviklingsmiljø
 
-Når man beveger seg bort fra en liten enkel html-side med en css-fil eller to og litt javascript, og over på kjempestore prosjekter som de vi gjerne jobber med hos kunder, trenger man et ordentlig utviklingsmiljø for frontenden. Kanskje man bruker de [siste standardene for EcmaScript samtidig som man må støtte IE11](../cover-4/10-ecmascript.md). Sannsynligvis har man noen rammeverk og eksterne biblioteker man bruker. Og hadde det ikke vært digg om endringer du lagret i kodebasen ble automatisk oppdatert i nettsiden der du kjører nettsiden lokalt?
+Når man beveger seg bort fra en liten enkel html-side med en css-fil eller to og litt javascript, og over på kjempestore prosjekter som de vi gjerne jobber med hos kunder, trenger man et ordentlig utviklingsmiljø for frontenden. Kanskje man bruker de [siste standardene for EcmaScript samtidig som man må støtte IE11](../cover-3/10-ecmascript.md). Sannsynligvis har man noen rammeverk og eksterne biblioteker man bruker. Og hadde det ikke vært digg om endringer du lagret i kodebasen ble automatisk oppdatert i nettsiden der du kjører nettsiden lokalt?
 
 En skikkelig frontendrigg består av mange deler, og varierer også gjerne fra prosjekt til prosjekt. Derfor kommer vi ikke til å gå så veldig i detalj på dette, men nevner heller noen sentrale konsepter som du kanskje vil komme borti.
 

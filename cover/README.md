@@ -1,6 +1,6 @@
 # Din første nettside
 
-I dette kapittelet skal vi se på hvordan man kan sette opp en nettside som vil danne grunnlaget for mange av oppgavene som kommer senere. Når du har fulgt instruksjonene i denne delen og nettsiden er oppe, kan du fortsette videre gjennom de neste kapitlene for å lære hvordan du legger til elementer, stiler og JavaScript for å få nettsiden din til å oppføre seg som du vil at den skal.
+I denne delen skal vi se på hvordan man kan sette opp en nettside som vil danne grunnlaget for mange av oppgavene som kommer senere. Når du har fulgt instruksjonene i denne delen og nettsiden er oppe, kan du fortsette videre gjennom de neste kapitlene for å lære hvordan du legger til elementer, stiler og JavaScript for å få nettsiden din til å oppføre seg som du vil at den skal.
 
 {% hint style="warning" %}
 **Tips!**   

@@ -30,7 +30,7 @@ Det finnes mye annen informasjon man kan legge som metadata, for eksempel bildet
 
 ## Body
 
-Elementene som ligger som children til `body`-tagen er ganske enkelt det innholdet vi viser på siden. I [neste kapittel](03-semantikk.md) om semantikk lister vi opp en del av de ulike elementene man kan sette i body.
+Elementene som ligger som children til `body`-tagen er ganske enkelt det innholdet vi viser på siden. I [neste del](03-semantikk.md) om semantikk lister vi opp en del av de ulike elementene man kan sette i body.
 
 ## Oppgaver
 
