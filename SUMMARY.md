@@ -1,9 +1,14 @@
 # Table of contents
 
+
+## Introduksjon
 * [Introduksjon](README.md)
 * [Din første nettside](cover/README.md)
   * [Hello World](cover/01-hello.md)
   * [DevTools](cover/02-devtools.md)
+  
+## Grunnleggende webutvikling
+
 * [HTML](cover-1/README.md)
   * [Elementer](cover-1/01-elementer.md)
   * [Head og body](cover-1/02-head-body.md)
@@ -32,6 +37,9 @@
   * [Web-APIer](cover-3/09-web-api.md)
   * [ESNext](cover-3/10-ecmascript.md)
   * [Rammeverk](cover-3/11-rammeverk.md)
+  
+## Neste steg
+
 * [Universell utforming](cover-4.md)
 * [React og Redux](cover-5.md)
 * [Utviklingsmiljø](cover-6/README.md)
