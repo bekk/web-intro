@@ -1,6 +1,6 @@
 # Dytt det til skyen!
 
-I [første kapittel](../cover/01-hello.md) satte vi opp en liten nettside som besto av bare én HTML-side - og i kapittelet om [CSS](../cover-2/) og [JavaScript](../cover-4/06-filer.md) utvidet vi den til å inneholde stiler og et lite program. Men hadde det ikke vært gøy å legge den ut så du kan dele den med hvem som helst som har tilgang på internett!? Det er få ting som er like stas som å stolt vise frem ting man har laget til venner og familie 😌
+I [første del](../cover/01-hello.md) satte vi opp en liten nettside som besto av bare én HTML-side - og i delen om [CSS](../cover-2/) og [JavaScript](../cover-3/06-filer.md) utvidet vi den til å inneholde stiler og et lite program. Men hadde det ikke vært gøy å legge den ut så du kan dele den med hvem som helst som har tilgang på internett!? Det er få ting som er like stas som å stolt vise frem ting man har laget til venner og familie 😌
 
 ## Sett opp versjonskontroll på koden
 
