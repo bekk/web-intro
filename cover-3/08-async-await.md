@@ -7,7 +7,7 @@ Syntaksen er som følger:
 ```javascript
 async function hentData() {
     const response = await fetch('http://ressurs.no');
-    return await response.json();
+    return response.json();
 }
 ```
 
@@ -19,7 +19,7 @@ Dersom requesten feiler, vil await kaste en feil. Dette kan vi enkelt håndtere 
 async function hentData() {
     try {
         const data = await fetch('http://ressurs.no');
-        return await data.json();
+        return data.json();
     } catch (err) {
         // gjør noe med feilen
     }
