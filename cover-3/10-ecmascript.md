@@ -20,6 +20,3 @@ På et eller annet tidspunkt må man bestemme seg for om det er noen nettlesere 
 ## Må man transpilere?
 
 Nei! Ikke alltid :\) Kanskje du er så heldig at du slipper å bry deg om IE11. Kanskje dere bruker en eldre ES-standard. Men de som jobber med JavaScript-engines i de ulike nettleserne, oppfordrer oss til å bruke ESNext - for da kan de tilpasse implementasjonen sin til bruken, jobbe med ytelse osv.
-
-Mikael Brevik har forvrig en god talk om at man [ikke alltid trenger transpilering](https://vimeo.com/207724489).
-
