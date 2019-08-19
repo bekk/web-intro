@@ -1,6 +1,6 @@
 # Async/await
 
-Async-await-mønsteret er en mer moderne måte å håndtere asynkronitet på enn med [Promises](08-async-await.md).
+Async-await-mønsteret er en mer moderne måte å håndtere asynkronitet på enn med [Promises](./08-promises.md).
 
 Syntaksen er som følger:
 
