@@ -10,5 +10,4 @@ Når vi bruker React får vi en [SPA \(Single Page App\)](https://en.wikipedia.o
 
 ## Typesikkerhet og profesjonalisering
 
-Frontendutvikling har i løpet av de siste årene gjennomgått en ganske heftig profesjonaliseringsprosess. I dag finnes det svære frontend-kodebaser, hvor nye teknikker og språk viser seg gjeldende for å kunne håndtere økt kompleksitet. Et programmeringsspråk som er spesielt i vinden om dagen er [Elm](https://radar.bekk.no/tech2018/sprak-og-rammeverk/elm), som bruker mange av de samme teknikkene som i React/Redux, men også blant annet tilbyr typesikkerhet og garanterer ingen kjøretidfeil \(!\). Se for eksempel [Redux Schmedux - Fremtidens webapp er laget i Elm](https://vimeo.com/208178713) om du har lyst til å høre mer.
-
+Frontendutvikling har i løpet av de siste årene gjennomgått en ganske heftig profesjonaliseringsprosess. I dag finnes det svære frontend-kodebaser, hvor nye teknikker og språk viser seg gjeldende for å kunne håndtere økt kompleksitet. Et programmeringsspråk som er spesielt i vinden om dagen er [Elm](https://radar.bekk.no/tech2018/sprak-og-rammeverk/elm), som bruker mange av de samme teknikkene som i React/Redux, men også blant annet tilbyr typesikkerhet og garanterer ingen kjøretidfeil \(!\).
