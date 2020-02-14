@@ -32,9 +32,11 @@ Legg inn en ny `html`-fil i samme mappe som du la `index.html`-fila fra[ del 1](
 
 {% hint style="info" %}
 **Hint:** Her kan det lønne seg å bruke en kombinasjon av elementet `nav` og en uordnet liste:  
-`<ul>  
+
+```
+<ul>  
  <li>Menyelement1</li>  
  <li>Menyelement2</li>
-
-</ul>`
+</ul>
+```
 {% endhint %}
