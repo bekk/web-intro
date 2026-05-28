@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Frontendkurs</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/bekk/remark/master/dist/bekk.css">
+    <link rel="stylesheet" href="slides.css">
+  </head>
+  <body class="bekk-black">
+    <textarea id="source">
+class: center middle
+  # Single page application (SPA)
+
+???
+
+Må kjøre opp serveren på web-intro/assignments/bildegalleri/assignment før slidesene lastes
+
+---
+class: center
+
+<iframe src="http://localhost:5006/" style=" height: 100%; width: 50%;" />
+
+???
+Gi en introduksjon til oppgaven vi skal gjennom
+---
+class: center middle
+# Repoet
+## https://github.com/bekk/web-intro
+`git clone https://github.com/bekk/web-intro.git`
+
+## Oppgave: assignments > bildegalleri > assignment > client
+## Fasit: assignments > bildegalleri > solutions > 1 / 2 / 3 ...
+???
+Satt opp en node-server som de også kan titte på - også skrevet i javascript, som henter bilder fra flickr.
+---
+
+
+
+
+
+
+
+<div class="example-box" style="
+  top: 30%;
+  height: 200px;
+">
+  Klient
+</div>
+
+<div class="example-box" style="
+  top: 22%;
+  right: 2em;
+">
+  Server
+</div>
+
+--
+
+<div class="example-arrow arrow-right" style="top: 250px;">
+  Request
+</div>
+
+--
+
+<div class="example-arrow arrow-left" style="top: 350px;">
+  Response
+</div>
+
+---
+
+
+<div class="example-box" style="
+  top: 30%;
+  height: 200px;
+">
+  Klient
+</div>
+
+<div class="example-box" style="
+  top: 22%;
+  right: 2em;
+">
+  Server
+</div>
+
+<div class="example-arrow arrow-right" style="
+  top: 250px;
+  text-transform: lowercase;
+">
+  http://localhost:5000/sok?tag=bekk
+</div>
+
+<div class="example-arrow arrow-left" style="
+  top: 350px;
+  text-transform: none;
+  text-align: left;
+">
+  <pre style="
+  margin: 0;
+  padding: 0 1em;
+  font-size: 0.8em;
+">
+[{
+  "url":"https://flickr.com/bilde1.jpg",
+  "title":"Fint bilde av en bekker"
+},{...}]
+  </pre>
+</div>
+
+---
+# Laste data
+
+```javascript
+fetch('http://localhost:5000/sok?tag=bekk')
+```
+--
+
+```javascript
+const promise = fetch('http://localhost:5000/sok?tag=bekk')
+console.log(promise);
+
+Promise: {
+  [[PromiseStatus]]: "pending",
+  [[PromiseValue]]: undefined
+}
+```
+---
+# asynkront
+```javascript
+const promise = fetch('http://localhost:5000/sok?tag=bekk');
+
+promise.then(function(result) {
+  console.log(result);      // [Object, Object, Object,...]
+});
+```
+--
+```javascript
+fetch('http://localhost:5000/sok?tag=bekk')
+  .then(function(result) {
+    //...
+  });
+```
+---
+class: middle center
+## Hva om kallet feiler?
+---
+# Laste data
+
+```javascript
+  fetch('http://localhost:5000/sok?tag=bekk')
+    .then(function(response) {
+      // Gjør noe med responsen
+    })
+    .catch(function(error) {
+      // Håndter feil
+    });
+```
+
+---
+# Laste data - chaining
+
+```javascript
+  fetch('http://localhost:5000/sok?tag=bekk')
+    .then(function(response) {
+      return response[0];
+    })
+    .then(function(img) {
+      return img;
+    })
+    .catch(function(error) {
+      // Håndter feil
+    });
+```
+
+---
+
+class: cols two
+# JavaScript Object Notation - JSON
+--
+
+.col[
+## JSON
+```json
+  {
+    "string": "en string",
+    "key2": 1.2,
+    "boolean": false,
+    "array": [1,2,3,4,5,6],
+    "object": {
+      "key": "value"
+    },
+    "empty": null
+  }
+```
+]
+
+.col[
+## JavaScript objekter
+```javascript
+  {
+    string: "en string",
+    key2: 1.2,
+    boolean: false,
+    array: [1,2,3,4,5,6],
+    object: {
+      key: "value"
+    },
+    empty: undefined
+  }
+```
+]
+---
+# Parse JSON
+```javascript
+  JSON.parse('{"key":"value"}'); // {key: "value"}
+```
+--
+
+```javascript
+  JSON.stringify({key:"value"}); // '{"key": "value"}'
+```
+
+
+---
+# Parse responsen
+
+
+## JSON
+
+```javascript
+fetch('http://localhost:5000/sok?tag=bekk').then(function(response) {
+  return response.json();
+});
+```
+
+--
+## Text
+
+```javascript
+fetch('http://localhost:5000/sok?tag=bekk').then(function(response) {
+  return response.text();
+});
+```
+
+---
+# Laste data
+
+```javascript
+  fetch('http://localhost:5000/sok?tag=bekk')
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(data) {
+      console.log(data);
+    })
+    .catch(function(error) {
+      throw error;
+    });
+```
+--
+
+```
+  [{
+    "url":"https://flickr.com/bilde1.jpg",
+    "title":"Fint bilde av en bekker"
+  },{
+    "url":"https://flickr.com/bilde2.jpg",
+    "title":"Ikke fullt så fint bilde av en bekker"
+  },{
+    "url":"https://flickr.com/bilde3.jpg",
+    "title":"Rart bilde av en bekk"
+  },{
+    ...
+  }]
+```
+---
+# Same origin policy
+
+```javascript
+  fetch('https://ntnu.no');
+```
+--
+
+You will receive an error. `XMLHttpRequest` cannot load https://ntnu.no. No `'Access-Control-Allow-Origin'` header is present on the requested resource. Origin http://localhost:5000 is therefore not allowed access.
+
+--
+
+An origin is defined as a combination of URI scheme, hostname, and port number.
+
+---
+# Same origin policy
+
+<div class="example-same-origin">
+  http://localhost:5000
+</div>
+
+--
+<div class="example-same-origin">
+  https://ntnu.no:443
+</div>
+
+---
+
+# Same origin policy
+
+<div class="example-same-origin">
+  <span class="protocol">http</span>://<span class="domain">localhost</span>:<span class="port">5000</span>
+</div>
+
+<div class="example-same-origin">
+  <span class="protocol">https</span>://<span class="domain">ntnu.no</span>:<span class="port">443</span>
+</div>
+
+--
+<div style="margin-top:0.5em;font-size: 5em">&#128557;</div>
+
+
+
+---
+# Same origin policy
+
+<div class="example-same-origin">
+  <span class="protocol">http</span>://<span class="domain">localhost</span>:<span class="port">5000</span>
+</div>
+
+<div class="example-same-origin">
+  <span class="protocol">http</span>://<span class="domain">localhost</span>:<span class="port">5000</span>/sok?tag=bekk
+</div>
+
+--
+
+<div style="margin-top:0.5em;font-size: 5em">&#128571;</div>
+---
+class: middle center
+##Hvorfor er det sånn?
+---
+class: middle center
+##Fordi sikkerhet
+???
+Ble implementert av alle browsere i 1995 Netscape Navigator 2
+---
+class: middle center
+##Apropos sikkerhet - Cross site scripting
+
+--
+<input type="text" value="skriv noe her"/> <button>Send</button>
+```html
+   <script> alert(document.cookie); </script>
+```
+---
+class: split
+
+# Oppgave
+
+* Gå til <b>bildegalleri/assignment</b> i en terminal
+ * Kjør <b>npm install</b>
+ * Kjør <b>npm start</b>
+
+* For å se nettsiden, åpne http://localhost:5000 i en nettleser
+ * Ikke åpne html-filen rett fra filsystemet
+
+* I script.js
+ * Gjør en request mot `/sok?tag=bekk` når siden blir lastet
+ * Logg ut resultatet i consollet
+
+<iframe src="http://localhost:5001/" style="width: 50%; border-left: 1px solid #515151;" />
+
+
+
+
+---
+
+
+
+
+
+
+class: center middle
+#Vise bildene
+
+---
+
+#Ønsket resultat
+
+<iframe src="http://localhost:5002" style="height: 80%; width: 100%;" />
+
+---
+
+# Hva vi har
+```javascript
+function getPhotos(tag) {
+    return fetch('/sok?tag=' + tag).then(function(resp) {
+        return resp.json();
+    });
+}
+
+getPhotos('bekk').then(function(data) {
+    console.log(data);
+});
+```
+
+```json
+[{
+    "url": "https://farm2.staticflickr.com/1545/25292140150_8029266c75.jpg",
+    "title": "Freeze"
+}, {
+    "url": "https://farm2.staticflickr.com/1485/25535245756_37be2821ee.jpg",
+    "title": "Winter"
+}...]
+```
+
+---
+# Ønsket HTML
+
+```html
+<main>
+    <figure>
+        <img src="https://farm2.staticflickr.com/1545/25292140150_8029266c75.jpg" />
+        <figcaption>Freeze</figcaption>
+    </figure>
+    <figure>
+        <img src="https://farm2.staticflickr.com/1485/25535245756_37be2821ee.jpg", />
+        <figcaption>Winter</figcaption>
+    </figure>
+    <!-- ... -->
+</main>
+```
+
+---
+# Dom repetisjon
+
+```javascript
+const medTag = document.querySelector('body');
+const medTag2 = document.querySelector('main');
+const medId = document.querySelector('#min-boks');
+```
+&nbsp;
+--
+
+```javascript
+const tekst = medTag.textContent;
+medTag.textContent = 'Hei på deg';
+```
+&nbsp;
+--
+
+```javascript
+const html = medTag.innerHTML;
+medTag.innerHTML = '<div>Masse <b>HTML</b> kode</div>';
+```
+
+---
+
+class: split
+# Oppgave
+
+* Lag en ny funksjon som heter `renderImages` som tar inn listen over bilder
+ * Denne funksjonen skal returnere HTML-markup
+ * For hvert bilde, lag en `<figure>` med `<img>` som viser bildet og en `<figcaption>` som viser tittelen
+* Sett HTML-en som `renderImages` returnerer som innhold til `<main>`-elementet
+
+.wayright[```javascript
+function renderImages(data) {
+    let html = '';
+    // bruk en for-løkke for å fylle htmlen
+    // med en <figure> for hvert bilde i data
+    return html;
+}
+
+function getPhotos(tag) {
+    return fetch('/sok?tag=' + tag).then(function(resp) {
+        return resp.json();
+    });
+}
+
+getPhotos('bekk').then(function(data) {
+    // console.log(data);
+    const html = renderImages(data);
+    // hent ut main-elementet og sett
+    // innholdet til å være denne htmlen
+});
+
+```]
+
+
+
+
+---
+
+
+
+
+
+
+
+class: center middle
+#Responsivt design
+
+???
+Sammenligne vg.no med abakus.no evt ifinavet.no eller nav.no
+vise smal/stor side horisontal scroll, zoom
+
+---
+# Hvorfor?
+* Trenger bare lage én nettside, fungerer på alle enheter
+ * PC, tablet, mobil, tv...
+* Brukervennlig
+* Zoomkrav i universell utforming
+
+
+
+---
+# Strategi
+
+* Mobile first
+    * Lettere å legge til enn å ta bort
+
+
+* Bruke enheten *rem* for de fleste størrelser
+* 1rem = font-size til rot-elementet
+
+```css
+html {
+    font-size: 16px;
+}
+.styling {
+    font-size: 1.5rem;
+}
+```
+
+
+???
+
+Videre vise hva vi ønsker å oppnå, localhost:5003
+Vise ser bra ut i mobilbredde, dårlig i fullbredde
+Sette til 50/49%, vise ser bedre ut. Sette 30% fullbredde, vise ser bra ut
+Men da dårlig på mobil!
+
+---
+#Media queries
+
+CSS-regler som bare er aktive i visse tilfeller
+
+```css
+@media (min-width: 500px) {
+  .bokser {
+      width: 50%;
+  }
+}
+```
+
+&nbsp;
+
+--
+* Enheter
+ * all, print, screen, speech
+* Egenskaper
+ * min-width, max-width, min-height, max-height, orientation, resolution, color, light-level
+
+Legger media-queries til slutt i CSS-en
+
+---
+#Eksempel
+
+```css
+.bokser {
+  width: 100%;
+  background: red;
+}
+
+@media (min-width: 500px) {
+  .bokser {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .bokser {
+    width: 33%;
+  }
+}
+```
+```
+250px => 100%, 750px => 50%, 1500px => 33%
+```
+---
+#Eksempel, feil rekkefølge
+
+```css
+.bokser {
+  width: 100%;
+  background: red;
+}
+
+@media (min-width: 1000px) {
+  .bokser {
+    width: 33%;
+  }
+}
+
+@media (min-width: 500px) {
+  .bokser {
+    width: 50%;
+  }
+}
+```
+```
+250px => 100%, 750px => 50%, 1500px => 50%
+```
+
+---
+class: split
+# Oppgave
+* Legg til media-queries nederst i CSS-filen for å:
+ * Minske bredden på `figure` slik at det blir plass til 2 bilder i bredden ved medium skjermer
+ * Vise 3 bilder i bredden ved enda bredere skjerm
+
+
+<iframe src="http://localhost:5003/" style="width: 50%; border-left: 1px solid #515151;" />
+
+
+
+---
+
+
+
+
+
+
+
+class: center middle
+
+#Forms
+
+---
+class: center middle
+
+Representerer en <em>interaktiv</em> del av siden, og brukes for å <em>sende</em> data til en server
+--
+
+```html
+<form></form>
+```
+---
+
+#Form
+
+*Noen nyttige attributter*
+
+```html
+<form action="url" method="get"></form>   // url?key=value1&key2=value2
+<form action="url" method="post"></form>  // url
+```
+--
+
+Sjekk <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">MDN form</a>
+
+---
+
+#Input
+
+Definerer hva som skal sendes til serveren
+```html
+<form action="url" method="get">
+  <input type="text" name="sok" value="" placeholder="Søk" />
+</form>
+```
+--
+
+<label><input type="checkbox" /> checkbox</label><br />
+<label><input type="radio" name="radio" /> radio1</label>
+<label><input type="radio" name="radio" /> radio2</label><br />
+<label><input type="date" /></label>
+
+--
+
+Sjekk <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/Input" target="_blank">MDN input</a>
+
+---
+class: cols two
+
+#Input - uthenting av verdien
+
+For tekstelement:
+
+Skriv noe her: <input id="da-tekstelement" type="text" data-ex="1" data-listen-for="keyup" data-value-prop="value" />
+
+```javascript
+document.querySelector('#da-tekstelement').value
+```
+
+--
+<p>For checkbox:</p>
+<input type="checkbox" id="da-checkbox" data-ex="2" data-listen-for="change" data-value-prop="checked" />
+<span id="ex2">Velg meg</span>
+
+```javascript
+document.querySelector('#da-checkbox').checked
+```
+
+
+---
+class: cols two
+
+#Browser default
+
+
+.col[
+<label><input type="checkbox" />Default</label>
+]
+.col[
+```html
+<input type="checkbox" />
+```
+]
+
+.col[
+<label><input type="checkbox" class="prevent" />Endret</label>
+]
+.col[
+```javascript
+document
+  .querySelector('input')
+  .addEventListener('click', function(e) {
+    e.preventDefault();
+  });
+```
+]
+
+Form- og input-elementer kommer med en del *default behaviour* fra browseren.
+
+Denne oppførselen kan hindres ved hjelp av `preventDefault()`
+
+---
+
+#Submit
+
+*Submit*-knapp
+```html
+<form action="/sok.html" method="post">
+  <input type="text" name="sok" value="" autocomplete="off"/>
+  <button type="submit">Søk</button>
+</form>
+```
+
+---
+
+#Submit
+
+*Submit*-knapp
+```html
+<form action="/sok.html" method="post">
+  <input type="text" name="sok" value="" autocomplete="off"/>
+  <button type="submit">Søk</button>
+</form>
+```
+
+Det skjer en `submit`-event når `form` skal sendes til serveren.
+
+---
+
+#Submit
+
+*Submit*-knapp
+```html
+<form action="/sok.html" method="post">
+  <input type="text" name="sok" value="" autocomplete="off"/>
+  <button type="submit">Søk</button>
+</form>
+```
+
+Det skjer en `submit`-event når `form` skal sendes til serveren.
+
+Dette kan lyttes etter ved hjelp av `addEventListener`
+
+```javascript
+document.querySelector('.mitt-form').addEventListener('submit', function(event) {
+  // Stop default behaviour
+  // Do something
+});
+```
+
+---
+class: split
+
+# Oppgave
+
+* Fortsett på løsningen fra forrige oppgave
+* Legg til submit event handler på form'et
+* Hent ut verdien som er skrevet inn i tekstfeltet
+* Bruk verdien til å hente ut og vise de nye bildene
+
+<iframe src="http://localhost:5004/" style="width: 50%; border-left: 1px solid #515151;" />
+
+---
+
+
+
+
+
+
+
+
+class: center middle
+
+# Single Page Applications
+
+???
+En single page application, er en web app eller nettside som får plass på en enkeltnettside
+og har som mål å fremstå som en desktopapplikasjon.
+I en SPA er enten all koden du trenger, HTML, JS og CSS hentet ved første sidelast,
+eller så lastes de nødvendige ressursene inn dynamisk underveis når de trengs.
+
+Alt i alt gir det en ganske sømløs opplevelse, men noen ting må man selv sette opp -
+må feks programmere noen ting som ellers kommer ut av boksen når man ikke har SPA.
+Feks navigering/bakoverknapp.
+
+React er et rammeverk som hjelper oss i gang med SPA.
+
+APIer: window.location, men kan ikke bruke settingen
+pushstate popstate
+
+router!
+
+---
+
+# SPA - Hvorfor?
+
+* Mer effektivt, unngår å laste hele siden på nytt
+* Oppleves bedre for brukeren
+* Visker ut skillet mellom desktop-applikasjoner og nettsider
+
+Må oppdatere URL
+* Lar en bruke fram- og tilbakeknappene i nettleseren
+* Kan bokmerke og dele lenker
+
+---
+
+# Lese ut URL
+
+`window.location` inneholder masse info om hvor brukeren er
+
+```javascript
+// http://localhost:9000/bekk/1
+console.log(window.location);
+// ->
+{
+    protocol: "http:",
+    hostname: "localhost",
+    port: "9000",
+    pathname: "/bekk/1"
+    ...
+}
+```
+
+---
+
+# Lese ut riktig del av URL
+```javascript
+// http://localhost:9000/bekk/1
+var path = window.location.pathname; // '/bekk/1'
+var deler = path.split('/'); // ['', 'bekk', '1']
+var tag = deler[1];
+var id = deler[2];
+```
+
+---
+
+# Modifisere URL
+
+Kan sette verdien til `window.location` og `window.location.pathname` selv.
+
+```javascript
+window.location = 'http://vg.no';
+
+window.location.pathname = '/elv';
+```
+
+--
+Men dette fører til en fullstendig sidelast 🙁
+
+---
+
+# History API
+HTML5 kom med et API som lar en modifisere URL uten sidelast
+
+```javascript
+history.pushState(state, title, URL);
+```
+
+I praksis bruker man ofte bare siste parameter
+
+```javascript
+history.pushState(null, '', '/bekk/1');
+```
+---
+
+# History API
+Kan også lytte på når brukeren går frem og tilbake i nettleseren
+
+```javascript
+function router() {
+    console.log(window.location.pathname);
+}
+
+window.addEventListener('popstate', router);
+```
+
+---
+
+# Routing
+
+Routing er et vanlig navn på logikken som bestemmer hva som skal skje basert på URLen brukeren er på
+
+```javascript
+function router() {
+    var path = window.location.pathname;
+    var deler = path.split('/');
+    // ... gjør ting basert på verdier
+}
+```
+--
+Må kalle den ved oppstart
+
+```javascript
+router();
+```
+
+---
+
+# Oppgave
+* URLen i nettleseren skal oppdatere seg ved søk
+    * Lag en router-funksjon som søker på det som ligger i URLen
+    * I eventlisteneren for submit, oppdater URLen og kall routeren
+* Skal kunne bruke frem- og tilbakeknappene i nettleseren
+    * Legg til en popstate-listener som kaller routeren
+* Skal kunne åpne siden rett på et søk
+    * Kall router-funksjonen i det siden lastes
+
+http://localhost:5005
+
+---
+
+
+
+
+
+
+
+
+
+# Lenker
+
+`Anchor`-tagen definerer en hyperkobling til en annen ressurs på weben
+
+```html
+<a>...</a>
+```
+
+Der attributtet href sier hvor lenken peker
+
+
+```html
+<a href="/bekk/2">Se bilde 2</a>
+```
+
+Kan legge lenke på et bilde
+
+```html
+<a href="/bekk/2">
+  <img src="/url/til/bilde.jpg">
+</a>
+```
+---
+
+# Lenker og Single Page Applications
+
+En lenke fører til en full sidelast, på samme måte som `window.location`
+
+Det kan vi unngå ved å "hijacke" klikk på lenker, og istedet kalle `history.pushstate` med URLen som ble lenket til.
+
+```javascript
+document.querySelector('main').addEventListener('click', function (event) {
+  var parent = event.target.parentNode; // klikkes på et bilde, finner a-taggen rundt
+
+  if (parent.tagName === 'A') {
+    event.preventDefault(); // hindrer lenken i å laste en ny side
+    var href = parent.getAttribute('href');
+    history.pushState(undefined, '', href); // leser ut href verdien og setter den i urlen
+    router(); // kaller routeren nå som vi har en oppdatert URL
+  }
+});
+```
+
+Koden over antar at lenken ligger rundt et bilde, og at alle lenker skal føre til en pushstate, noe som er godt nok for vår bruk.
+
+---
+
+# Oppgave
+
+* Legg en lenke rundt bildene som vises, som lenker til det man har søkt på pluss hvilket nummer bildet er.
+  * F. eks. href="/bekk/0", href="/bekk/1" osv.
+* Når et bilde klikkes på, hijack eventet og bruk pushstate til å oppdatere URL
+* I routeren, vis bare bildet med riktig index om det ligger en index i URL
+  * Om `<figure>` får klassen `fullwidth` får bildet automatisk riktig styling.
+
+
+
+---
+    </textarea>
+    <script src="https://cdn.rawgit.com/bekk/remark/master/vendor/remark.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      'use strict';
+      var slideshow = remark.create({
+        ratio: '16:9',
+        highlightLanguage: 'javascript',
+        highlightStyle: 'monokai',
+        navigation: {
+          scroll: false
+        }
+      });
+
+      var dateStr = new Date().toLocaleString('nb-NO', { year: 'numeric', month: 'long', day: 'numeric' });
+
+      document.querySelector('.today-date').textContent = dateStr;
+
+      document.querySelector('#load-data').addEventListener('click', function(event) {
+        event.target.outerHTML = '<img src="resources/spinner.svg" />';
+      });
+
+      // Uthenting av .value eksempel
+      Array.prototype.slice.call(document.querySelectorAll('[data-ex]'), 0)
+        .forEach(function(ex) {
+          var view = document.querySelector('#ex' + ex.dataset.ex);
+          view.textContent = (''+ex[ex.dataset.valueProp]) || ' ';
+
+          ex.addEventListener(ex.dataset.listenFor, function(e) {
+            var value = e.target[ex.dataset.valueProp];
+            view.textContent = (''+value) || ' ';
+          });
+        });
+    </script>
+    <script type="text/javascript">
+      // Prevent default example
+      document
+        .querySelector('.prevent')
+        .addEventListener('click', function(e) {
+          e.preventDefault();
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+.annonse-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.annonse {
+    width: 100%;
+    display: inline-block;
+    background-color: #f1f1f1;
+    margin: 1rem;
+}
+
+.annonse .bilde {
+    max-height: 400px;
+    max-width: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.img-container {
+    position: relative;
+}
+
+.pris-container {
+    position: absolute;
+    top: 22%;
+    padding: 1rem;
+    background-color: black;
+    opacity: 0.7;
+    font-size: 1.5rem;
+}
+
+.pris {
+    color: #fff;
+}
+
+.arrow {
+    position: absolute;
+    top:46%;
+    display: none;
+}
+
+.arrow-right {
+    right: 0;
+}
+.annonse .img-container:hover .arrow {
+    display: block;
+}
+
+.kvm {
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+
+    border-radius: 50%;
+    border: 2px solid #fff;
+    text-align: center;
+    line-height: 50px;
+    height: 60px;
+    width: 60px;
+
+    color: #fff;
+    font-size: 1rem;
+    background-color: #333333;
+
+}
+
+.details {
+    padding: 1.5rem;
+}
+
+.tittel {
+    color: #333333;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.omradetittel {
+    display: block;
+    font-weight: bold;
+}
+
+.adr {
+    color: #7D7D7D;
+    margin-top: 0;
+}
+
+.hidden {
+    display: none;
+}
+@media (min-width: 48rem) {
+    .annonse {
+        width: 46%;
+    }
+}
+@media (min-width: 70rem) {
+    .annonse {
+        width: 30%;
+    }
+}

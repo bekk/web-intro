@@ -1,0 +1,83 @@
+.cols.two .col:nth-child(2n+2) {
+    margin-left: 0;
+}
+.cols.two .col:nth-child(1n+2) {
+    margin-bottom: 1rem;
+}
+div.col > pre {
+	margin-top: 0;
+}
+
+.example-box {
+  position: absolute;
+  background-color: #fd5158;
+  width: 150px;
+  height: 300px;
+  color: #fff;
+  font-family: Conduit;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1em;
+}
+
+.example-box:before {
+  content: "";
+  display: block;
+  height: calc(50% - 0.5em);
+}
+
+.example-arrow {
+  position: absolute;
+  left: 280px;
+  right: 280px;
+  font-family: Conduit;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  text-align: center;
+  border-top: 10px solid #FFF9AE;
+}
+
+.example-arrow:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -25px;
+  height: 0;
+  width: 0;
+  border: 20px solid transparent;
+}
+
+.example-arrow.arrow-left:after {
+  left: -29px;
+  border-right-color: #FFF9AE;
+}
+
+.example-arrow.arrow-right:after {
+  right: -29px;
+  border-left-color: #FFF9AE;
+}
+
+
+.example-same-origin {
+  font-family: Conduit;
+  font-size: 2em;
+}
+
+.example-same-origin .protocol {
+  color: #36bdb2;
+}
+
+.example-same-origin .domain {
+  color: #FFF9AE;
+}
+
+.example-same-origin .port {
+    color: #fd5158;
+}
+
+.wayright {
+  position: absolute;
+  right: 0;
+  top: 90px;
+}

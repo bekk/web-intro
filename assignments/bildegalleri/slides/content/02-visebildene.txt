@@ -1,0 +1,112 @@
+
+class: center middle
+#Vise bildene
+
+---
+
+#Ønsket resultat
+
+<iframe src="http://localhost:5002" style="height: 80%; width: 100%;" />
+
+---
+
+# Hva vi har
+```javascript
+function getPhotos(tag) {
+    return fetch('/sok?tag=' + tag).then(function(resp) {
+        return resp.json();
+    });
+}
+
+getPhotos('bekk').then(function(data) {
+    console.log(data);
+});
+```
+
+```json
+[{
+    "url": "https://farm2.staticflickr.com/1545/25292140150_8029266c75.jpg",
+    "title": "Freeze"
+}, {
+    "url": "https://farm2.staticflickr.com/1485/25535245756_37be2821ee.jpg",
+    "title": "Winter"
+}...]
+```
+
+---
+# Ønsket HTML
+
+```html
+<main>
+    <figure>
+        <img src="https://farm2.staticflickr.com/1545/25292140150_8029266c75.jpg" />
+        <figcaption>Freeze</figcaption>
+    </figure>
+    <figure>
+        <img src="https://farm2.staticflickr.com/1485/25535245756_37be2821ee.jpg", />
+        <figcaption>Winter</figcaption>
+    </figure>
+    <!-- ... -->
+</main>
+```
+
+---
+# Dom repetisjon
+
+```javascript
+const medTag = document.querySelector('body');
+const medTag2 = document.querySelector('main');
+const medId = document.querySelector('#min-boks');
+```
+&nbsp;
+--
+
+```javascript
+const tekst = medTag.textContent;
+medTag.textContent = 'Hei på deg';
+```
+&nbsp;
+--
+
+```javascript
+const html = medTag.innerHTML;
+medTag.innerHTML = '<div>Masse <b>HTML</b> kode</div>';
+```
+
+---
+
+class: split
+# Oppgave
+
+* Lag en ny funksjon som heter `renderImages` som tar inn listen over bilder
+ * Denne funksjonen skal returnere HTML-markup
+ * For hvert bilde, lag en `<figure>` med `<img>` som viser bildet og en `<figcaption>` som viser tittelen
+* Sett HTML-en som `renderImages` returnerer som innhold til `<main>`-elementet
+
+.wayright[```javascript
+function renderImages(data) {
+    let html = '';
+    // bruk en for-løkke for å fylle htmlen
+    // med en <figure> for hvert bilde i data
+    return html;
+}
+
+function getPhotos(tag) {
+    return fetch('/sok?tag=' + tag).then(function(resp) {
+        return resp.json();
+    });
+}
+
+getPhotos('bekk').then(function(data) {
+    // console.log(data);
+    const html = renderImages(data);
+    // hent ut main-elementet og sett
+    // innholdet til å være denne htmlen
+});
+
+```]
+
+
+
+
+---
